@@ -19,7 +19,7 @@
 
 							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
 					                <div class="sheet-top"></div>
-		                			<div class="sheet-text"><img src="images/mask-yellow2.png" alt="yellow-sheet">
+		                			<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
 	                				<div class="text">
 								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
 
@@ -48,7 +48,7 @@
 						<?php $image_gallery_images = get_sub_field( 'image_gallery' ); ?>
 						<?php if ( $image_gallery_images ) :  ?>
 							<div class="location1-img">
-								<img class="sheet" src="images/sheet-green.png" alt="">
+								<img class="sheet" src="<?php echo get_template_directory_uri(); ?>/images/sheet-green.png" alt="">
 				                <div>
 				                    <div>
 							<?php foreach ( $image_gallery_images as $image_gallery_image ): ?>
@@ -153,7 +153,7 @@
 		<?php elseif ( get_row_layout() == 'booking_form_with_contact' ) : ?>
 	    <section class="section-contact">
 	        <div class="wrapper">
-	            <img class="shape2" src="images/green-shape.png" alt="">
+	            <img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
 	            <ul class="col-2">
 	            	<li>
 	                    <h2>Rezervirajte smestaj</h2>
@@ -166,32 +166,177 @@
 
 		<!-- Text block column -->
 		<?php elseif ( get_row_layout() == 'text_blocks_columns_with_bg_images' ) : ?>
-			<?php the_sub_field( 'column_number' ); ?>
-			<?php the_sub_field( 'text_editor_1' ); ?>
-			<?php the_sub_field( 'text_editor_2' ); ?>
-			<?php the_sub_field( 'text_editor_3' ); ?>
-			<?php $background_images_images = get_sub_field( 'background_images' ); ?>
-			<?php if ( $background_images_images ) :  ?>
-				<?php foreach ( $background_images_images as $background_images_image ): ?>
-					<a href="<?php echo $background_images_image['url']; ?>">
-						<img src="<?php echo $background_images_image['sizes']['thumbnail']; ?>" alt="<?php echo $background_images_image['alt']; ?>" />
-					</a>
-				<p><?php echo $background_images_image['caption']; ?></p>
-				<?php endforeach; ?>
-		<?php endif; ?>
+    		<section class="background-img-shapes">
+			<?php if ( have_rows( 'background_images' ) ) : ?>
+				<?php while ( have_rows( 'background_images' ) ) : the_row(); ?>
+					<?php if ( get_sub_field( 'image_1' ) ) { ?>
+        				<!-- 1 left -->
+						<div class="img-shape">
+				            <svg width="732" height="530" viewBox="0 0 732 530">
+				                <defs>
+				                    <mask id="mask1" maskUnits="objectBoundingBox">
+				                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+				                    </mask>
+				                </defs>
+				                <image mask="url(#mask1)" width="711" height="527" xlink:href="<?php the_sub_field( 'image_1' ); ?>" />
+				            </svg>
+				        </div>
+					<?php } ?>
+					<?php if ( get_sub_field( 'image_2' ) ) { ?>
+						<!-- 2 left -->
+				        <div class="img-shape">
+				            <svg class="img-inner-shape" width="655" height="397" viewBox="0 0 655 397">
+				                <defs>
+				                    <mask id="mask2" maskUnits="objectBoundingBox">
+				                        <image width="655" height="397" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask22.png" />
+				                    </mask>
+				                </defs>
+				                <image mask="url(#mask2)" width="655" height="397" xlink:href="<?php the_sub_field( 'image_2' ); ?>" />
+				            </svg>
+				        </div>
+					<?php } ?>
+						<!-- 3 left -->
+        				<div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask.png" alt=""></div>
+					<?php if ( get_sub_field( 'image_3' ) ) { ?>
+						<!-- 4 left -->
+				        <div class="img-shape">
+				            <svg class="img-inner-shape" width="695" height="415" viewBox="0 0 695 415">
+				                <defs>
+				                    <mask id="mask5" maskUnits="objectBoundingBox">
+				                        <image width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask3.png" />
+				                    </mask>
+				                </defs>
+				                <image mask="url(#mask5)" width="695" height="415" xlink:href="<?php the_sub_field( 'image_3' ); ?>" />
+				            </svg>
+				        </div>
+					<?php } ?>
+						<!-- 5 top -->
+				        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
+
+				        <!-- 6 bottom -->
+				        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
+					<?php if ( get_sub_field( 'image_4' ) ) { ?>
+						<!-- 5 right  -->
+				        <div class="img-shape">
+				            <svg class="img-inner-shape" width="731" height="368" viewBox="0 0 731 368">
+				                <defs>
+				                    <mask id="mask3" maskUnits="objectBoundingBox">
+				                        <image width="731" height="368" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask23.png" />
+				                    </mask>
+				                </defs>
+				                <image mask="url(#mask3)" width="761" height="368" xlink:href="<?php the_sub_field( 'image_4' ); ?>" />
+				            </svg>
+				        </div>
+					<?php } ?>
+					<?php if ( get_sub_field( 'image_5' ) ) { ?>
+						<!-- 6 right -->
+				        <div class="img-shape">
+				            <svg width="732" height="530" viewBox="0 0 732 530">
+				                <defs>
+				                    <mask id="mask4" maskUnits="objectBoundingBox">
+				                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+				                    </mask>
+				                </defs>
+				                <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php the_sub_field( 'image_5' ); ?>" />
+				            </svg>
+				        </div>
+					<?php } ?>
+			        <!-- 7 right -->
+			        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
+				<?php endwhile; ?>
+			<?php endif; ?>
+
+        	<div class="wrapper">
+					<?php $column_number = get_sub_field( 'column_number' ); ?>
+					<?php if ($column_number === 'one-column'): ?>
+    				<ul class="col-1">
+					<?php elseif ($column_number === 'two-column'): ?>
+    				<ul class="col-2">
+					<?php elseif ($column_number === 'three-column'): ?>
+    				<ul class="col-3">
+					<?php endif ?>
+					<?php if ( have_rows( 'content' ) ) : ?>
+						<?php while ( have_rows( 'content' ) ) : the_row(); ?>
+							<li>
+			                    <?php the_sub_field( 'text_editor' ); ?>
+			                <li>
+						<?php endwhile; ?>
+					<?php else : ?>
+						<?php // no rows found ?>
+					<?php endif; ?>
+				</ul>
+			</div>
 		<!-- Text block column -->
 
 		<!-- Gallery separator -->
 		<?php elseif ( get_row_layout() == 'gallery_separator' ) : ?>
-			<?php $gallery_images = get_sub_field( 'gallery' ); ?>
-			<?php if ( $gallery_images ) :  ?>
-				<?php foreach ( $gallery_images as $gallery_image ): ?>
-					<a href="<?php echo $gallery_image['url']; ?>">
-						<img src="<?php echo $gallery_image['sizes']['thumbnail']; ?>" alt="<?php echo $gallery_image['alt']; ?>" />
-					</a>
-				<p><?php echo $gallery_image['caption']; ?></p>
-				<?php endforeach; ?>
+	    <div class="border-image">
+	        <div class="wrapper">
+			<?php if ( have_rows( 'gallery_group' ) ) : ?>
+				<?php while ( have_rows( 'gallery_group' ) ) : the_row(); ?>
+					<?php if ( get_sub_field( 'image_1' ) ) { ?>
+						 <!-- shape 1 -->
+			            <div class="img-shape1">
+			                <svg width="470" height="380" viewBox="0 0 470 380">
+			                    <defs>
+			                        <mask id="mask11" maskUnits="objectBoundingBox">
+			                            <image width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet2.png" />
+			                        </mask>
+			                    </defs>
+			                    <image mask="url(#mask11)" width="480" height="380" xlink:href="<?php the_sub_field( 'image_1' ); ?>" />
+			                </svg>
+			            </div>
+					<?php } ?>
+		            <!-- shape 2 -->
+		            <div class="img-shape1"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
+					<?php if ( get_sub_field( 'image_2' ) ) { ?>
+						<!-- shape 3 -->
+			            <div class="img-shape1">
+			                <svg width="373" height="345" viewBox="0 0 373 345">
+			                    <defs>
+			                        <mask id="mask12" maskUnits="objectBoundingBox">
+			                            <image width="373" height="345" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet1.png" />
+			                        </mask>
+			                    </defs>
+			                    <image mask="url(#mask12)" width="373" height="345" xlink:href="<?php the_sub_field( 'image_2' ); ?>" />
+			                </svg>
+			            </div>
+					<?php } ?>
+
+		            <!-- shape 4 -->
+		            <div class="img-shape1"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt=""></div>
+					<?php if ( get_sub_field( 'image_3' ) ) { ?>
+						 <!-- shape 5 -->
+			            <div class="img-shape1">
+			                <svg width="470" height="380" viewBox="0 0 470 380">
+			                    <defs>
+			                        <mask id="mask13" maskUnits="objectBoundingBox">
+			                            <image width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet2.png" />
+			                        </mask>
+			                    </defs>
+			                    <image mask="url(#mask13)" width="480" height="380" xlink:href="<?php the_sub_field( 'image_3' ); ?>" />
+			                </svg>
+			            </div>
+					<?php } ?>
+
+		            <!-- shape 6 -->
+		            <div class="img-shape1"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
+					<?php if ( get_sub_field( 'image_4' ) ) { ?>
+						 <div class="img-shape1">
+			                <svg width="373" height="345" viewBox="0 0 373 345">
+			                    <defs>
+			                        <mask id="mask14" maskUnits="objectBoundingBox">
+			                            <image width="373" height="345" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet1.png" />
+			                        </mask>
+			                    </defs>
+			                    <image mask="url(#mask14)" width="373" height="345" xlink:href="<?php the_sub_field( 'image_4' ); ?>" />
+			                </svg>
+			            </div>
+					<?php } ?>
+				<?php endwhile; ?>
 			<?php endif; ?>
+			</div>
+		</div>
 		<?php endif; ?>
 		<!-- Gallery separator -->
 
