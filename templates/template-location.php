@@ -27,7 +27,7 @@
             </div>
         </section>
 
-    <section class="location-gallery">
+    <section class="location-gallery top-none">
         <div class="wrapper col-2">
             <div>
                 <h3>Osijek</h3>
@@ -41,12 +41,10 @@
             <div class="location1-img">
                 <img class="sheet" src="<?php echo get_template_directory_uri(); ?>/images/sheet-green.png" alt="">
                 <div>
-                    <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/location1-3.png" alt="">
-                            
+                    <div class="gallery">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/location1-3.png" alt="">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/location1-1.png" alt="">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/location1-2.png" alt="">
-                       
                     </div>
                 </div>
 
@@ -98,10 +96,10 @@
         </div>
 
         <!-- 5 top -->
-        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
+        <div class="img-shape top"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
 
         <!-- 6 bottom -->
-        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
+        <div class="img-shape bottom"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
 
         <!-- 5 right  -->
         <div class="img-shape">

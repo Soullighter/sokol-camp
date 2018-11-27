@@ -31,11 +31,6 @@
     }
   }
 
-  @mixin devices-1100{
-    @media only screen and (min-width: 1100px){
-      @content;
-      }
-    }
  // Large devices (laptops/desktops, 992px and up)
 @mixin large-devices{
   @media only screen and (min-width: 1280px) {

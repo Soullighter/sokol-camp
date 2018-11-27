@@ -1,0 +1,51 @@
+.news {
+    p {
+        padding: 10px 10px;
+    }
+}
+.news1 {
+    h3 {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 30px;
+        color: $green-light;
+    }
+}
+
+.news-content {
+    .content {
+        background-color: $white;
+        img {
+            padding-bottom: 20px;
+        }
+        
+    }
+}
+@include small-devices {
+    .news1 {
+        h3 {
+            padding-top: 60px;
+        } 
+    }
+}
+
+@include medium-devices {
+    .news {
+        p {
+            padding: 10px 160px;
+        }
+    }
+    .news-content {
+        .content {
+            max-width: 954px;
+            margin: 0 auto;
+        }
+    }
+
+    .news1 {
+        h3 {
+            padding-top: 100px;
+        } 
+    }
+}
+

@@ -39,8 +39,8 @@
                     <div></div>
                     <div></div>
                 </div>
-                <div>
-                	<a href="javascript:void(0)" class="close" onclick="closeNav()"> &times;</a>
+                <div class="close">
+                	<a href="javascript:void(0)" onclick="closeNav()"> &times;</a>
                 </div>
                 <?php
 	                wp_nav_menu(

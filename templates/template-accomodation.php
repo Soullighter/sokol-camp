@@ -29,7 +29,7 @@
         </div>
     </section>
 
-    <section class="accommodation1">
+    <section class="accommodation1 top-none">
         <div class="wrapper col-2">
             <div class="col1 text">
                 <h3>Sobe</h3>
@@ -39,9 +39,9 @@
                     je s klima uređajem, LCD televizorom te kvalitetnim wi-fi signalom.</p>
             </div>
             <div class=" col2 flexslider">
-                <div class="sheet-top"></div>
+                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
                 <div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
-                    <div class="text">9 soba <br>31 ležaj</div>
+                    <div class="text"> <span>9</span><small>soba  </small><span>31</span><small>ležaj</small></div>
                     <ul class="slides">
                         <li>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/accommodation1.png" />
@@ -104,10 +104,10 @@
         </div>
 
         <!-- 5 top -->
-        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
+        <div class="img-shape top"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
 
         <!-- 6 bottom -->
-        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
+        <div class="img-shape bottom"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
 
         <!-- 5 right  -->
         <div class="img-shape">
@@ -155,7 +155,7 @@
     <section class="accommodation3">
         <div class="wrapper col-2">
             <div class="flexslider">
-                <div class="sheet1"></div>
+            <div class="sheet1"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
                 <div class="sheet2"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-sheet-yellow.png" alt="yellow-sheet"></div>
                 <ul class="slides">
                     <li>
@@ -225,10 +225,10 @@
         </div>
 
         <!-- 5 top -->
-        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
+        <div class="img-shape top"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
 
         <!-- 6 bottom -->
-        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
+        <div class="img-shape bottom"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
 
         <!-- 5 right  -->
         <div class="img-shape">

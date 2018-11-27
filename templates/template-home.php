@@ -124,49 +124,73 @@
 
     <section class="section6">
         <div class="wrapper">
-            <!-- <div class="green-sheet"></div>
-            <div class="yellow-sheet"></div> -->
+        <img class ="shape6-1" src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt="">
+        <img class ="shape6-2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
             <h2>Svjedočanstva</h2>
             <div class="flexslider">
                 <ul class="slides">
                     <li>
                         <div class="flex-caption"> <img src="<?php echo get_template_directory_uri(); ?>/images/section6.png" />
-                            <p>Osječki gimnastički centar ima niz prednosti koje su, možemo reći, rijetke u svijetu. Kao prvo,
-                                objekt objedinjuje smještajne kapacitete s prehranom i vrhunskim treningom odnosno uvjetima
-                                u dvorani koji su trenutno najbolji u regiji. Vrhunska gimnastička dvorana opremljena je
-                                najmodernijim spravama i trenažerima tvrtke Spieth koji ima sadržaje za dopunske vježbe te
-                                treninge i metodske vježbe kakve sada imaju rijetki u svijetu.<br>Vladimir Mađarević</br>
-                                trener Roberta Seligmana i potpredsjednik Hrvatskog gimnastičkog saveza </p>
+                        <div>
+                        <div>
+                            <p>Osječki gimnastički centar ima niz prednosti koje su, možemo reći, rijetke u svijetu.
+                                Kao prvo, objekt objedinjuje smještajne kapacitete s prehranom i vrhunskim treningom
+                                odnosno uvjetima u dvorani koji su trenutno najbolji u regiji. Vrhunska gimnastička
+                                dvorana opremljena je najmodernijim spravama i trenažerima tvrtke Spieth koji ima
+                                sadržaje za dopunske vježbe te treninge i metodske vježbe kakve sada imaju rijetki
+                                u svijetu.</p>
+                        </div>
+                        <div><strong>Vladimir Mađarević</strong></div>
+                        <div>trener Roberta Seligmana i potpredsjednik Hrvatskog gimnastičkog saveza</div>
+                    </div>
                         </div>
                     </li>
                     <li>
                         <div class="flex-caption"> <img src="<?php echo get_template_directory_uri(); ?>/images/section6.png" />
-                            <p>Osječki gimnastički centar ima niz prednosti koje su, možemo reći, rijetke u svijetu. Kao prvo,
-                                objekt objedinjuje smještajne kapacitete s prehranom i vrhunskim treningom odnosno uvjetima
-                                u dvorani koji su trenutno najbolji u regiji. Vrhunska gimnastička dvorana opremljena je
-                                najmodernijim spravama i trenažerima tvrtke Spieth koji ima sadržaje za dopunske vježbe te
-                                treninge i metodske vježbe kakve sada imaju rijetki u svijetu.<br>Vladimir Mađarević</br>
-                                trener Roberta Seligmana i potpredsjednik Hrvatskog gimnastičkog saveza </p>
+                        <div>
+                        <div>
+                            <p>Osječki gimnastički centar ima niz prednosti koje su, možemo reći, rijetke u svijetu.
+                                Kao prvo, objekt objedinjuje smještajne kapacitete s prehranom i vrhunskim treningom
+                                odnosno uvjetima u dvorani koji su trenutno najbolji u regiji. Vrhunska gimnastička
+                                dvorana opremljena je najmodernijim spravama i trenažerima tvrtke Spieth koji ima
+                                sadržaje za dopunske vježbe te treninge i metodske vježbe kakve sada imaju rijetki
+                                u svijetu.</p>
+                        </div>
+                        <div><strong>Vladimir Mađarević</strong></div>
+                        <div>trener Roberta Seligmana i potpredsjednik Hrvatskog gimnastičkog saveza</div>
+                    </div>
                         </div>
                     </li>
                     <li>
                         <div class="flex-caption"> <img src="<?php echo get_template_directory_uri(); ?>/images/section6.png" />
-                            <p>Osječki gimnastički centar ima niz prednosti koje su, možemo reći, rijetke u svijetu. Kao prvo,
-                                objekt objedinjuje smještajne kapacitete s prehranom i vrhunskim treningom odnosno uvjetima
-                                u dvorani koji su trenutno najbolji u regiji. Vrhunska gimnastička dvorana opremljena je
-                                najmodernijim spravama i trenažerima tvrtke Spieth koji ima sadržaje za dopunske vježbe te
-                                treninge i metodske vježbe kakve sada imaju rijetki u svijetu.<br>Vladimir Mađarević</br>
-                                trener Roberta Seligmana i potpredsjednik Hrvatskog gimnastičkog saveza </p>
+                        <div>
+                        <div>
+                            <p>Osječki gimnastički centar ima niz prednosti koje su, možemo reći, rijetke u svijetu.
+                                Kao prvo, objekt objedinjuje smještajne kapacitete s prehranom i vrhunskim treningom
+                                odnosno uvjetima u dvorani koji su trenutno najbolji u regiji. Vrhunska gimnastička
+                                dvorana opremljena je najmodernijim spravama i trenažerima tvrtke Spieth koji ima
+                                sadržaje za dopunske vježbe te treninge i metodske vježbe kakve sada imaju rijetki
+                                u svijetu.</p>
+                        </div>
+                        <div><strong>Vladimir Mađarević</strong></div>
+                        <div>trener Roberta Seligmana i potpredsjednik Hrvatskog gimnastičkog saveza</div>
+                    </div>
                         </div>
                     </li>
                     <li>
                         <div class="flex-caption"> <img src="<?php echo get_template_directory_uri(); ?>/images/section6.png" />
-                            <p>Osječki gimnastički centar ima niz prednosti koje su, možemo reći, rijetke u svijetu. Kao prvo,
-                                objekt objedinjuje smještajne kapacitete s prehranom i vrhunskim treningom odnosno uvjetima
-                                u dvorani koji su trenutno najbolji u regiji. Vrhunska gimnastička dvorana opremljena je
-                                najmodernijim spravama i trenažerima tvrtke Spieth koji ima sadržaje za dopunske vježbe te
-                                treninge i metodske vježbe kakve sada imaju rijetki u svijetu.<br>Vladimir Mađarević</br>
-                                trener Roberta Seligmana i potpredsjednik Hrvatskog gimnastičkog saveza </p>
+                        <div>
+                        <div>
+                            <p>Osječki gimnastički centar ima niz prednosti koje su, možemo reći, rijetke u svijetu.
+                                Kao prvo, objekt objedinjuje smještajne kapacitete s prehranom i vrhunskim treningom
+                                odnosno uvjetima u dvorani koji su trenutno najbolji u regiji. Vrhunska gimnastička
+                                dvorana opremljena je najmodernijim spravama i trenažerima tvrtke Spieth koji ima
+                                sadržaje za dopunske vježbe te treninge i metodske vježbe kakve sada imaju rijetki
+                                u svijetu.</p>
+                        </div>
+                        <div><strong>Vladimir Mađarević</strong></div>
+                        <div>trener Roberta Seligmana i potpredsjednik Hrvatskog gimnastičkog saveza</div>
+                    </div>
                         </div>
                     </li>
                 </ul>
@@ -176,6 +200,7 @@
         <!-- end wrapper -->
     </section>
     <!-- end section6 -->
+
 
     <section class="section7">
     <img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">

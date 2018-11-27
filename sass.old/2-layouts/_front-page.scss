@@ -1,37 +1,26 @@
-.section6 {
-    p {
-        color: $green-blue;
-    }
-}
-
-.section1 {
-    p {
-        color: $white;
-    }
-}
-
 .section2 {
-    padding: 10% 0;
     background-color: $green-blue;
-    .wrapper {
-        >div {
-            margin: 5% 0;
-        }
-        h5, p {
-            padding-bottom: 1em;
-        }
-    }
     .wrapper {
         div:nth-of-type(2){
             order: 3;
         }  
-       
+        div:nth-of-type(1) {
+            margin: 10% 0 5% 0;
+        }
+        div:nth-of-type(3){
+            margin: 10% 0 5% 0;
+        }
     }
     p {
         color: $white;
     }
+    image {
+        width: auto;
+        height: auto;
+    }
     svg {
-        display: none;
+        width: 711px;
+        height: 465px;
     }
 }
 
@@ -81,21 +70,6 @@
     }
 }
 
-.section6 {
-    .shape6-1,
-    .shape6-2 {
-        position: absolute;
-    }
-    .shape6-1 {
-        right: 108px;
-        transform: rotate(-69deg);
-        top: 142px;
-    }
-    .shape6-2 {
-        bottom: 157px;
-        transform: rotate(117deg);
-    }
-}
 .section7 {
     .shape1 {
         top: -80px;
@@ -134,23 +108,6 @@
        padding:15px;
    }
 }
-@include extra-small-devices {
-    .section2 {
-        .col {
-            flex-direction: row;
-        }
-        .wrapper {
-            div:nth-of-type(1) {
-                width: 45%;
-                margin-right: 20px;
-            }
-            div:nth-of-type(3){
-                width: 45%;
-                margin-left: 20px;
-            }
-        }
-    }
-}
 @include device-576 {
     .shape1,
     .shape2,
@@ -186,61 +143,15 @@
             padding: 50px;
         }
     }
-    .section6 {
-        .shape6-2 {
-            bottom: 209px;
-            transform: rotate(117deg);
-            left: 165px;
-        }
-    }
 }
 
 @include device-920 {
     .section2 {
-        padding: 0;
-        image {
-            width: auto;
-            height: auto;
-        }
-        img {
-            display: none;
-        }
-        svg {
-            display: block;
-            width: 711px;
-            height: 465px;
-        }
         .wrapper {
-            .col {
-                flex-direction: column;
-            }
-            >div {
-                margin: 0;
-                width: 33%;
-            }
             div:nth-of-type(2) {
-                order: 0;
-                position: relative;
-                left: -146px;
-                z-index: 1;
-            }
-            div:nth-of-type(1),
-            div:nth-of-type(3){
-               margin-top: 10%;
-               z-index: 2;
-            }
-            div:nth-of-type(1) {
-                width: 30%;
-                margin-right: 0;
-            }
-            div:nth-of-type(3){
-                width: 30%;
-                margin-left: 0;
+                order: inherit;
             }
         }
-    }
-    .section2 {
-       
     }
     .shape1,
     .shape2,
@@ -277,7 +188,6 @@
 }
 
 @include medium-devices {
-   
     .section3 {
         .shape4 {
             bottom: 176px;            

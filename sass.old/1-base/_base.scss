@@ -47,7 +47,7 @@ h4,
 h6 {
     font-weight: 800;
     color: $green-blue;
-    padding: 0 0 1.2em 0;
+    padding: 0 0 1.5em 0;
 }
 
 h3 {
@@ -62,12 +62,7 @@ h4 {
 }
 
 h1 {
-    font-size: 36px;
-    font-weight: 800;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.92;
-    letter-spacing: 3.4px;
+    font-size: 50px;
 }
 
 // 36px
@@ -86,10 +81,9 @@ h3 {
     line-height: 1.29;
     letter-spacing: 3.4px;
 }
-// 32px
+
 h4 {
-    // font-size: 1.375em;
-    font-size: 2em;
+    font-size: 1.375em;
 }
 
 h5 {
@@ -130,10 +124,8 @@ small {
 }
 
 video {
-    width: 100%    !important;
-    height: auto   !important;
-    z-index: 2;
-    position: relative;
+    width: 90%;
+    height: auto;
 }
 
 .clearfix {
@@ -147,11 +139,10 @@ video {
     margin: 0 auto;
 }
 
-
 .button {
     color: $green-light;
     text-transform: uppercase;
-    padding: 5% 5% 5% 0;
+    padding: 15px 0;
     span {
         margin-left: 7px;
         color: $green-light;

@@ -3,30 +3,46 @@
 .section6 {
     .flex-caption {
         background-color: $white;
-        p {
+        position: relative;
+        >div {
             width: 90%;
             background-color: $white;
+            position:  relative;
+            top: -50px;
         }
         display: flex;
         flex-wrap: wrap;
         padding: 2%;
-        left: 0;
-        bottom: 0;
         justify-content: center;
+        align-items: center;
+        
     }
     
-    .flex-direction-nav .flex-prev {
-        right: 0px !important;
+    .flex-direction-nav {
+        position: absolute;
+        left: 50%;
+        .flex-prev {
+            right: 0px !important;
+            margin: -50px 10px;
+        }
+        .flex-next {
+            margin: -49px;
+        }
     }
     
     .flexslider {
+        background-color: transparent;
+        .flex-caption {
+            margin-top: 150px;
+        }
         .slides {
             img {
                 width: auto !important;
                 border-radius: 50%;
                 margin: 0 auto;
                 position: relative;
-                left: -50px;
+                top: -92px;
+                z-index: 999;
             }
         } 
     }   
@@ -40,17 +56,55 @@
         .flexslider {
             margin: 60px;
             .flex-caption {
-                p {
-                    width: 70%;
+                >div {
+                    width: 75%;
                 }
-                display: flex;
-                flex-wrap: wrap;
-                padding: 2%;
-                left: 0;
-                bottom: 0;
-                justify-content: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 2%;
+                    left: 0;
+                    bottom: 0;
+                    justify-content: center;
             }
         }
+    }
+}
+
+@include devices-1100 {
+    .section6 {
+        .flexslider {
+            .flex-caption {
+                margin: 0 78px 0 114px;
+                z-index: -1;
+                >div {
+                    width: 60%;
+                    margin-top: 0;
+                    top:0;
+                    left: -60px;
+                }  
+            }
+            .slides {
+                img {
+                    width: auto !important;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    position: relative;
+                    left: -135px;
+                    top: 0;
+                }
+            } 
+        }  
+        .flex-direction-nav {
+            position: static;
+            left: 0;
+            .flex-prev {
+             margin: -20px 0 0;
+            }
+            .flex-next {
+              
+             margin: -50px 0 0;
+            }
+        } 
     }
 }
 

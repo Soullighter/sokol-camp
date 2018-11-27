@@ -1,30 +1,17 @@
-.sheet-top,
-.sheet-text,
-.sheet1,
-.sheet2 {
+.sheet-text {
+    position: absolute;
     width: 150px;
+    height: 128px;
+    left: -60px;
+    top: 39px;
+    .text {
+        position: relative;
+        left: 11px;
+        bottom: 160px;
+    }
 }
-
 .accommodation2 {
     height: 585px;
-}
-
-.accommodation1 {
-    .col-2 {
-
-    }
-}
-.sheet-text {
-    .text {
-        color: $yellow;
-        span {
-            font-size: 1.5em;
-        }
-    }
-    img {
-        display: none;
-        
-    }
 }
 .col-2 {
     .img-inner-shape {
@@ -38,15 +25,19 @@
         position: relative;
         margin: 0 7%;
         .sheet1 {
-        transform: rotate(-65deg);
-        position: absolute;
-        top: -20px;
-        right: 20px;
+            border-radius: 100% 0% 88% 9% / 58% 0% 100% 54%;
+            width: 200px;
+            height: 105px;
+            background-color: $green-light;
+            position: absolute;
+            right: 0;
+            transform: rotate(350deg);
+            top: 0;
         }
         .sheet2 {
             position: absolute;
             left: -37px;
-            bottom: 5px;
+            bottom: 73px;
             img {
                 width: 50%;
             }
@@ -57,11 +48,14 @@
             top: 10%;
         }
     }
-    .sheet-top{
-        transform: rotate(-65deg);
+    .sheet-top {
+        border-radius: 50% 44% 67% 20% / 56% 3% 96% 3%;
+        width: 190px;
+        height: 190px;
+        background-color: $green-light;
         position: absolute;
         top: -10px;
-        right: -11px;
+        right: 30px;
     }
 }
 
@@ -69,11 +63,11 @@
     .col-2 {
         .flexslider {
             .sheet1 {
-                top: -32px;
+                top: -14px;
             }
             .sheet2 {
                 left: -54px;
-                bottom: 5px;
+                bottom: 119px;
                 img {
                     width: 50%;
                 }
@@ -95,28 +89,10 @@
             right: 30px;
         }
     }
-
     .sheet-text {
-        position: absolute;
-        width: 150px;
-        height: 128px;
-        top: 12px;
-        left: -86px;
-        img {
-            display: block;
-        }
-        .text {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40px;
-            top: -185px;
-            color: $green-blue;
-            font-weight: normal;
-           
-        }
+        left: -44px;
+        top: 15px;
     }
-   
 }
 
 @include small-devices {
@@ -138,36 +114,19 @@
 }
 
 @include medium-devices {
-   
     .col-2 {
         .flexslider {
             align-self: none;
-            .sheet1 {
-                top: -39px;
-                right: 42px;
-            }
-            .sheet2 {
-                left: -53px;
-                bottom: 6px;
-            }
         }
         .img-inner-shape {
             width: 100%;
         }
     }
-    .sheet-top {
-        width: 200px;
-    }
-    
 }
 
 @include large-devices {
     .col-2 {
         .flexslider {
-            .sheet1 {
-                top: -86px;
-                right: -33px;
-            }
             .sheet2 {
                 left: -66px;
                 bottom: 40px;
@@ -178,12 +137,7 @@
             .sheet1 {
                 width: 295px;
                 height: 198px;
-
             }
-            // .sheet2 {
-            //     width: 295px;
-            //     height: 198px;
-            // }
         }
     }
 }

@@ -2,7 +2,7 @@
 
     <section class="header-bottom background-wave">
         <div class="wrapper">
-            <h2>Objekt</h2>
+            <h1>Kontakt</h1>
             <!-- hero image1 -->
             <span class="image-shape1">
                 <svg width="732" height="530" viewBox="0 0 732 530">
@@ -11,7 +11,7 @@
                             <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                         </mask>
                     </defs>
-                    <image mask="url(#mask-hero1)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                    <image mask="url(#mask-hero1)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation3.png" />
                 </svg>
             </span>
             <!-- hero image2 -->
@@ -22,13 +22,13 @@
                             <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                         </mask>
                     </defs>
-                    <image mask="url(#mask-hero2)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                    <image mask="url(#mask-hero2)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation3.png" />
                 </svg>
             </span>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact top-none">
         <div class="wrapper col-2">
             <div class="text">
                 <ul>
