@@ -1,0 +1,46 @@
+
+//media query
+/* Extra small devices (phones, 600px and down) */
+@mixin extra-small-devices{
+  @media only screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin device-576 {
+  @media only screen and (min-width: 576px){
+    @content;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@mixin small-devices{
+  @media only screen and (min-width: 767px){
+    @content;
+  }
+}
+
+@mixin device-920 {
+  @media only screen and (min-width: 920px){
+    @content;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin medium-devices{
+  @media only screen and (min-width: 1024px){
+    @content;
+    }
+  }
+
+ // Large devices (laptops/desktops, 992px and up)
+@mixin large-devices{
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+
+@mixin extra-large() {
+  @media only screen and (min-width: 1362px) {
+    @content;    
+  }
+}

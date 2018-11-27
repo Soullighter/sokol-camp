@@ -1,0 +1,173 @@
+//base styles
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: $green-blue;
+    font-size: 14px;
+}
+
+body {
+    background-color: $grey-white;
+}
+
+a {
+    background: transparent;
+    color: $white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    &:hover {
+        color: $green-light;
+    }
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    font-size: 1em;
+    background: transparent;
+    color: $white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.13;
+    letter-spacing: normal;
+    color: $green-blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    font-weight: 800;
+    color: $green-blue;
+    padding: 0 0 1.5em 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+    a {
+        color: $green-blue;
+    }
+    padding: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+// 36px
+h2 {
+    font-size: 2.25em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.22;
+    letter-spacing: 3.4px;
+    font-weight: 800;    
+}
+
+h3 {
+    font-size: 2.125em;
+    text-transform: uppercase;
+    line-height: 1.29;
+    letter-spacing: 3.4px;
+}
+
+h4 {
+    font-size: 1.375em;
+}
+
+h5 {
+    font-size: 1.5em;
+    color: $yellow;
+    font-weight: 800;
+    letter-spacing: 2.2px; 
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1em;
+    padding-bottom: 1.5625em;
+    color: $green-blue;
+    line-height: 1.56;
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    width: auto;
+}
+
+small {
+    font-size: 14px;
+}
+
+video {
+    width: 90%;
+    height: auto;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.button {
+    color: $green-light;
+    text-transform: uppercase;
+    padding: 15px 0;
+    span {
+        margin-left: 7px;
+        color: $green-light;
+    }
+}
+
+.video {
+    max-width: 640px;
+    max-height: 420px;
+}
+
+.padding {
+    padding: 5% 0;
+}
+
+@include small-devices {
+    *,
+    body,
+    html {
+        font-size: 16px;
+    }
+}
+
+@include extra-large {
+    .wrapper {
+        max-width: 1300px;
+    }
+}
