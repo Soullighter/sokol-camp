@@ -63,6 +63,65 @@
 					
 				<?php endwhile; ?>
 			<?php endif; ?>
+
+			<?php if ( have_rows( '2nd_column' ) ) : ?>
+				<?php while ( have_rows( '2nd_column' ) ) : the_row(); ?>
+					<?php $block_type = get_sub_field( 'select_block_type' ); ?>
+					<?php if ($block_type === 'text-editor'): ?>
+						<div>
+							<?php the_sub_field( 'text_editor' ); ?>
+						</div>
+					<?php elseif ($block_type === 'flexslider'): ?>
+						<?php $picture_slider_images = get_sub_field( 'picture_slider' ); ?>
+						<?php if ( $picture_slider_images ) :  ?>
+			            <div class="flexslider">
+
+							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
+					                <div class="sheet-top"></div>
+		                			<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
+	                				<div class="text">
+								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
+
+									<strong><?php the_sub_field( 'number' ); ?></strong>
+									<?php the_sub_field( 'text' ); ?>
+									<br>
+								<?php endwhile; ?>
+								</div>
+							<?php else: ?>
+
+			                <div class="sheet1"></div>
+			                <div class="sheet2"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-sheet-yellow.png" alt="yellow-sheet"></div>
+
+							<?php endif; ?>
+
+			                <ul class="slides">
+							<?php foreach ( $picture_slider_images as $picture_slider_image ): ?>
+			                    <li>
+									<img src="<?php echo $picture_slider_image['sizes']['large']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
+			                    </li>
+							<?php endforeach; ?>
+			                </ul>
+			            </div>
+						<?php endif; ?>
+					<?php elseif ($block_type === 'image-gallery'): ?>
+						<?php $image_gallery_images = get_sub_field( 'image_gallery' ); ?>
+						<?php if ( $image_gallery_images ) :  ?>
+							<div class="location1-img">
+								<img class="sheet" src="<?php echo get_template_directory_uri(); ?>/images/sheet-green.png" alt="">
+				                <div>
+				                    <div>
+							<?php foreach ( $image_gallery_images as $image_gallery_image ): ?>
+								<img src="<?php echo $image_gallery_image['sizes']['large']; ?>" alt="<?php echo $image_gallery_image['alt']; ?>" />
+							<?php endforeach; ?>
+				                    </div>
+				                </div>
+							</div>
+						<?php endif; ?>
+					<?php endif ?>
+
+					
+				<?php endwhile; ?>
+			<?php endif; ?>
 			</div>
 		</section>
 		<!-- Block Section END-->
@@ -156,13 +215,37 @@
 	            <img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
 	            <ul class="col-2">
 	            	<li>
-	                    <h2>Rezervirajte smestaj</h2>
 	                   <?php the_sub_field( 'form' ); ?>
                	 	</li>
                	 	<li>
 						<?php the_sub_field( 'contact_info' ); ?>
                	 	</li>
+               	 </ul>
+           	</div>
+       </section>
 		<!-- Booking with contact form -->
+
+		<!-- Contact form section -->
+		<?php elseif ( get_row_layout() == 'contact_form_with_additional_contact' ) : ?>
+
+		    <section class="contact">
+		        <div class="wrapper col-2">
+		            <div class="text">
+						<?php the_sub_field( 'text_editor' ); ?>
+		            </div>
+		            <div class="contact-form">
+		                <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-yellow.png" alt="yellow-sheet">
+		                <img class="sheet2" src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt="green-shape">
+		                <img src="<?php echo get_template_directory_uri(); ?>/images/" alt="">
+		               
+		               <?php the_sub_field( 'form' ); ?>
+		             
+		            </div>
+		        </div>
+		        <!-- end wrapper -->
+		    </section>
+
+		<!-- Contact form section -->
 
 		<!-- Text block column -->
 		<?php elseif ( get_row_layout() == 'text_blocks_columns_with_bg_images' ) : ?>
@@ -337,9 +420,45 @@
 			<?php endif; ?>
 			</div>
 		</div>
-		<?php endif; ?>
 		<!-- Gallery separator -->
 
+		<!-- Oval separator -->
+		<?php elseif ( get_row_layout() == 'oval_separator' ) : ?>
+			<?php if ( get_sub_field( 'show_separator' ) == 1 ) { ?>
+			    <section class="section7">
+			    	<img class="shape1" src="images/green-shape.png" alt="">
+			    </section>
+			<?php } else { ?>
+			 <?php echo 'Please check button to show separator' ?>
+			<?php } ?>
+		<!-- Oval separator -->
+
+		<!-- Full imag separator -->
+		<?php elseif ( get_row_layout() == 'full_width_image_separator' ) : ?>
+			<?php if ( get_sub_field( 'image' ) ) { ?>
+		    <section class="section3">
+		        <div class="wrapper">
+		            <img class ="shape1" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
+		            <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+		            <img class="center" src="<?php the_sub_field( 'image' ); ?>" alt="img">
+		            <div class="green-sheet"></div>
+		            <img class ="shape3" src="<?php echo get_template_directory_uri(); ?>/images/yellow-shape.png" alt="">
+		            <img class ="shape4" src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt="">
+		        </div>
+		        <!-- end wrapper -->
+		    </section>
+		    <!-- end section3 -->
+			<?php } ?>
+		<!-- Full imag separator -->
+
+		<!-- Google map embed -->
+		<?php elseif ( get_row_layout() == 'google_map_embed' ) : ?>
+			<section class="google-maps">
+				<?php the_sub_field( 'map' ); ?>
+			</section>
+		<!-- Google map embed -->
+		
+	<?php endif; ?>
 	<?php endwhile; ?>
 <?php else: ?>
 	<?php // no layouts found ?>

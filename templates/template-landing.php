@@ -1,4 +1,4 @@
-<?php /* Template Name: Landing */ get_header(); ?>
+<?php /* Template Name: Landing */ get_header('landing'); ?>
  <div class="landing-page">
             <div class="col1">
                 <div>
@@ -19,4 +19,4 @@
                 </div>
             </div>
     </div>
-<?php get_footer(); ?>
+<?php get_footer('landing'); ?>

@@ -32,14 +32,17 @@ get_header(); ?>
 
 					endwhile;
 
-					the_posts_navigation();
-
 				else :
 
 					get_template_part( 'template-parts/content', 'none' );
 
 				endif; ?>
             </div>
+            <?php 
+					echo '<div class="pagination layout layout--flushtxt__desc">';
+						theme_pagination();
+					echo '</div>';
+             ?>
         </div>
         <!-- end wrapper -->
     </section>
