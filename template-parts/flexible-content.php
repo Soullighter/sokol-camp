@@ -349,6 +349,7 @@
 					<?php endif; ?>
 				</ul>
 			</div>
+		</section>
 		<!-- Text block column -->
 
 		<!-- Gallery separator -->
@@ -458,6 +459,13 @@
 			</section>
 		<!-- Google map embed -->
 		
+		<!-- Google map embed -->
+		<?php elseif ( get_row_layout() == 'open_street_map' ) : ?>
+			<!-- <section class="google-maps"> -->
+				<?php the_sub_field( 'map' ); ?>
+			<!-- </section> -->
+		<!-- Google map embed -->
+
 	<?php endif; ?>
 	<?php endwhile; ?>
 <?php else: ?>
