@@ -1,12 +1,10 @@
-.section6 {
-    p {
-        color: $green-blue;
-    }
-}
-
 .section1 {
     p {
         color: $white;
+    }
+    h3 {
+        color: $green-light;
+        text-transform: none;
     }
 }
 
@@ -17,15 +15,15 @@
         >div {
             margin: 5% 0;
         }
-        h5, p {
+        h5,
+        p {
             padding-bottom: 1em;
         }
     }
     .wrapper {
-        div:nth-of-type(2){
+        div:nth-of-type(2) {
             order: 3;
-        }  
-       
+        }
     }
     p {
         color: $white;
@@ -39,49 +37,93 @@
 .shape2,
 .shape3,
 .shape4 {
-    position:absolute;
+    position: absolute;
     z-index: -1;
     width: 80px;
 }
+
 .section3 {
     position: relative;
     overflow: hidden;
     .wrapper {
         text-align: center;
     }
-   .shape1 {
-    top: 87px;
-    left: -48px;
-   }
-   .shape2 {
-    top: 11px;
-    left: 30px;
-   }
-   .shape3 {
-    top: 1px;
-    right: -59px;
-   }
-   .shape4 {
-    right: 1px;
-    bottom: 82px;
-    
-   }
+    .shape1 {
+        top: 87px;
+        left: -48px;
+    }
+    .shape2 {
+        top: 11px;
+        left: 30px;
+    }
+    .shape3 {
+        top: 1px;
+        right: -59px;
+    }
+    .shape4 {
+        right: 1px;
+        bottom: 82px;
+    }
+}
+
+.news-list {
+    h6{
+        font-size: 1em;
+        font-weight: normal;
+        color: $green-blue; 
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.45;
+        letter-spacing: normal;  
+        padding: 0.5em;
+        text-transform: none;
+    }
 }
 
 .section5 {
     background-color: $green-blue;
-    overflow: hidden;
-    min-height: 500px;
-    position: relative;
     p {
         color: $white;
     }
-    .image-shape2 {
-        display: none;
+    .image-shape1 {
+        position: relative;
+        left: -97px;
+        
     }
+    svg {
+        // width: 225%;
+        width: 532px;
+    }
+    .sheet-text1{
+        /* bottom: -2px; */
+    /* bottom: -16px; */
+    position: absolute;
+    left: 180px;
+    width: 244px;
+    /* top: 1px; */
+    top: 212px;
+    }
+    .image-shape2 {
+                display: none;
+            }
 }
+// .section5 {
+//     background-color: $green-blue;
+//     overflow: hidden;
+//     min-height: 500px;
+//     position: relative;
+//     p {
+//         color: $white;
+//     }
+//     
+// }
 
 .section6 {
+    position: relative;
+    p {
+        color: $green-blue;
+    }
     .shape6-1,
     .shape6-2 {
         position: absolute;
@@ -96,6 +138,7 @@
         transform: rotate(117deg);
     }
 }
+
 .section7 {
     .shape1 {
         top: -80px;
@@ -104,17 +147,25 @@
         transform: rotate(69deg);
     }
 }
+
 .section-contact {
     background-color: $green-blue;
     position: relative;
     overflow: hidden;
     .col-2 {
-        justify-content: space-between;
-        align-items: stretch;
-        padding: 0 10% 10% 10%;
+        justify-content: space-around;
     }
-    li,h2 {
+    li,
+    h2,
+    p {
         color: $white;
+        text-align: center;
+    }
+    label {
+        text-align: left;
+    }
+    li:first-child {
+        width: 100%;
     }
     .shape2 {
         bottom: -40px;
@@ -122,7 +173,9 @@
         left: 314px;
         z-index: 2;
     }
- 
+    .wpcf7-form {
+        align-items: center;
+    }
 }
 
 .partners {
@@ -130,32 +183,36 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-   img {
-       padding:15px;
-   }
+    img {
+        padding: 15px;
+    }
 }
+
 @include extra-small-devices {
     .section2 {
         .col {
             flex-direction: row;
+            justify-content: space-between;
+            ;
         }
         .wrapper {
             div:nth-of-type(1) {
                 width: 45%;
                 margin-right: 20px;
             }
-            div:nth-of-type(3){
+            div:nth-of-type(3) {
                 width: 45%;
                 margin-left: 20px;
             }
         }
     }
 }
+
 @include device-576 {
     .shape1,
     .shape2,
     .shape3,
-    .shape4 { 
+    .shape4 {
         width: 150px;
     }
     .section3 {
@@ -163,7 +220,7 @@
             top: 94px;
             left: -86px;
         }
-        .shape3{
+        .shape3 {
             top: -53px;
             right: -108px;
         }
@@ -176,21 +233,46 @@
             bottom: -150px;
         }
     }
+    .section5 {
+        .image-shape1 {
+            left: -178px;
+        }
+        .wrapper {
+            svg {
+                width: 695px;
+            }
+        }
+         .sheet-text1 {
+             width: 309px;
+             left: 269px;
+         }
+         .image-shape1 {
+             left: -266px;
+             bottom: -27px;
+         }
+    }
 }
 
 @include small-devices {
-    .section5 {
-        div:nth-of-type(2) {
-            width: 50%;
-            margin-left: auto;
-            padding: 50px;
-        }
-    }
+    // .section5 {
+    //     div:nth-of-type(2) {
+    //         width: 50%;
+    //         margin-left: auto;
+    //         padding: 50px;
+    //     }
+    // }
     .section6 {
         .shape6-2 {
             bottom: 209px;
             transform: rotate(117deg);
             left: 165px;
+        }
+    }
+    .section-contact {
+        li,
+        h2,
+        p {
+            text-align: left;
         }
     }
 }
@@ -199,8 +281,8 @@
     .section2 {
         padding: 0;
         image {
-            width: auto;
-            height: auto;
+            width: 98%;
+            height: 102%;
         }
         img {
             display: none;
@@ -208,7 +290,7 @@
         svg {
             display: block;
             width: 711px;
-            height: 465px;
+            height: 413px;
         }
         .wrapper {
             .col {
@@ -223,29 +305,27 @@
                 position: relative;
                 left: -146px;
                 z-index: 1;
+                bottom: -99px;
             }
             div:nth-of-type(1),
-            div:nth-of-type(3){
-               margin-top: 10%;
-               z-index: 2;
+            div:nth-of-type(3) {
+                margin-top: 10%;
+                z-index: 2;
             }
             div:nth-of-type(1) {
                 width: 30%;
                 margin-right: 0;
             }
-            div:nth-of-type(3){
+            div:nth-of-type(3) {
                 width: 30%;
                 margin-left: 0;
             }
         }
     }
-    .section2 {
-       
-    }
     .shape1,
     .shape2,
     .shape3,
-    .shape4 { 
+    .shape4 {
         width: auto;
     }
     .section3 {
@@ -265,6 +345,18 @@
             transform: rotate(57deg);
         }
     }
+
+    .section5 {
+        .wrapper {
+            flex-direction: row;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+          
+        
+    }
     .section7 {
         .shape1 {
             top: -120px;
@@ -273,20 +365,74 @@
             transform: rotate(69deg);
         }
     }
-   
 }
 
 @include medium-devices {
-   
     .section3 {
         .shape4 {
-            bottom: 176px;            
+            bottom: 176px;
             right: 30px;
         }
     }
-    .section5 {
-            .image-shape2 {
-                display: block;
+    // .section5 {
+    //     .image-shape2 {
+    //         display: block;
+    //     }
+    // }
+}
+
+@include large-devices {
+    .section-contact {
+        .wpcf7-form {
+            align-items: normal;
+        }
+        li:first-child {
+            width: 60%;
+        }
+    }
+}
+
+@include extra-large {
+    .section2 {
+        image {
+            width: auto;
+            height: auto;
+        }
+        svg {
+            height: 465px;
+        }
+        .wrapper {
+            div:nth-of-type(2) {
+                bottom: 0px;
             }
+        }
+    }
+    .section5 {
+        overflow: hidden;
+        max-height: 454px;
+       .wrapper {
+           >div {
+               width: 33.3%;
+           }
+           svg {
+               width: 695px;
+           }
+       }
+        .image-shape2 {
+            display: block;
+        }
+
+        .sheet-text1 {
+            width: 309px;
+        }
+
+        .image-shape1 {
+            left: -266px;
+            bottom: -27px;
+        }
+        .image-shape2 {
+            position: relative;
+            bottom: -37px;
+        }
     }
 }

@@ -10,8 +10,8 @@
 }
 
 .accommodation1 {
-    .col-2 {
-
+    small {
+        color: $green-blue;
     }
 }
 .sheet-text {
@@ -19,6 +19,7 @@
         color: $yellow;
         span {
             font-size: 1.5em;
+             line-height: 0.5em;
         }
     }
     img {
@@ -65,6 +66,32 @@
     }
 }
 
+.wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    p {
+        width: 80%;
+        margin-top: 2%;
+    }
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        border:none;
+        padding: 10px;
+        color: $green-blue;
+        margin-top: 5px;
+    }
+    label {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 100%;
+    }
+    input[type=submit] {
+        background-color: $yellow;
+    }
+}
 @include extra-small-devices {
     .col-2 {
         .flexslider {
@@ -79,6 +106,9 @@
                 }
             }
         }
+    }
+    .wpcf7-form {
+        align-items: normal;
     }
 }
 
@@ -95,7 +125,6 @@
             right: 30px;
         }
     }
-
     .sheet-text {
         position: absolute;
         width: 150px;
@@ -110,13 +139,19 @@
             flex-direction: column;
             position: relative;
             left: 40px;
-            top: -185px;
+            top: -170px;
             color: $green-blue;
             font-weight: normal;
-           
         }
     }
    
+    .wpcf7-form {
+        flex-direction: row;
+        p {
+            width: 30%;
+            margin-right: 10px;
+        }
+    }
 }
 
 @include small-devices {
@@ -180,16 +215,9 @@
                 height: 198px;
 
             }
-            // .sheet2 {
-            //     width: 295px;
-            //     height: 198px;
-            // }
         }
     }
-}
 
-// .form {
-//     width: 500px;
-//     height: 300px;
-//     background-color: red;
-// }
+    
+  
+}

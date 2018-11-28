@@ -46,6 +46,9 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    p {
+        background-color: rgba(0, 66, 84, 0.6) !important;
+    }
 }
 
 .col-2 {
@@ -73,8 +76,6 @@
     width: 55%;
     
 }
-
-
 
 .background-img-shapes {
     background-color: $green-blue;
@@ -210,9 +211,9 @@
     .section1.background-wave {
         min-height: 623px;
     }
-    .background-wave {
-        min-height: 450px;
-    }
+    // .background-wave {
+    //     min-height: 400px;
+    // }
     .col-2 {
         display: flex;
         justify-content: center;
@@ -412,7 +413,7 @@
 .col-4 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     article {
         max-width: 305px;
         margin: 0 auto;

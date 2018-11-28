@@ -1,19 +1,17 @@
 <?php /* Template Name: Home */ get_header(); ?>
 
     <section class="section1 background-wave negative">
-        <div class="wrapper col-2">
+        <div class="wrapper col-2 padd">
             <div>
                 <h3>Mjesto vrhunske gimnastike</h3>
                 <p>Sokol Centar je moderan, novi gimnastički centar opremljen najsuvremenijom opremom za vrhunsku sportsku gimnastiku.</p>
                 <p>Centar pruža usluge smještaja u moderno opremljenim sobama kao i vrhunsku prehranu, a sve sa ciljem što kvalitetnije
                     pripreme gimnastičkih klubova i pojedinaca.</p>
-                <div class="button">Saznaj više <span>&#x2192;</span></div>
+                    <div class="button"><a href="#">Saznaj više</a></div>
             </div>
-            <div class="video">
-                <video src="" controls>
-                    <source src="../video/test.mp4" type="video/mp4">
-                    <source src="video.ogg" type="video/ogg"> Your browser does not support HTML5 video.
-                </video>
+            <div class="videoWrapper">
+                <iframe width="640px" height="420px" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+                </iframe>
             </div>
         </div>
     </section>
@@ -23,7 +21,7 @@
             <div>
                 <h5>SUVREMENE DVORANE</h5>
                 <p>Dvorane opremljene suvremenom opremom osiguravaju raznolikost i kvalitetu treninga.</p>
-                <div class="button">Saznaj više <span>&#x2192;</span></div>
+                <div class="button"> <a href="#">Saznaj više</a></div>
             </div>
                 <div class="image-shape2">
                     <svg>
@@ -39,7 +37,7 @@
             <div>
                 <h5>SUVREMENE DVORANE</h5>
                 <p>Nudimo uslugu smještaja u moderno opremljenim sobama te korištenje kantine sa punim pansionom</p>
-                <div class="button">Saznaj više <span>&#x2192;</span></div>
+                <div class="button"> <a href="#">Saznaj više</a></div>
             </div>
         </div>
         <!-- end wrapper  -->
@@ -66,19 +64,19 @@
                 <div class="col-4">
                     <article>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/objavamedija2.png" alt="#">
-                        <h4><a href="file:///C:/Users/PURE_GUEST/Desktop/SokolCamp/news2.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, iusto?</a></h4>
+                        <a href="file:///C:/Users/PURE_GUEST/Desktop/SokolCamp/news2.html"><h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, iusto?</h6></a>
                     </article>
                     <article>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/objavamedija2.png" alt="">
-                        <h4><a href="file:///C:/Users/PURE_GUEST/Desktop/SokolCamp/news2.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, iusto?</a></h4>
+                        <a href="file:///C:/Users/PURE_GUEST/Desktop/SokolCamp/news2.html"><h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, iusto?</h6></a>
                     </article>
                     <article>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/objavamedija3.png" alt="">
-                        <h4><a href="file:///C:/Users/PURE_GUEST/Desktop/SokolCamp/news2.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, iusto?</a></h4>
+                        <a href="file:///C:/Users/PURE_GUEST/Desktop/SokolCamp/news2.html"><h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, iusto?</h6></a>
                     </article>
                     <article>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/objavamedija4.png" alt="">
-                        <h4><a href="file:///C:/Users/PURE_GUEST/Desktop/SokolCamp/news2.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, iusto?</a></h4>
+                        <a href="file:///C:/Users/PURE_GUEST/Desktop/SokolCamp/news2.html"><h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, iusto?</h6></a>
                     </article>
                 </div>
             </div>
@@ -86,8 +84,8 @@
         </section>
         <!-- end section4 -->
 
-    <!-- <section class="">
-        <div class="wrapper section5 col">
+    <section class="section5">
+        <div class="wrapper">
                 <div class="image-shape1">
                         <svg class="img-inner-shape" width="695" height="415" viewBox="0 0 695 415">
                             <defs>
@@ -97,8 +95,11 @@
                             </defs>
                             <image mask="url(#sect-5)" width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                         </svg>
+                        <img class="sheet-text1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-home-text.png" alt="">
+
                     </div>
-            <div>
+                 <div>
+                    
                     <p> „Veličanstven je osjećaj imati mogućnost vrhunski se pripremati u svom rodnom gradu, iz razloga jer sam cijeli
                             život sanjao o vježbanju i pripremanju u ovakvoj dvorani. Ovakvi centri postoje, primjerice, samo u Moskvi,
                             Tokiju, New Yorku gdje sam bio na mini pripremama prije određenih natjecanja. Sada kada imam ovakvu dvoranu
@@ -117,9 +118,9 @@
                         <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
                     </svg>
                 </div>
-        </div> -->
+        </div>
         <!-- end wrapper -->
-    <!-- </section> -->
+    </section>
     <!-- end section5 -->
 
     <section class="section6">

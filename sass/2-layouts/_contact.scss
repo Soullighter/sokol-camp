@@ -1,40 +1,75 @@
-
 .contact {
     .contact-form {
         position: relative;
-        width: 70%;
         background-color: $white;
-        padding: 5%!important;
+        padding: 0 5% 2% 5% !important;
         margin: 0 auto;
+        .wpcf7-form {
+            label {
+                color: $green-blue;
+            }
+            input, 
+            textarea {
+                border: 1px solid #837d73;
+                width: 98%;
+                max-height: 80px;
+                padding: 0;
+            }
+            input[type=submit] {
+                background-color: $green-blue;
+                color: $white;
+                padding: 9px 40px;
+            }
+        }
+    }
+    .text {
+        text-align: center;
     }
     .col-2 {
         align-items: center;
         justify-content: center;
+        .contact-form {
+            .wpcf7-form {
+                p {
+                    width: 100%;
+                }
+            }
+        }
     }
     .sheet1,
     .sheet2 {
         position: absolute;
         z-index: -1;
-        // width: 80%;
     }
     .sheet1 {
-        // top: -33px;
         top: -16px;
         transform: rotate(-65deg);
         right: 43px;
     }
     .sheet2 {
-        // left: -74px;
         left: -44px;
         bottom: 83px;
         transform: rotate(-69deg);
     }
+    strong {
+        color: $green-blue;
+    }
+    span,
+    a {
+        color: $green-blue;
+        font-size: 1em;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 2;
+        letter-spacing: normal;
+    }
+    a:hover {
+        color: $green-light;
+    }
 }
 
 .google-maps {
-
     iframe {
-    
         width: 100% ;
         min-height: 451px;;
     }
@@ -42,20 +77,55 @@
 
 @include small-devices {
     .contact {
-        .contact-form {
-            .sheet1 {
-                top: -33px;
+        .col-2 {
+            .contact-form {
+                width: 80%;
+                .wpcf7-form p {
+                    width: auto;
+                }
+                p:nth-of-type(1),
+                p:nth-of-type(2){
+                    width: 100%;
+                }
+                p:nth-of-type(3) {
+                    width: 100%;
+                }
+                .sheet1 {
+                    top: -33px;
+                }
+                .sheet2 {
+                    left: -74px;
+                }
             }
-            .sheet2 {
-                left: -74px;
-            }
+        }
+        .text {
+            text-align: left;
+        }
+    }
+    .contact-form {
+        textarea {
+            width: 98%;
         }
     }
 }
 
+@include device-920 {
+    .contact {
+        .col-2 {
+            .contact-form {
+                p:nth-of-type(1),
+                p:nth-of-type(2){
+                    width: 47%;
+                }
+            }
+        }
+}
+
+}
 @include large-devices {
     .contact {
         .contact-form {
+            width: 80%;
             .sheet1 {
                 top: -49px;
             }
