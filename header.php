@@ -18,6 +18,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 
+
 <?php wp_head(); ?>
 </head>
 

@@ -49,7 +49,7 @@
                 <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-yellow.png" alt="yellow-sheet">
                 <img class="sheet2" src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt="green-shape">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/" alt="">
-               <h4>Kontaktirajte nas</h4>
+               <h6>Kontaktirajte nas</h6>
                <form action="post">
                     <label for="">Ime i prezime <br>
                         <input type="text" name="name">

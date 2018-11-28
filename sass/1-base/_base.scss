@@ -7,10 +7,14 @@ html {
     font-family: 'Open Sans', sans-serif;
     color: $green-blue;
     font-size: 14px;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
 }
 
 body {
     background-color: $grey-white;
+    // background-color: #A0A8AA
 }
 
 a {
@@ -58,7 +62,7 @@ h4 {
     a {
         color: $green-blue;
     }
-    padding: 10px;
+    padding: 10px 10px 10px 0;
 }
 
 h1 {
@@ -90,6 +94,8 @@ h3 {
 h4 {
     // font-size: 1.375em;
     font-size: 2em;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 h5 {
@@ -102,6 +108,8 @@ h5 {
 
 h6 {
     font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 p {
@@ -115,7 +123,7 @@ p {
 }
 
 a {
-    font-size: 18px;
+    font-size: 1.125em;
     text-decoration: none;
 }
 
@@ -123,12 +131,27 @@ img {
     max-width: 100%;
     vertical-align: bottom;
     width: auto;
+    height: auto;
 }
 
+strong {
+    font-weight: 800;
+    color: $white;
+}
 small {
     font-size: 14px;
+    color: $white;
 }
 
+label {
+    color: $white;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+}
 video {
     width: 100%    !important;
     height: auto   !important;
@@ -152,17 +175,39 @@ video {
     color: $green-light;
     text-transform: uppercase;
     padding: 5% 5% 5% 0;
-    span {
-        margin-left: 7px;
+    display: inline;
+    a {
+        font-weight: normal;
         color: $green-light;
+        font-size: 1em;
+    }
+    &:after {
+        content: "\2192";
+        padding-left: 10px;
     }
 }
 
-.video {
-    max-width: 640px;
-    max-height: 420px;
+video,
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: relative;
+    z-index: 999;
 }
-
+.videoWrapper {
+    max-width: 640px;
+    height: 420px;
+    z-index: 999;
+}
+// .videoWrapper iframe {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+//     height: 100%;
+//     border: none;
+// }
 .padding {
     padding: 5% 0;
 }
@@ -179,4 +224,12 @@ video {
     .wrapper {
         max-width: 1300px;
     }
+}
+
+.ytp-title-enable-channel-logo .ytp-title {
+    display: none!important;
+}
+
+.ytp-chrome-top, .ytp-chrome-bottom {
+    display: none;
 }
