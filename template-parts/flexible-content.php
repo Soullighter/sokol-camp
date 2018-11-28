@@ -6,26 +6,26 @@
     	<section class="location-gallery">
        		<div class="wrapper col-2">
 			<?php if ( have_rows( '1st_column' ) ) : ?>
+				<?php $col1Class = 'col1' ?>
 				<?php while ( have_rows( '1st_column' ) ) : the_row(); ?>
 					<?php $block_type = get_sub_field( 'select_block_type' ); ?>
 					<?php if ($block_type === 'text-editor'): ?>
-						<div>
+						<div class="text <?php echo $col1Class ?>">
 							<?php the_sub_field( 'text_editor' ); ?>
 						</div>
 					<?php elseif ($block_type === 'flexslider'): ?>
 						<?php $picture_slider_images = get_sub_field( 'picture_slider' ); ?>
 						<?php if ( $picture_slider_images ) :  ?>
-			            <div class="flexslider">
+			            <div class="flexslider <?php echo $col1Class ?>">
 
 							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
-					                <div class="sheet-top"></div>
-		                			<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
+					                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
+                					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
 	                				<div class="text">
 								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
 
-									<strong><?php the_sub_field( 'number' ); ?></strong>
-									<?php the_sub_field( 'text' ); ?>
-									<br>
+									<span><?php the_sub_field( 'number' ); ?></span>
+									<small><?php the_sub_field( 'text' ); ?></small>
 								<?php endwhile; ?>
 								</div>
 							<?php else: ?>
@@ -47,7 +47,7 @@
 					<?php elseif ($block_type === 'image-gallery'): ?>
 						<?php $image_gallery_images = get_sub_field( 'image_gallery' ); ?>
 						<?php if ( $image_gallery_images ) :  ?>
-							<div class="location1-img">
+							<div class="location1-img <?php echo $col1Class ?>">
 								<img class="sheet" src="<?php echo get_template_directory_uri(); ?>/images/sheet-green.png" alt="">
 				                <div>
 				                    <div>
@@ -65,26 +65,28 @@
 			<?php endif; ?>
 
 			<?php if ( have_rows( '2nd_column' ) ) : ?>
+				<?php $col2Class = 'col2' ?>
 				<?php while ( have_rows( '2nd_column' ) ) : the_row(); ?>
 					<?php $block_type = get_sub_field( 'select_block_type' ); ?>
 					<?php if ($block_type === 'text-editor'): ?>
-						<div>
+						<div class="text <?php echo $col2Class
+						 ?>">
 							<?php the_sub_field( 'text_editor' ); ?>
 						</div>
 					<?php elseif ($block_type === 'flexslider'): ?>
 						<?php $picture_slider_images = get_sub_field( 'picture_slider' ); ?>
 						<?php if ( $picture_slider_images ) :  ?>
-			            <div class="flexslider">
+			            <div class="flexslider <?php echo $col2Class
+						 ?>">
 
 							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
-					                <div class="sheet-top"></div>
-		                			<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
+					                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
+                					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
 	                				<div class="text">
 								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
 
-									<strong><?php the_sub_field( 'number' ); ?></strong>
-									<?php the_sub_field( 'text' ); ?>
-									<br>
+									<span><?php the_sub_field( 'number' ); ?></span>
+									<small><?php the_sub_field( 'text' ); ?></small>
 								<?php endwhile; ?>
 								</div>
 							<?php else: ?>
@@ -106,7 +108,8 @@
 					<?php elseif ($block_type === 'image-gallery'): ?>
 						<?php $image_gallery_images = get_sub_field( 'image_gallery' ); ?>
 						<?php if ( $image_gallery_images ) :  ?>
-							<div class="location1-img">
+							<div class="location1-img <?php echo $col2Class
+						 ?>">
 								<img class="sheet" src="<?php echo get_template_directory_uri(); ?>/images/sheet-green.png" alt="">
 				                <div>
 				                    <div>
@@ -180,11 +183,38 @@
 
 		<!-- People about us slider -->
 		<?php elseif ( get_row_layout() == 'people_about_us_slider' ) : ?>
-			<?php the_sub_field( 'quoter' ); ?>
-			<?php if ( get_sub_field( 'image_of_quoter' ) ) { ?>
-				<img src="<?php the_sub_field( 'image_of_quoter' ); ?>" />
-			<?php } ?>
-			<?php the_sub_field( 'quote' ); ?>
+		    <section class="section6">
+		        <div class="wrapper">
+		        <img class ="shape6-1" src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt="">
+		        <img class ="shape6-2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+				<h2>Svjedočanstva</h2>
+				<?php if ( have_rows( 'slide' ) ) : ?>
+	            <div class="flexslider">
+	                <ul class="slides">
+					<?php while ( have_rows( 'slide' ) ) : the_row(); ?>
+						<li>
+							<?php
+								if ( get_sub_field( 'image_of_quoter' ) ) { 
+								
+								$image_of_quoter = get_sub_field( 'image_of_quoter' );
+								}
+							?>
+	                        <div class="flex-caption">
+	                        	<img src="<?php echo $image_of_quoter ?>" />
+		                        <div>
+		                        	<div><?php the_sub_field( 'quote' );?></div>
+		                        	<div><?php the_sub_field( 'quoter' ); ?></div>
+		                        </div>
+		                    </div>
+		                </li>
+					<?php endwhile; ?>
+					</ul>
+				</div>
+				<?php else : ?>
+					<?php // no rows found ?>
+				<?php endif; ?>
+				</div>
+			</section>
 		<!-- People about us slider -->
 
 		<!-- Partners -->
