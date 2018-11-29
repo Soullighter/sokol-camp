@@ -90,7 +90,9 @@ add_action( 'after_setup_theme', 'gulp_wordpress_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function gulp_wordpress_scripts() {
-	wp_enqueue_style( 'flexslider-css', get_stylesheet_uri(),'/css/flexslider.css' );
+	wp_register_style('css-flexslider', get_template_directory_uri() . '/css/flexslider.css', array(), '1.0', 'all');
+    wp_enqueue_style('css-flexslider'); // Enqueue it!
+	
 	wp_enqueue_style( 'gulp-wordpress-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'gulp-wordpress-javascript', get_template_directory_uri() . '/js/app.min.js', array(), '20151215', true );
