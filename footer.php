@@ -14,8 +14,8 @@
 	</div><!-- #content -->
     <footer class="footer">
         <div class="wrapper">
-            <!-- <div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/sheet-green1.png" alt="sheet-green"></div>
-            <div class="sheet2"><img src="<?php echo get_template_directory_uri(); ?>/images/sheet-yellow.png" alt="sheet-yellow1"></div> -->
+            <div class="shape1"><img src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="sheet-green"></div>
+            <div class="shape2"><img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt="sheet-yellow1"></div>
             <div class="col">
             	<?php if ( have_rows( 'footer_group', 'option' ) ) : ?>
 					<?php while ( have_rows( 'footer_group', 'option' ) ) : the_row(); ?>

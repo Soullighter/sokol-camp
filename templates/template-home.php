@@ -7,7 +7,7 @@
                 <p>Sokol Centar je moderan, novi gimnastički centar opremljen najsuvremenijom opremom za vrhunsku sportsku gimnastiku.</p>
                 <p>Centar pruža usluge smještaja u moderno opremljenim sobama kao i vrhunsku prehranu, a sve sa ciljem što kvalitetnije
                     pripreme gimnastičkih klubova i pojedinaca.</p>
-                    <div class="button"><a href="#">Saznaj više</a></div>
+                <a href="#">Saznaj više</a>
             </div>
             <div class="videoWrapper">
                 <iframe width="640px" height="420px" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
@@ -18,10 +18,12 @@
 
     <section class="section2">
         <div class="wrapper col">
+        <img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt="">
+
             <div>
                 <h5>SUVREMENE DVORANE</h5>
                 <p>Dvorane opremljene suvremenom opremom osiguravaju raznolikost i kvalitetu treninga.</p>
-                <div class="button"> <a href="#">Saznaj više</a></div>
+                <a href="#">Saznaj više</a>
             </div>
                 <div class="image-shape2">
                     <svg>
@@ -37,12 +39,13 @@
             <div>
                 <h5>SUVREMENE DVORANE</h5>
                 <p>Nudimo uslugu smještaja u moderno opremljenim sobama te korištenje kantine sa punim pansionom</p>
-                <div class="button"> <a href="#">Saznaj više</a></div>
+                <a href="#">Saznaj više</a>
             </div>
         </div>
+        <img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
         <!-- end wrapper  -->
     </section>
-    <!-- end section1 -->
+    <!-- end section2 -->
 
 
     <section class="section3">
@@ -59,7 +62,7 @@
     <!-- end section3 -->
 
     <section class="news-list">
-            <div class="wrapper padding">
+            <div class="wrapper">
                 <h2>Objava medija</h2>
                 <div class="col-4">
                     <article>
@@ -86,6 +89,10 @@
 
     <section class="section5">
         <div class="wrapper">
+        <img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+        <img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
+        <img class="shape3" src="<?php echo get_template_directory_uri(); ?>/images/yellow-shape.png" alt="">
+
                 <div class="image-shape1">
                         <svg class="img-inner-shape" width="695" height="415" viewBox="0 0 695 415">
                             <defs>
@@ -99,7 +106,6 @@
 
                     </div>
                  <div>
-                    
                     <p> „Veličanstven je osjećaj imati mogućnost vrhunski se pripremati u svom rodnom gradu, iz razloga jer sam cijeli
                             život sanjao o vježbanju i pripremanju u ovakvoj dvorani. Ovakvi centri postoje, primjerice, samo u Moskvi,
                             Tokiju, New Yorku gdje sam bio na mini pripremama prije određenih natjecanja. Sada kada imam ovakvu dvoranu
@@ -125,8 +131,10 @@
 
     <section class="section6">
         <div class="wrapper">
-        <img class ="shape6-1" src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt="">
-        <img class ="shape6-2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+        <img class="side-img" src="<?php echo get_template_directory_uri(); ?>/images/section6-side2.png" alt="">
+        <!-- <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+
+        <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt=""> -->
             <h2>Svjedočanstva</h2>
             <div class="flexslider">
                 <ul class="slides">
@@ -196,7 +204,7 @@
                     </li>
                 </ul>
             </div>
-
+            <img class="side-img2" src="<?php echo get_template_directory_uri(); ?>/images/section6-side1.png" alt="">
         </div>
         <!-- end wrapper -->
     </section>
@@ -235,15 +243,15 @@
     </section>
     <!-- end section-contact -->
 
-        <section class=" padding">
+        <section class="section8">
             <div class="wrapper">
                 <h2>Partneri</h2>
                 <div class="partners">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/partner1.svg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/partner2.svg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/partner3.svg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/partner4.svg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/partner5.svg" alt="">
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/partner2.svg" alt=""></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/partner2.svg" alt=""></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/partner3.svg" alt=""></div>
+                    <div> <img src="<?php echo get_template_directory_uri(); ?>/images/partner4.svg" alt=""></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/partner5.svg" alt=""></div>
                 </div>
             </div>
             <!-- end wrapper -->

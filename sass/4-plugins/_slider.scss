@@ -1,8 +1,7 @@
 // front page slider
-
 .section6 {
     .flex-caption {
-        background-color: $white;
+        background-color: $white;;
         position: relative;
         >div {
             width: 90%;
@@ -20,10 +19,10 @@
     
     .flex-direction-nav {
         position: absolute;
-        left: 50%;
+        left: 47%;
         .flex-prev {
             right: 0px !important;
-            margin: -50px 10px;
+            margin: -49px -16px;
         }
         .flex-next {
             margin: -49px;
@@ -48,17 +47,20 @@
     }   
 }
 
+.flex-next:hover {
+    color: $green-light;
+}
 @include small-devices {
     
     .section6 {
         position: relative;
         z-index: 999;
         .flexslider {
-            margin: 60px;
+            margin: 0 60px;
             .flex-caption {
-                >div {
-                    width: 75%;
-                }
+                // >div {
+                //     width: 75%;
+                // }
                     display: flex;
                     flex-wrap: wrap;
                     padding: 2%;
@@ -105,6 +107,24 @@
              margin: -50px 0 0;
             }
         } 
+    }
+}
+
+@include extra-large {
+    .section6 {
+        .flexslider {
+            .flex-caption {
+                margin: 0 43px 0 43px;
+                >div {
+                    width: 71%;
+                }
+            }
+            .slides {
+                img {
+                    left: -82px;
+                }
+            }
+        }
     }
 }
 

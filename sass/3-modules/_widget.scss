@@ -41,6 +41,8 @@
 }
 
 .col {
+    padding-top: 7%;
+    padding-bottom: 7%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -128,6 +130,26 @@
             z-index: 999;
             margin-top: 30px;
             color: $white;
+        }
+    }
+}
+
+.col-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    article {
+        max-width: 305px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        &:hover {
+            -webkit-box-shadow: 0 4px 18px 0 rgba(207, 204, 200, 0.3);
+            -moz-box-shadow: 0 4px 18px 0 rgba(207, 204, 200, 0.3);
+            box-shadow: 0 4px 18px 0 $grey;
+            h6 {
+                color: $green-light;
+            }
+            
         }
     }
 }
@@ -410,24 +432,6 @@
 //     align-items: center;
 // }
 //create float div with 4 columns 
-.col-4 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    article {
-        max-width: 305px;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        &:hover {
-            -webkit-box-shadow: 0 4px 18px 0 rgba(207, 204, 200, 0.3);
-            -moz-box-shadow: 0 4px 18px 0 rgba(207, 204, 200, 0.3);
-            box-shadow: 0 4px 18px 0 rgba(207, 204, 200, 0.3);
-        }
-        h4 {
-            background-color: $white;
-        }
-    }
-}
 
 // .absolute {
 //     position: absolute;

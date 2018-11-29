@@ -5,6 +5,7 @@
         background-color: $green-light;
         margin: 6px 0;
     }
+    margin-right: 15px;
 }
 
 .header {
@@ -35,6 +36,11 @@
             padding: 8px 5px;
             display: block;
             color: $green-blue;
+            &:hover {
+                color: $green-light;
+                -webkit-transition: all 0.5s; /* Safari */
+                transition: all 0.5s;
+            }
         }
     }
     .close {
@@ -101,7 +107,6 @@
 }
 
 
-
 // FRONT PAGE SECTIONS
 // .section1 {
 //     h3 {
@@ -153,7 +158,6 @@
 .footer {
     position: relative;
     overflow: hidden;
-    padding: 7%;
     background-color: $green-blue;
     a {
         font-size: 1em;
@@ -171,16 +175,19 @@
         flex-direction: column;
         justify-content: center;
     }
-    .yellow-sheet {
+    .shape1 {
         position: absolute;
-        left: -100px;
-        transform: rotate(-46deg);
+        left: -79px;
+        z-index: 1;
+        transform: rotate(-172deg);
+        top: 11px;
     }
-    .green-sheet {
+    .shape2 {
         position: absolute;
         right: -120px;
         bottom: 0;
-        transform: rotate(72deg);
+        z-index: 1;
+        transform: rotate(-161deg);
     }
     .last {
         display: flex;
@@ -228,7 +235,7 @@
             flex-wrap: nowrap;
             ul {
                 border: none;
-                width: 33.3%;
+                width: auto;
             }
         }
     }
@@ -299,22 +306,14 @@
         }
     }
     .col-4 {
+        flex-wrap: nowrap;
         article {
-            margin: 20px 65px;
+            margin-right: 10px;
+        }
+        article:nth-of-type(4n) {
+            margin-right: 0;
         }
     }
-    // .section6 {
-    //     background-color: $grey-white;
-    //     .wrapper {
-    //         padding-bottom: 80px;
-    //     }
-    // }
-    // .section7 {
-    //     .form {
-    //         width: 600px;
-    //         height: 300px;
-    //     }
-    // }
 }
 
 @include large-devices {
@@ -335,10 +334,10 @@
     }
     .news-list {
         .wrapper {
-            padding-bottom: 125px;
+            // padding-bottom: 125px;
         }
         article {
-            margin: 20px 10px;
+            // margin: 20px 10px;
         }
     }
 }

@@ -14,7 +14,6 @@ html {
 
 body {
     background-color: $grey-white;
-    // background-color: #A0A8AA
 }
 
 a {
@@ -92,7 +91,6 @@ h3 {
 }
 // 32px
 h4 {
-    // font-size: 1.375em;
     font-size: 2em;
     text-transform: uppercase;
     text-align: left;
@@ -125,6 +123,11 @@ p {
 a {
     font-size: 1.125em;
     text-decoration: none;
+    &:hover {
+        -webkit-transition: all 0.5s; /* Safari */
+        transition: all 0.5s;
+        color: $green-light;
+    }
 }
 
 img {
@@ -170,22 +173,24 @@ video {
     margin: 0 auto;
 }
 
-
-.button {
-    color: $green-light;
-    text-transform: uppercase;
-    padding: 5% 5% 5% 0;
-    display: inline;
-    a {
+// button
+.section1,
+.section2 {
+    a { 
+        color: red;
+        text-transform: uppercase;
+        padding: 3% 5% 0% 0;
+        display: inline-block;
         font-weight: normal;
         color: $green-light;
         font-size: 1em;
-    }
-    &:after {
-        content: "\2192";
-        padding-left: 10px;
+        &:after {
+            content: "\2192";
+            padding-left: 10px;
+        }
     }
 }
+
 
 video,
 iframe {
@@ -233,3 +238,8 @@ iframe {
 .ytp-chrome-top, .ytp-chrome-bottom {
     display: none;
 }
+.html5-video-player a  {
+    display: none;
+}
+
+
