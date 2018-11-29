@@ -129,6 +129,35 @@
 		</section>
 		<!-- Block Section END-->
 
+		<!-- Two text blocks with centered image -->
+		<?php elseif ( get_row_layout() == 'two_text_blocks_with_centered_image' ) : ?>
+		    <section class="section2">
+		        <div class="wrapper col">
+		            <div>
+		                <?php the_sub_field( '1st_block' ); ?>
+		            </div>
+		                <div class="image-shape2">
+		                	<?php if ( get_sub_field( 'image' ) ) { ?>
+		                		<?php $image = get_sub_field( 'image' ); ?>
+							<?php } ?>
+		                    <svg>
+		                        <defs>
+		                            <mask id="sect-2"  maskUnits="objectBoundingBox">
+		                                <image xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-section2-homepage.png" />
+		                            </mask>
+		                        </defs>
+		                        <image mask="url(#sect-2)" xlink:href="<?php echo $image; ?>" />
+		                    </svg>
+		                </div>
+		                
+		            <div>
+		                <?php the_sub_field( '2nd_block' ); ?>
+		            </div>
+		        </div>
+		        <!-- end wrapper  -->
+		    </section>
+		<!-- Two text blocks with centered image -->
+
 		<!-- Latest posts -->
 		<?php elseif ( get_row_layout() == 'latest_posts' ) : ?>
 			<?php if ( get_sub_field( 'latest_posts' ) == 1 ) { ?>
@@ -137,28 +166,32 @@
 		        <div class="wrapper padding">
 		        	<h2>Objava medija</h2>
 		            <div class="col-4">
+		            	<?php
+						// The Query
+						$args = array(
+							'post_type' => 'post',
+							'posts_per_page' => 4,
+							'post_status' => 'publish'
+						);
+						$the_query = new WP_Query( $args );
 
-						<?php
-						if ( have_posts() ) :
-							/* Start the Loop */
-							while ( have_posts() ) : the_post();
-
+						// The Loop
+						if ( $the_query->have_posts() ) {
+							while ( $the_query->have_posts() ) {
+								$the_query->the_post();
 								/*
 								 * Include the Post-Format-specific template for the content.
 								 * If you want to override this in a child theme, then include a file
 								 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 								 */
 								get_template_part( 'template-parts/content', get_post_format() );
-
-							endwhile;
-
-							the_posts_navigation();
-
-						else :
-
+							}
+							/* Restore original Post Data */
+							wp_reset_postdata();
+						} else {
 							get_template_part( 'template-parts/content', 'none' );
-
-						endif; ?>
+						}
+						?>
 		            </div>
 		        </div>
 		        <!-- end wrapper -->
@@ -457,7 +490,7 @@
 		<?php elseif ( get_row_layout() == 'oval_separator' ) : ?>
 			<?php if ( get_sub_field( 'show_separator' ) == 1 ) { ?>
 			    <section class="section7">
-			    	<img class="shape1" src="images/green-shape.png" alt="">
+			    	<img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
 			    </section>
 			<?php } else { ?>
 			 <?php echo 'Please check button to show separator' ?>
