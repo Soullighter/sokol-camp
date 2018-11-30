@@ -106,55 +106,31 @@
     }   
 }
 
+.wpml-ls-statics-shortcode_actions {
+    .wpml-ls-current-language>a,
+    .wpml-ls-current-language>a:focus {
+        background-color: $green-blue;
+        color: $white;
+        border: none;
+    }
 
-// FRONT PAGE SECTIONS
-// .section1 {
-//     h3 {
-//         color: $green-light;
-//         text-transform: none;
-//     }
-//     .video {
-//         text-align: center;
-//     }
-// }
-// .news-list {
-//     position: relative;
-//     h4 {
-//         // padding:  15px;
-//     }
-//     .wrapper {
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: center;
-//     }
-// }
+}
 
-// .section6 {
-//     background-color: $grey-white;
-//     .wrapper {
-//         padding: 50px 0;
-//         position: relative;
-//     }
-//     .flexslider {
-//         z-index: 1000;
-//     }
-//     .green-sheet,
-//     .yellow-sheet {
-//         z-index: 1000;
-//         width: 190px;
-//         height: 193px;
-//     }
-//     .yellow-sheet {
-//         bottom: 80px;
-//         left: 50px;
-//     }
-//     .green-sheet {
-//         right: 50px;
-//         bottom: 50%;
-//         transform: rotate(180deg);
-//     }
-// }
-
+.wpml-ls-legacy-dropdown-click {
+   a {
+    span {
+        color: $white;;
+    }
+   }
+   a.wpml-ls-item-toggle:after {
+    border: solid $white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(44deg);
+    top: calc(44% - 0.175em);
+   }
+} 
 .footer {
     position: relative;
     overflow: hidden;
@@ -305,15 +281,7 @@
             }
         }
     }
-    .col-4 {
-        flex-wrap: nowrap;
-        article {
-            margin-right: 10px;
-        }
-        article:nth-of-type(4n) {
-            margin-right: 0;
-        }
-    }
+   
 }
 
 @include large-devices {
@@ -327,11 +295,6 @@
 }
 
 @include extra-large {
-    .col-4 {
-        article {
-            padding: 0px;
-        }
-    }
     .news-list {
         .wrapper {
             // padding-bottom: 125px;

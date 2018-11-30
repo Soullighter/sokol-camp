@@ -66,15 +66,16 @@
     <!-- end section -->
 
     <section class="background-img-shapes">
+       
         <!-- 1 left -->
         <div class="img-shape">
             <svg width="732" height="530" viewBox="0 0 732 530">
                 <defs>
                     <mask id="mask1" maskUnits="objectBoundingBox">
-                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3-1.png" />
                     </mask>
                 </defs>
-                <image mask="url(#mask1)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                <image mask="url(#mask1)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
             </svg>
         </div>
 
@@ -128,16 +129,15 @@
             <svg width="732" height="530" viewBox="0 0 732 530">
                 <defs>
                     <mask id="mask4" maskUnits="objectBoundingBox">
-                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3-6.png" />
                     </mask>
                 </defs>
-                <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
             </svg>
         </div>
 
         <!-- 7 right -->
         <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
-
         <div class="wrapper">
             <ul class="col-2">
                 <li>
@@ -245,7 +245,7 @@
                 <svg width="470" height="380" viewBox="0 0 470 380">
                     <defs>
                         <mask id="mask13" maskUnits="objectBoundingBox">
-                            <image width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet2.png" />
+                            <image width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-border-top.png" />
                         </mask>
                     </defs>
                     <image mask="url(#mask13)" width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
@@ -303,15 +303,16 @@
 
     <section class="background-img-shapes">
 
+        
         <!-- 1 left -->
         <div class="img-shape">
             <svg width="732" height="530" viewBox="0 0 732 530">
                 <defs>
                     <mask id="mask1" maskUnits="objectBoundingBox">
-                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3-1.png" />
                     </mask>
                 </defs>
-                <image mask="url(#mask1)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                <image mask="url(#mask1)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
             </svg>
         </div>
 
@@ -365,10 +366,10 @@
             <svg width="732" height="530" viewBox="0 0 732 530">
                 <defs>
                     <mask id="mask4" maskUnits="objectBoundingBox">
-                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3-6.png" />
                     </mask>
                 </defs>
-                <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
             </svg>
         </div>
 

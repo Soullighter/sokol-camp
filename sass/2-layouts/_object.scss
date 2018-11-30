@@ -1,9 +1,11 @@
 .border-image {
     background-color: $green-blue;
-    position: relative;
     overflow: hidden;
     height: 250px;
     width: 100%;
+    .wrapper {
+        position: relative;
+    }
     .img-shape1 {
         img {
             display: block;
@@ -11,40 +13,38 @@
     }
     .img-shape1:nth-of-type(1) {
         position: absolute;
-        bottom: -102px;
-        left: -30px;
+        left: -215px;
     }
     .img-shape1:nth-of-type(2) {
         position: absolute;
-        left: 120px;
-        top: -130px;
+        left: -32px;
+        top: -142px;
         transform: rotateX(-184deg);
     }
     .img-shape1:nth-of-type(3) {
         position: absolute;
         top: -57px;
-        left: 436px;
+        left: 270px;
     }
     .img-shape1:nth-of-type(4) {
         position: absolute;
-        bottom: -117px;
-        left: 796px;
+        bottom: -337px;
+        left: 650px;
     }
     .img-shape1:nth-of-type(5) {
         position: absolute;
-        top: -98px;
-        left: 763px;
-        transform: rotate(182deg);
+        top: -123px;
+        left: 660px;
     }
     .img-shape1:nth-of-type(6) {
+        bottom: -398px;
         position: absolute;
-        bottom: -156px;
-        left: 1166px;
-        transform: rotate(102deg);
+        left: 1001px;
+        transform: rotate(159deg);
     }
     .img-shape1:nth-of-type(7) {
         position: absolute;
-        left: 1280px;
+        left: 1130px;
         top: -50px;
     }
 }

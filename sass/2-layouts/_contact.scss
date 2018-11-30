@@ -1,3 +1,4 @@
+
 .contact {
     .contact-form {
         position: relative;
@@ -43,7 +44,6 @@
     }
     .sheet1 {
         top: -16px;
-        transform: rotate(-65deg);
         right: 43px;
     }
     .sheet2 {
@@ -75,6 +75,11 @@
     }
 }
 
+.sheet1,
+.sheet2 {
+    width: auto!important;
+    height: auto!important;
+}
 @include small-devices {
     .contact {
         .col-2 {
@@ -91,7 +96,7 @@
                     width: 100%;
                 }
                 .sheet1 {
-                    top: -33px;
+                    top: -71px;;
                 }
                 .sheet2 {
                     left: -74px;
