@@ -15,5 +15,5 @@
 			<?php the_post_thumbnail(); // Declare pixel size you need inside the array. ?>
 		</a>
 	<?php endif; ?>
-	<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+	<a href="<?php the_permalink(); ?>"><h6><?php the_title(); ?></h6></a>
 </article><!-- #post-## -->
