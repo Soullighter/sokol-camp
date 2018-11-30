@@ -22,7 +22,7 @@
                             <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                         </mask>
                     </defs>
-                    <image mask="url(#mask-hero2)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation3.png" />
+                    <image mask="url(#mask-hero2)"  xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                 </svg>
             </span>
         </div>
@@ -46,7 +46,7 @@
                 </ul>
             </div>
             <div class="contact-form">
-                <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-yellow.png" alt="yellow-sheet">
+                <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet2.png" alt="yellow-sheet2">
                 <img class="sheet2" src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt="green-shape">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/" alt="">
                <h6>Kontaktirajte nas</h6>

@@ -1,7 +1,10 @@
 // front page slider
+.flexslider {
+    background-color: transparent;
+}
 .section6 {
     .flex-caption {
-        background-color: $white;;
+        background-color: $white;
         position: relative;
         >div {
             width: 90%;
@@ -30,18 +33,26 @@
     }
     
     .flexslider {
-        background-color: transparent;
         .flex-caption {
             margin-top: 150px;
+
         }
         .slides {
-            img {
-                width: auto !important;
+            .border-radius {
+                position:relative;
+                overflow: hidden;
                 border-radius: 50%;
+                width: 210px;
+                height: 210px;
+            }
+            img {
+                width: auto;
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
                 margin: 0 auto;
-                position: relative;
-                top: -92px;
-                z-index: 999;
             }
         } 
     }   
@@ -86,9 +97,7 @@
                 }  
             }
             .slides {
-                img {
-                    width: auto !important;
-                    border-radius: 50%;
+                .border-radius{
                     margin: 0 auto;
                     position: relative;
                     left: -135px;
@@ -114,14 +123,14 @@
     .section6 {
         .flexslider {
             .flex-caption {
-                margin: 0 43px 0 43px;
+                margin: 0 60px 0 75px;
                 >div {
                     width: 71%;
                 }
             }
             .slides {
-                img {
-                    left: -82px;
+                .border-radius {
+                    left: -124px;
                 }
             }
         }

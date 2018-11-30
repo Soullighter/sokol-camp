@@ -10,7 +10,7 @@
                                 <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                             </mask>
                         </defs>
-                        <image mask="url(#mask-hero1)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                        <image mask="url(#mask-hero1)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                     </svg>
                 </span>
                 <!-- hero image2 -->
@@ -21,7 +21,7 @@
                                  <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                             </mask>
                         </defs>
-                        <image mask="url(#mask-hero2)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                        <image mask="url(#mask-hero2)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                     </svg>
                  </span>
             </div>
@@ -61,10 +61,10 @@
             <svg width="732" height="530" viewBox="0 0 732 530">
                 <defs>
                     <mask id="mask1" maskUnits="objectBoundingBox">
-                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3-1.png" />
                     </mask>
                 </defs>
-                <image mask="url(#mask1)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                <image mask="url(#mask1)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
             </svg>
         </div>
 
@@ -118,10 +118,10 @@
             <svg width="732" height="530" viewBox="0 0 732 530">
                 <defs>
                     <mask id="mask4" maskUnits="objectBoundingBox">
-                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3-6.png" />
                     </mask>
                 </defs>
-                <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
             </svg>
         </div>
 
@@ -149,24 +149,21 @@
     </section>
     <!-- end section location2 -->
 
-    <section>
+    <section class="location3">
         <div class="wrapper col-2 sheet-text-inner">
             <div>
                 <h3>Transport</h3>
                 <p> Grad Osijek smješten je u istočnom dijelu Hrvatske i od glavnog grada Zagreba udaljen je 280 km.</p>
                 <p>Za dolazak organiziranih grupa, moguća je organizacija autobusnog transfera iz sljedećih zračnih luka:</p>
            
-                  
-                <div class="sheet">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/sheet-text.png" alt="">
-                        <div>
-                                Osijek <br>
-                                Zagreb <br>
-                                Beograd <br>
-                                Budimpešta <br>
-                        </div>
+                <div class="list">
+                    <ul>
+                        <li>Osijek</li>
+                        <li>Zagreb</li>
+                        <li>Beograd </li>
+                        <li>Budimpešta</li>
+                    </ul>
                 </div>
-
             </div>
             <div class="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/map.svg" alt="">
