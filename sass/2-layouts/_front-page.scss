@@ -58,6 +58,7 @@
 .section3 {
     position: relative;
     overflow: hidden;
+    padding-top: 4%;
     .wrapper {
         text-align: center;
     }
@@ -92,7 +93,7 @@ svg {
 }
 
 .news-list {
-    padding-bottom: 7%;
+    padding: 7% 0;
     h6 {
         font-size: 1.2em;
         font-weight: normal;
@@ -342,14 +343,7 @@ svg {
         svg {
             width: 695px;
         }
-        .shape1 {
-            display: block;
-            left: 60%;
-            position: absolute;
-            top: -50px;
-            z-index: 1;
-            transform: rotate(115deg);
-        }
+ 
         .sheet-text1 {
             width: 309px;
             position: absolute;
@@ -528,7 +522,7 @@ svg {
             p {
                 position: static;
                 margin-top: 0;
-                width: 100%;
+                width: 522px;
             }
             .image-shape2 {
                 display: block;
@@ -550,6 +544,13 @@ svg {
                     height: 440px;
                 }
             }
+            .shape1 {
+                display: block;
+                right: 139px;
+                position: absolute;
+                top: -135px;
+                z-index: 1;
+            }
             .shape3 {
                 display: block;
                 z-index: 1;
@@ -562,6 +563,7 @@ svg {
                 top: -94px;
             }
         }
+       
         .section6 {
             .side-img2 {
                 display: block;

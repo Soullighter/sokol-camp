@@ -109,7 +109,7 @@
 
 <section class="section5">
 	<div class="wrapper">
-		<img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png"
+		<img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet2.png"
 		 alt="">
 		<img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png"
 		 alt="">
