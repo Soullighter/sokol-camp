@@ -21,7 +21,7 @@
 							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
 					                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
                 					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
-	                				<div class="text">
+	                				<div class="text slider-info">
 								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
 
 									<span><?php the_sub_field( 'number' ); ?></span>
@@ -133,6 +133,7 @@
 		<?php elseif ( get_row_layout() == 'two_text_blocks_with_centered_image' ) : ?>
 		    <section class="section2">
 		        <div class="wrapper col">
+		        	<img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt="">
 		            <div>
 		                <?php the_sub_field( '1st_block' ); ?>
 		            </div>
@@ -154,6 +155,7 @@
 		                <?php the_sub_field( '2nd_block' ); ?>
 		            </div>
 		        </div>
+		        <img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
 		        <!-- end wrapper  -->
 		    </section>
 		<!-- Two text blocks with centered image -->
@@ -163,7 +165,7 @@
 			<?php if ( get_sub_field( 'latest_posts' ) == 1 ) { ?>
 			 
 			<section class="news-list">
-		        <div class="wrapper padding">
+		        <div class="wrapper">
 		        	<h2>Objava medija</h2>
 		            <div class="col-4">
 		            	<?php
@@ -204,22 +206,62 @@
 		<!-- People about us single -->
 		<?php elseif ( get_row_layout() == 'people_about_us_single' ) : ?>
 			<?php the_sub_field( 'quoter' ); ?>
-			<?php if ( get_sub_field( 'image_of_quoter' ) ) { ?>
-				<img src="<?php the_sub_field( 'image_of_quoter' ); ?>" />
-			<?php } ?>
-			<?php the_sub_field( 'quote' ); ?>
-			<?php $additional_image = get_sub_field( 'additional_image' ); ?>
-			<?php if ( $additional_image ) { ?>
-				<img src="<?php echo $additional_image['url']; ?>" alt="<?php echo $additional_image['alt']; ?>" />
-			<?php } ?>
+
+			<?php 
+				if ( get_sub_field( 'image_of_quoter' ) ) { 
+					$image_of_quoter = get_sub_field( 'image_of_quoter' );
+			 	} 
+			
+				if ( get_sub_field( 'additional_image' ) ) { 
+					$additional_image = get_sub_field( 'additional_image' );
+				} 
+			?>
+
+		 	<section class="section5">
+		        <div class="wrapper">
+		        <img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet2.png" alt="">
+		        <img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
+		        <img class="shape3" src="<?php echo get_template_directory_uri(); ?>/images/yellow-shape.png" alt="">
+
+	                <div class="image-shape1">
+                        <svg class="img-inner-shape" width="695" height="415" viewBox="0 0 695 415">
+                            <defs>
+                                <mask id="sect-5" maskUnits="objectBoundingBox">
+                                    <image width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask3.png" />
+                                </mask>
+                            </defs>
+                            <image mask="url(#sect-5)" width="695" height="415" xlink:href="<?php echo $image_of_quoter; ?>" />
+                        </svg>
+                        <img class="sheet-text1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-home-text.png" alt="">
+
+                    </div>
+	                <div>
+	                    <?php the_sub_field( 'quote' ); ?>
+	            	</div>
+	     
+	            	<div class="image-shape2">
+	                    <svg>
+	                        <defs>
+	                            <mask id="mask4" maskUnits="objectBoundingBox">
+	                                <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+	                            </mask>
+	                        </defs>
+	                        <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo $additional_image; ?>" />
+	                    </svg>
+	                </div>
+	        	</div>
+	        	<!-- end wrapper -->
+	    	</section>
 		<!-- People about us single -->
 
 		<!-- People about us slider -->
 		<?php elseif ( get_row_layout() == 'people_about_us_slider' ) : ?>
 		    <section class="section6">
 		        <div class="wrapper">
-		        <img class ="shape6-1" src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt="">
-		        <img class ="shape6-2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+		        <img class="side-img" src="<?php echo get_template_directory_uri(); ?>/images/section6-side2.png" alt="">
+		        <!-- <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+
+		        <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt=""> -->
 				<h2>Svjedočanstva</h2>
 				<?php if ( have_rows( 'slide' ) ) : ?>
 	            <div class="flexslider">
@@ -233,7 +275,9 @@
 								}
 							?>
 	                        <div class="flex-caption">
-	                        	<img src="<?php echo $image_of_quoter ?>" />
+	                        	<div class="border-radius">
+		                        	<img src="<?php echo $image_of_quoter ?>" />
+		                        </div>
 		                        <div>
 		                        	<div><?php the_sub_field( 'quote' );?></div>
 		                        	<div><?php the_sub_field( 'quoter' ); ?></div>
@@ -246,6 +290,7 @@
 				<?php else : ?>
 					<?php // no rows found ?>
 				<?php endif; ?>
+				<img class="side-img2" src="<?php echo get_template_directory_uri(); ?>/images/section6-side1.png" alt="">
 				</div>
 			</section>
 		<!-- People about us slider -->
@@ -253,14 +298,16 @@
 		<!-- Partners -->
 		<?php elseif ( get_row_layout() == 'partners' ) : ?>
 			<?php if ( have_rows( 'list_of_partners' ) ) : ?>
-	        <section class=" padding">
+	        <section class="section8">
 	            <div class="wrapper">
 	            	<h2>Partneri</h2>
                 	<div class="partners">
 				<?php while ( have_rows( 'list_of_partners' ) ) : the_row(); ?>
 					<?php if ( get_sub_field( 'partners_logo' ) ) { ?>
 						<a href="<?php the_sub_field( 'partners_url' ); ?>">
-						<img src="<?php the_sub_field( 'partners_logo' ); ?>" /></a>
+							<div>
+								<img src="<?php the_sub_field( 'partners_logo' ); ?>" /></a>
+							</div>
 					<?php } ?>
 				<?php endwhile; ?>
 					</div>
@@ -405,7 +452,7 @@
 						<?php while ( have_rows( 'content' ) ) : the_row(); ?>
 							<li>
 			                    <?php the_sub_field( 'text_editor' ); ?>
-			                <li>
+			                </li>
 						<?php endwhile; ?>
 					<?php else : ?>
 						<?php // no rows found ?>

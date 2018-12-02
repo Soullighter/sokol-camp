@@ -1,33 +1,7 @@
 <?php /* Template Name: Accomodation */ get_header(); ?>
 
 
-    <section class="header-bottom background-wave">
-        <div class="wrapper">
-            <h1>Smjestaj</h1>
-            <!-- hero image1 -->
-            <span class="image-shape1"><?php echo get_template_directory_uri(); ?>
-                    <svg width="732" height="530" viewBox="0 0 732 530">
-                        <defs>
-                            <mask id="mask-hero1"  maskUnits="objectBoundingBox">
-                                <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
-                            </mask>
-                        </defs>
-                        <image mask="url(#mask-hero1)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
-                    </svg>
-                </span>
-            <!-- hero image2 -->
-            <span class="image-shape2">
-                <svg width="732" height="530" viewBox="0 0 732 530">
-                        <defs>
-                             <mask id="mask-hero2"  maskUnits="objectBoundingBox">
-                                 <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
-                            </mask>
-                        </defs>
-                        <image mask="url(#mask-hero2)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
-                    </svg>
-                </span>
-        </div>
-    </section>
+    
 
     <section class="accommodation1 top-none">
         <div class="wrapper col-2">
