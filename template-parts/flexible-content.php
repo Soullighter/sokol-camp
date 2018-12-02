@@ -30,7 +30,7 @@
 								</div>
 							<?php else: ?>
 
-			                <div class="sheet1"></div>
+			                <div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
 			                <div class="sheet2"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-sheet-yellow.png" alt="yellow-sheet"></div>
 
 							<?php endif; ?>

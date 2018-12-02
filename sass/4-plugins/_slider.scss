@@ -2,27 +2,44 @@
 .flexslider {
     background-color: transparent;
 }
+
+.number-slides {
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    span.current-slide {
+        color: $green-blue;
+    }
+    span.total-slides {
+       color: $grey;
+    }
+}
+
 .section6 {
     .flex-caption {
         background-color: $white;
         position: relative;
+        max-height: 725px;
         >div {
             width: 90%;
             background-color: $white;
-            position:  relative;
-            top: -50px;
+            position: relative;
+            top: -113px;
+            margin-bottom: 50px;
         }
         display: flex;
         flex-wrap: wrap;
         padding: 2%;
         justify-content: center;
         align-items: center;
-        
     }
-    
+    .flex-control-nav {
+        bottom: 21px;
+    }
     .flex-direction-nav {
         position: absolute;
-        left: 47%;
+        left: 42%;
+        bottom: 52px;
         .flex-prev {
             right: 0px !important;
             margin: -49px -16px;
@@ -31,15 +48,13 @@
             margin: -49px;
         }
     }
-    
     .flexslider {
         .flex-caption {
             margin-top: 150px;
-
         }
         .slides {
             .border-radius {
-                position:relative;
+                position: relative;
                 overflow: hidden;
                 border-radius: 50%;
                 width: 210px;
@@ -54,15 +69,24 @@
                 transform: translate(-50%, -50%);
                 margin: 0 auto;
             }
-        } 
-    }   
+        }
+    }
 }
 
 .flex-next:hover {
     color: $green-light;
 }
+
+@include extra-small-devices {
+    .section6 {
+      
+            .flex-direction-nav {
+                left: 47%;
+        }
+
+    }
+}
 @include small-devices {
-    
     .section6 {
         position: relative;
         z-index: 999;
@@ -72,12 +96,12 @@
                 // >div {
                 //     width: 75%;
                 // }
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding: 2%;
-                    left: 0;
-                    bottom: 0;
-                    justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 2%;
+                left: 0;
+                bottom: 0;
+                justify-content: center;
             }
         }
     }
@@ -92,30 +116,29 @@
                 >div {
                     width: 60%;
                     margin-top: 0;
-                    top:0;
+                    top: 0;
                     left: -60px;
-                }  
+                }
             }
             .slides {
-                .border-radius{
+                .border-radius {
                     margin: 0 auto;
                     position: relative;
                     left: -135px;
                     top: 0;
                 }
-            } 
-        }  
+            }
+        }
         .flex-direction-nav {
             position: static;
             left: 0;
             .flex-prev {
-             margin: -20px 0 0;
+                margin: -20px 0 0;
             }
             .flex-next {
-              
-             margin: -50px 0 0;
+                margin: -50px 0 0;
             }
-        } 
+        }
     }
 }
 
@@ -140,37 +163,36 @@
 .col-2 {
     .flex-direction-nav .flex-prev {
         left: 0px;
-        top: 103%;
-        opacity: .8;  
-      }
-      .flex-direction-nav .flex-next {
+        top: 0%;
+        opacity: .8;
+    }
+    .flex-direction-nav .flex-next {
         opacity: .8;
         text-align: right;
         left: 50px;
         margin: -50px 0 0;
-      }
-      .flexslider:hover .flex-direction-nav .flex-prev {
+    }
+    .flexslider:hover .flex-direction-nav .flex-prev {
         opacity: 0.7;
         left: 0;
-      }
-      .flexslider:hover .flex-direction-nav .flex-prev:hover {
+    }
+    .flexslider:hover .flex-direction-nav .flex-prev:hover {
         opacity: 1;
-      }
-      .flexslider:hover .flex-direction-nav .flex-next {
+    }
+    .flexslider:hover .flex-direction-nav .flex-next {
         opacity: 0.7;
         left: 50px;
-      }
-      .flexslider:hover .flex-direction-nav .flex-next:hover {
+    }
+    .flexslider:hover .flex-direction-nav .flex-next:hover {
         opacity: 1;
-      }
-
-      .flex-direction-nav {
-          a {
-              position: relative;
+    }
+    .flex-direction-nav {
+        a {
+            position: relative;
             margin: 10px 0 10px 0;
-          }
-      }
-      .flex-control-nav {
-          display: none;
-      }
+        }
+    }
+    .flex-control-nav {
+        display: none;
+    }
 }

@@ -6,9 +6,11 @@ html {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     color: $green-blue;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
     font-stretch: normal;
-    line-height: 2;
+    line-height: 1.63;
     letter-spacing: normal;
 }
 
@@ -50,24 +52,13 @@ h4,
 h6 {
     font-weight: 800;
     color: $green-blue;
-    padding: 0 0 1.2em 0;
+    padding-bottom: 1em;
+    position: relative;
+    z-index: 1;
 }
 
 h3 {
     text-transform: uppercase;
-}
-
-h4 {
-    a {
-        color: $green-blue;
-    }
-    padding: 10px 10px 10px 0;
-    letter-spacing: 2.5px;
-    font-weight: 800;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.69;
-    
 }
 
 h1 {
@@ -86,7 +77,7 @@ h2 {
     text-transform: uppercase;
     line-height: 1.22;
     letter-spacing: 3.4px;
-    font-weight: 800;    
+    font-weight: 800;
 }
 
 h3 {
@@ -95,32 +86,49 @@ h3 {
     line-height: 1.29;
     letter-spacing: 3.4px;
 }
+
 // 32px
 h4 {
     font-size: 2em;
     text-transform: uppercase;
     text-align: left;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
 }
 
+// font-size: 24px;
 h5 {
     font-size: 1.5em;
     color: $yellow;
     font-weight: 800;
-    letter-spacing: 2.2px; 
+    letter-spacing: 2.2px;
     text-transform: uppercase;
+    position: relative;
+    z-index: 1;
 }
 
 h6 {
     font-size: 1.2em;
     text-transform: uppercase;
     text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
 }
 
 p {
-    font-size: 1em;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
     padding-bottom: 1.5625em;
     color: $green-blue;
-    line-height: 1.56;
     &:last-of-type {
         padding-bottom: 0;
     }
@@ -130,7 +138,8 @@ a {
     font-size: 1.125em;
     text-decoration: none;
     &:hover {
-        -webkit-transition: all 0.5s; /* Safari */
+        -webkit-transition: all 0.5s;
+        /* Safari */
         transition: all 0.5s;
         color: $green-light;
     }
@@ -147,6 +156,7 @@ strong {
     font-weight: 800;
     color: $white;
 }
+
 small {
     font-size: 14px;
     color: $white;
@@ -161,9 +171,10 @@ label {
     line-height: 1.63;
     letter-spacing: normal;
 }
+
 video {
-    width: 100%    !important;
-    height: auto   !important;
+    width: 100% !important;
+    height: auto !important;
     z-index: 2;
     position: relative;
 }
@@ -182,7 +193,7 @@ video {
 // button
 .section1,
 .section2 {
-    a { 
+    a {
         color: red;
         text-transform: uppercase;
         padding: 3% 5% 0% 0;
@@ -197,7 +208,6 @@ video {
     }
 }
 
-
 video,
 iframe {
     width: 100%;
@@ -206,11 +216,13 @@ iframe {
     position: relative;
     z-index: 999;
 }
+
 .videoWrapper {
     max-width: 640px;
     height: 420px;
     z-index: 999;
 }
+
 // .videoWrapper iframe {
 // 	position: absolute;
 // 	top: 0;
@@ -222,7 +234,6 @@ iframe {
 // .padding {
 //     padding: 5% 0;
 // }
-
 @include small-devices {
     *,
     body,
@@ -238,14 +249,14 @@ iframe {
 }
 
 .ytp-title-enable-channel-logo .ytp-title {
-    display: none!important;
+    display: none !important;
 }
 
-.ytp-chrome-top, .ytp-chrome-bottom {
+.ytp-chrome-top,
+.ytp-chrome-bottom {
     display: none;
 }
-.html5-video-player a  {
+
+.html5-video-player a {
     display: none;
 }
-
-
