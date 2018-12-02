@@ -219,7 +219,7 @@
 
 		 	<section class="section5">
 		        <div class="wrapper">
-		        <img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+		        <img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet2.png" alt="">
 		        <img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
 		        <img class="shape3" src="<?php echo get_template_directory_uri(); ?>/images/yellow-shape.png" alt="">
 
@@ -240,7 +240,7 @@
 	            	</div>
 	     
 	            	<div class="image-shape2">
-	                    <svg width="732" height="530" viewBox="0 0 732 530">
+	                    <svg>
 	                        <defs>
 	                            <mask id="mask4" maskUnits="objectBoundingBox">
 	                                <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
@@ -275,7 +275,9 @@
 								}
 							?>
 	                        <div class="flex-caption">
-	                        	<img src="<?php echo $image_of_quoter ?>" />
+	                        	<div class="border-radius">
+		                        	<img src="<?php echo $image_of_quoter ?>" />
+		                        </div>
 		                        <div>
 		                        	<div><?php the_sub_field( 'quote' );?></div>
 		                        	<div><?php the_sub_field( 'quoter' ); ?></div>
