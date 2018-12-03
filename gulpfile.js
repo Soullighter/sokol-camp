@@ -38,13 +38,13 @@ gulp.task('sass', function() {
 
 // JavaScript
 gulp.task('js', function() {
-  return gulp.src(['./js/*.js'])
-  .pipe(jshint())
+  // return gulp.src(['./js/*.js'])
+  // .pipe(jshint())
   // .pipe(jshint.reporter('default'))
-  .pipe(concat('app.js'))
-  .pipe(rename({suffix: '.min'}))
+  // .pipe(concat('app.js'))
+  // .pipe(rename({suffix: '.min'}))
   // .pipe(uglify())
-  .pipe(gulp.dest('./js'));
+  // .pipe(gulp.dest('./js'));
 });
 
 // Images

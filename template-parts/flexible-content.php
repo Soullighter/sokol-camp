@@ -42,6 +42,8 @@
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
+			                <div class="number-slides"> <span class="current-slide"> </span>     
+			                <span class="total-slides"></span></div>
 			            </div>
 						<?php endif; ?>
 					<?php elseif ($block_type === 'image-gallery'): ?>
@@ -50,7 +52,7 @@
 							<div class="location1-img <?php echo $col1Class ?>">
 								<img class="sheet" src="<?php echo get_template_directory_uri(); ?>/images/sheet-green.png" alt="">
 				                <div>
-				                    <div>
+				                    <div class="gallery">
 							<?php foreach ( $image_gallery_images as $image_gallery_image ): ?>
 								<img src="<?php echo $image_gallery_image['sizes']['large']; ?>" alt="<?php echo $image_gallery_image['alt']; ?>" />
 							<?php endforeach; ?>
@@ -103,6 +105,8 @@
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
+			                <div class="number-slides"> <span class="current-slide"> </span>     
+			                <span class="total-slides"></span></div>
 			            </div>
 						<?php endif; ?>
 					<?php elseif ($block_type === 'image-gallery'): ?>
@@ -205,7 +209,6 @@
 
 		<!-- People about us single -->
 		<?php elseif ( get_row_layout() == 'people_about_us_single' ) : ?>
-			<?php the_sub_field( 'quoter' ); ?>
 
 			<?php 
 				if ( get_sub_field( 'image_of_quoter' ) ) { 
@@ -224,17 +227,24 @@
 		        <img class="shape3" src="<?php echo get_template_directory_uri(); ?>/images/yellow-shape.png" alt="">
 
 	                <div class="image-shape1">
-                        <svg class="img-inner-shape" width="695" height="415" viewBox="0 0 695 415">
-                            <defs>
-                                <mask id="sect-5" maskUnits="objectBoundingBox">
-                                    <image width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask3.png" />
-                                </mask>
-                            </defs>
-                            <image mask="url(#sect-5)" width="695" height="415" xlink:href="<?php echo $image_of_quoter; ?>" />
-                        </svg>
-                        <img class="sheet-text1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-home-text.png" alt="">
-
-                    </div>
+						<svg class="img-inner-shape" width="695" height="415" viewBox="0 0 695 415">
+							<defs>
+								<mask id="sect-5" maskUnits="objectBoundingBox">
+									<image width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask3.png"
+									/>
+								</mask>
+							</defs>
+							<image mask="url(#sect-5)" width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/section5-2.png"
+							/>
+						</svg>
+						<div>
+							<div class="inner-sheet">
+								<?php the_sub_field( 'quoter' ); ?>
+							</div>
+							<img class="sheet-text1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-home-text.png" alt="">
+						</div>
+						
+					</div>
 	                <div>
 	                    <?php the_sub_field( 'quote' ); ?>
 	            	</div>

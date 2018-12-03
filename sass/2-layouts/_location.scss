@@ -1,4 +1,4 @@
-.location-gallery {
+.block-section {
     .location1-img {
         position: relative;
         img {
@@ -28,7 +28,7 @@
     }
 }
 
-.location3 {
+.block-section {
     ol {
         li:before {
             content: "\2192";
@@ -40,7 +40,8 @@
     }
 }
 @include small-devices {
-    .location-gallery {
+    .block-section
+     {
         .location1-img {
             div {
                 img {
@@ -72,7 +73,7 @@
 }
 
 @include medium-devices {
-    .location-gallery {
+    .block-section {
         .location1-img {
             .sheet {
                 top: -62px;
