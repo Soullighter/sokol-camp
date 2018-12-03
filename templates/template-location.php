@@ -27,7 +27,7 @@
             </div>
         </section>
 
-    <section class="location-gallery top-none">
+    <section class="location-gallery">
         <div class="wrapper col-2">
             <div>
                 <h3>Osijek</h3>
