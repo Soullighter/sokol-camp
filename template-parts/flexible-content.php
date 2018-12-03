@@ -21,13 +21,13 @@
 							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
 					                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
                 					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
-	                				<div class="text slider-info">
-								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
-
-									<span><?php the_sub_field( 'number' ); ?></span>
-									<small><?php the_sub_field( 'text' ); ?></small>
-								<?php endwhile; ?>
-								</div>
+	                					<div class="text">
+										<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
+											<span><?php the_sub_field( 'number' ); ?></span>
+											<small><?php the_sub_field( 'text' ); ?></small>
+										<?php endwhile; ?>
+										</div>
+									</div>
 							<?php else: ?>
 
 			                <div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
@@ -87,13 +87,13 @@
 							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
 					                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
                 					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
-	                				<div class="text">
-								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
-
-									<span><?php the_sub_field( 'number' ); ?></span>
-									<small><?php the_sub_field( 'text' ); ?></small>
-								<?php endwhile; ?>
-								</div>
+	                					<div class="text">
+										<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
+											<span><?php the_sub_field( 'number' ); ?></span>
+											<small><?php the_sub_field( 'text' ); ?></small>
+										<?php endwhile; ?>
+										</div>
+									</div>
 							<?php else: ?>
 
 			                <div class="sheet1"></div>
