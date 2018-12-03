@@ -43,7 +43,7 @@ gulp.task('js', function() {
   // .pipe(jshint.reporter('default'))
   .pipe(concat('app.js'))
   .pipe(rename({suffix: '.min'}))
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(gulp.dest('./js'));
 });
 

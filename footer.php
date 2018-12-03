@@ -56,16 +56,5 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
-<script>
-	(function ($) {
-// Can also be used with $(document).ready()
-$(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "fade", 
-    });
-  });
-})(jQuery);
-</script>
 </body>
 </html>

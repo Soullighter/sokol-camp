@@ -3,7 +3,7 @@
 
 		<!-- Block Section -->
 		<?php if ( get_row_layout() == 'block_section' ) : ?>
-    	<section class="location-gallery">
+    	<section class="block-section">
        		<div class="wrapper col-2">
 			<?php if ( have_rows( '1st_column' ) ) : ?>
 				<?php $col1Class = 'col1' ?>
@@ -166,7 +166,7 @@
 			 
 			<section class="news-list">
 		        <div class="wrapper">
-		        	<h2>Objava medija</h2>
+		        	<h2><?php esc_html_e( 'Media', 'gulp-wordpress' ); ?></h2>
 		            <div class="col-4">
 		            	<?php
 						// The Query
@@ -262,7 +262,7 @@
 		        <!-- <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
 
 		        <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt=""> -->
-				<h2>Svjedočanstva</h2>
+	        	<h2><?php esc_html_e( 'People about us', 'gulp-wordpress' ); ?></h2>
 				<?php if ( have_rows( 'slide' ) ) : ?>
 	            <div class="flexslider">
 	                <ul class="slides">
@@ -300,7 +300,7 @@
 			<?php if ( have_rows( 'list_of_partners' ) ) : ?>
 	        <section class="section8">
 	            <div class="wrapper">
-	            	<h2>Partneri</h2>
+	        	<h2><?php esc_html_e( 'Partners', 'gulp-wordpress' ); ?></h2>
                 	<div class="partners">
 				<?php while ( have_rows( 'list_of_partners' ) ) : the_row(); ?>
 					<?php if ( get_sub_field( 'partners_logo' ) ) { ?>
