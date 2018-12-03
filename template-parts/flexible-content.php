@@ -42,8 +42,11 @@
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
-			                <div class="number-slides"> <span class="current-slide"> </span>     
-			                <span class="total-slides"></span></div>
+			                <div class="number-slides">
+								<span class="zero1"></span><span class="current-slide"></span>
+								<hr class="line">
+								<span class="zero2"></span><span class="total-slides"></span>
+							</div>
 			            </div>
 						<?php endif; ?>
 					<?php elseif ($block_type === 'image-gallery'): ?>
@@ -105,8 +108,11 @@
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
-			                <div class="number-slides"> <span class="current-slide"> </span>     
-			                <span class="total-slides"></span></div>
+			               <div class="number-slides">
+								<span class="zero1"></span><span class="current-slide"></span>
+								<hr class="line">
+								<span class="zero2"></span><span class="total-slides"></span>
+							</div>
 			            </div>
 						<?php endif; ?>
 					<?php elseif ($block_type === 'image-gallery'): ?>
@@ -427,7 +433,7 @@
 				                        <image width="731" height="368" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask23.png" />
 				                    </mask>
 				                </defs>
-				                <image mask="url(#mask3)" width="761" height="368" xlink:href="<?php the_sub_field( 'image_4' ); ?>" />
+				                <image mask="url(#mask3)" width="761" height="386" xlink:href="<?php the_sub_field( 'image_4' ); ?>" />
 				            </svg>
 				        </div>
 					<?php } ?>

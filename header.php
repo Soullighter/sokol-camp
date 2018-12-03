@@ -74,7 +74,7 @@
                         $youtube_id = $match[1];
                  ?>
                  <div class="videoWrapper">
-                 <div class='youtube_codegena' id='6EA-MIYY1bg' src='<?php echo get_template_directory_uri(); ?>/images/video-play.png'></div>
+                 <div class='youtube_codegena' id='<?php echo $youtube_id; ?>' src='http://i3.ytimg.com/vi/<?php echo $youtube_id; ?>/hqdefault.jpg'></div>
                     <script src='https://rawgit.com/shaneapen/Async-Youtube-Player/master/async_youtube_player.js'></script>
                  </div>
                   
