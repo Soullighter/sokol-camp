@@ -151,13 +151,14 @@
 		                	<?php if ( get_sub_field( 'image' ) ) { ?>
 		                		<?php $image = get_sub_field( 'image' ); ?>
 							<?php } ?>
-		                    <svg>
+		                    <svg class="img-inner-shape" width="711" height="413" viewBox="0 0 711 413">
 		                        <defs>
 		                            <mask id="sect-2"  maskUnits="objectBoundingBox">
-		                                <image xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-section2-homepage.png" />
+	                                	<image width="802" height="558" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-section2-homepage.png"/>
 		                            </mask>
 		                        </defs>
 		                        <image mask="url(#sect-2)" xlink:href="<?php echo $image; ?>" />
+	                        	<image width="711" height="413" mask="url(#sect-2)" xlink:href="<?php echo $image; ?>"/>
 		                    </svg>
 		                </div>
 		                
@@ -256,13 +257,13 @@
 	            	</div>
 	     
 	            	<div class="image-shape2">
-	                    <svg>
+	                    <svg width="675" height="440" viewBox="0 0 675 440">
 	                        <defs>
 	                            <mask id="mask4" maskUnits="objectBoundingBox">
-	                                <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+	                                <image width="675" height="440" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-section5-2.png" />
 	                            </mask>
 	                        </defs>
-	                        <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo $additional_image; ?>" />
+                        	<image mask="url(#mask4)" width="675" height="440" xlink:href="<?php echo $additional_image['url']; ?>"/>
 	                    </svg>
 	                </div>
 	        	</div>
