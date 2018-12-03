@@ -240,7 +240,7 @@ iframe {
 // }
 
 #content {
-    section:first-of-type {
+    >section:first-of-type {
         .col-2 {
             padding-top:0;
         }

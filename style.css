@@ -519,7 +519,7 @@ iframe {
   height: 420px;
   z-index: 999; }
 
-#content section:first-of-type .col-2 {
+#content > section:first-of-type .col-2 {
   padding-top: 0; }
 
 @media only screen and (min-width: 767px) {
@@ -877,8 +877,6 @@ iframe {
 .accommodation2 {
   height: 585px; }
 
-.block-section .col-2 {
-  padding-top: 0; }
 .block-section small {
   color: #004253; }
 
