@@ -777,7 +777,7 @@ iframe {
     top: 31%;
     left: 35%; }
 
-.location3 ol li:before {
+.block-section ol li:before {
   content: "\2192";
   font-weight: 800;
   color: #004253;
@@ -785,12 +785,12 @@ iframe {
   padding-right: 8px; }
 
 @media only screen and (min-width: 767px) {
-  .location-gallery .location1-img div img {
+  .block-section .location1-img div img {
     width: 45%;
     float: right; }
-  .location-gallery .location1-img div img:nth-of-type(1) {
+  .block-section .location1-img div img:nth-of-type(1) {
     margin-left: 15px; }
-  .location-gallery .location1-img .sheet {
+  .block-section .location1-img .sheet {
     position: absolute;
     top: -28px;
     right: 62px;
@@ -803,7 +803,7 @@ iframe {
       top: 31%;
       left: 19%; } }
 @media only screen and (min-width: 1024px) {
-  .location-gallery .location1-img .sheet {
+  .block-section .location1-img .sheet {
     top: -62px; } }
 .news p {
   padding: 10px 10px; }
@@ -1711,6 +1711,7 @@ div.wpcf7-response-output {
 .number-slides {
   position: absolute;
   right: 0;
+  bottom: 0;
   padding: 16px; }
   .number-slides span.current-slide,
   .number-slides .zero1 {

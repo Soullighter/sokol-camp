@@ -100,27 +100,28 @@
                     endwhile; 
                 endif;
                 ?>
-                <span class="image-shape1"><?php echo get_template_directory_uri(); ?>
-                    <svg width="732" height="530" viewBox="0 0 732 530">
+                <!-- hero image1 -->
+                <span class="image-shape1">
+                    <svg width="660" height="470" viewBox="0 0 660 470">
                         <defs>
                             <mask id="mask-hero1"  maskUnits="objectBoundingBox">
-                                <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
+                                <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                             </mask>
                         </defs>
-                        <image mask="url(#mask-hero1)" width="732" height="527" xlink:href="<?php echo $first_image; ?>" />
+                        <image mask="url(#mask-hero1)" width="660" height="470" xlink:href="<?php echo $first_image; ?>" />
                     </svg>
                 </span>
                 <!-- hero image2 -->
                 <span class="image-shape2">
-                    <svg width="732" height="530" viewBox="0 0 732 530">
+                    <svg width="660" height="470" viewBox="0 0 660 470">
                         <defs>
                              <mask id="mask-hero2"  maskUnits="objectBoundingBox">
-                                 <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
+                                 <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                             </mask>
                         </defs>
-                        <image mask="url(#mask-hero2)" width="732" height="527" xlink:href="<?php echo $second_image; ?>" />
+                        <image mask="url(#mask-hero2)" width="660" height="470" xlink:href="<?php echo $second_image; ?>" />
                     </svg>
-                </span>
+                 </span>
             </div>
         </section>
     <?php endif ?>
