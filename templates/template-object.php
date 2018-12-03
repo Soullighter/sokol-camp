@@ -5,24 +5,24 @@
             <h1>Objekt</h1>
             <!-- hero image1 -->
             <span class="image-shape1">
-                <svg width="732" height="530" viewBox="0 0 732 530">
+                <svg width="660" height="470" viewBox="0 0 660 470">
                     <defs>
                         <mask id="mask-hero1"  maskUnits="objectBoundingBox">
-                            <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
+                            <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                         </mask>
                     </defs>
-                    <image mask="url(#mask-hero1)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                    <image mask="url(#mask-hero1)" width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                 </svg>
             </span>
             <!-- hero image2 -->
             <span class="image-shape2">
-                <svg width="732" height="530" viewBox="0 0 732 530">
+                <svg width="660" height="470" viewBox="0 0 660 470">
                     <defs>
                          <mask id="mask-hero2"  maskUnits="objectBoundingBox">
-                             <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
+                             <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                         </mask>
                     </defs>
-                    <image mask="url(#mask-hero2)" width="732" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation1-2.png" />
+                    <image mask="url(#mask-hero2)" width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                 </svg>
              </span>
         </div>
@@ -510,11 +510,41 @@
                     <li>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                     </li>
+                   
                 </ul>
+                <div class="number-slides"> <span class="current-slide"> </span>     
+                <span class="total-slides"></span></div>
+               
             </div>
+        
         </div>
+
         <!-- end wrapper -->
     </section>
     <!-- end section location -->
 
+
+<script>
+
+(function ($) {
+$(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "fade", 
+      after: function(slider) {
+
+        $('.current-slide').text(slider.currentSlide+1);
+    
+    
+},
+start: function(slider) {
+    $('.current-slide').text(slider.currentSlide+1);
+    $('.total-slides').text(slider.count);
+  
+}
+    });
+  });
+})(jQuery);
+
+
+</script>
 <?php get_footer(); ?>

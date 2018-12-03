@@ -127,9 +127,14 @@
 				<image mask="url(#sect-5)" width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/section5-2.png"
 				/>
 			</svg>
-			<img class="sheet-text1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-home-text.png"
-			 alt="">
-
+			<div>
+			<div class="inner-sheet">
+					<strong>Robert Seligman</strong><br>
+					<span>Prvak lorem ipsum dolor sit amet</span>
+				</div>
+				<img class="sheet-text1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-home-text.png" alt="">
+			</div>
+			
 		</div>
 		<div>
 			<p> „Velibbvvčanstven je osjećaj imati mogućnost vrhunski se pripremati u svom rodnom gradu, iz razloga jer sam cijeli život

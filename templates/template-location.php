@@ -155,15 +155,13 @@
                 <h3>Transport</h3>
                 <p> Grad Osijek smješten je u istočnom dijelu Hrvatske i od glavnog grada Zagreba udaljen je 280 km.</p>
                 <p>Za dolazak organiziranih grupa, moguća je organizacija autobusnog transfera iz sljedećih zračnih luka:</p>
-           
-                <div class="list">
-                    <ul>
+
+                    <ol>
                         <li>Osijek</li>
                         <li>Zagreb</li>
                         <li>Beograd </li>
                         <li>Budimpešta</li>
-                    </ul>
-                </div>
+                    </ol>
             </div>
             <div class="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/map.svg" alt="">

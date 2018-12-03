@@ -8,6 +8,7 @@
     margin-right: 15px;
 }
 
+
 .header {
     background-color: $green-blue;
     position: relative;
@@ -30,7 +31,7 @@
         opacity: 0.9;
         overflow-x: hidden;
         transition: 0.5s;
-        text-align:center;
+        text-align: center;
         padding-top: 100px;
         a {
             padding: 8px 5px;
@@ -38,7 +39,8 @@
             color: $green-blue;
             &:hover {
                 color: $green-light;
-                -webkit-transition: all 0.5s; /* Safari */
+                -webkit-transition: all 0.5s;
+                /* Safari */
                 transition: all 0.5s;
             }
         }
@@ -54,7 +56,7 @@
             right: 60px;
             top: 60px;
             padding: 20px;
-        } 
+        }
     }
     .menu-list {
         display: flex;
@@ -84,7 +86,7 @@
         position: absolute;
         bottom: -75px;
         left: -165px;
-        transform: rotateY(178deg);
+        // transform: rotateY(178deg);
     }
     .image-shape2 {
         position: absolute;
@@ -103,7 +105,7 @@
     h3 {
         width: 70%;
         text-transform: none;
-    }   
+    }
 }
 
 .wpml-ls-statics-shortcode_actions {
@@ -113,28 +115,30 @@
         color: $white;
         border: none;
     }
-
 }
 
 .wpml-ls-legacy-dropdown-click {
-   a {
-    span {
-        color: $white;;
+    a {
+        span {
+            color: $white;
+            ;
+        }
     }
-   }
-   a.wpml-ls-item-toggle:after {
-    border: solid $white;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(44deg);
-    top: calc(44% - 0.175em);
-   }
-} 
+    a.wpml-ls-item-toggle:after {
+        border: solid $white;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(44deg);
+        top: calc(44% - 0.175em);
+    }
+}
+
 .footer {
-    position: relative;
     overflow: hidden;
-    background-color: $green-blue;
+    .wrapper {
+        position: relative;
+    }
     a {
         font-size: 1em;
         font-weight: normal;
@@ -142,9 +146,6 @@
         font-stretch: normal;
         line-height: 2.13;
         letter-spacing: normal;
-    }
-    p {
-        color: $white;
     }
     .col {
         display: flex;
@@ -160,8 +161,8 @@
     }
     .shape2 {
         position: absolute;
-        right: -120px;
-        bottom: 0;
+        right: -54px;
+        bottom: -18px;
         z-index: 1;
         transform: rotate(-161deg);
     }
@@ -212,7 +213,17 @@
             ul {
                 border: none;
                 width: auto;
+                margin: 15px;
             }
+        }
+        .shape2 {
+            right: -89px;
+            bottom: -18px;
+            transform: rotate(-185deg);
+        }
+        .shape1 {
+            left: -104px;
+            top: -64px;
         }
     }
 }
@@ -222,7 +233,7 @@
         .image-shape1 {
             left: 300px;
         }
-    } 
+    }
     .footer {
         .wrapper {
             span {
@@ -239,6 +250,16 @@
     }
 }
 
+@include device-920 {
+    .footer {
+        .shape2 {
+            right: -145px;
+        }
+        .shape1 {
+            left: -128px;
+        }
+    }
+}
 @include medium-devices {
     .header {
         .close {
@@ -255,8 +276,8 @@
             padding: 25px;
         }
         .menu-list {
-            width: 100%!important;
-            transition: none!important;            
+            width: 100% !important;
+            transition: none !important;
             display: flex;
             flex-direction: row;
             position: inherit;
@@ -281,7 +302,6 @@
             }
         }
     }
-   
 }
 
 @include large-devices {
@@ -295,12 +315,12 @@
 }
 
 @include extra-large {
-    .news-list {
-        .wrapper {
-            // padding-bottom: 125px;
-        }
-        article {
-            // margin: 20px 10px;
-        }
-    }
+    // .news-list {
+    //     .wrapper {
+    //         // padding-bottom: 125px;
+    //     }
+    //     article {
+    //         // margin: 20px 10px;
+    //     }
+    // }
 }

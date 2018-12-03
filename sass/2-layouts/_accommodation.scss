@@ -47,7 +47,7 @@
         .sheet2 {
             position: absolute;
             left: -37px;
-            bottom: 5px;
+            bottom: 58px;
             img {
                 width: 50%;
             }
@@ -100,7 +100,7 @@
             }
             .sheet2 {
                 left: -54px;
-                bottom: 5px;
+               bottom: 104px;
                 img {
                     width: 50%;
                 }
@@ -138,7 +138,7 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 40px;
+            left: 30px;
             top: -170px;
             color: $green-blue;
             font-weight: normal;
@@ -165,8 +165,9 @@
                 }
             }
             .sheet1 {
-                top: -16px;
-                right: 75px;
+                top: -26px;
+
+                right: 12px;
             }
         }
     }
@@ -183,7 +184,7 @@
             }
             .sheet2 {
                 left: -53px;
-                bottom: 6px;
+                bottom: 74px;
             }
         }
         .img-inner-shape {
@@ -200,12 +201,12 @@
     .col-2 {
         .flexslider {
             .sheet1 {
-                top: -86px;
-                right: -33px;
+                top: -49px;
+                right: -9px;
             }
             .sheet2 {
                 left: -66px;
-                bottom: 40px;
+                bottom: 63px;
                 img {
                     width: 100%;
                 }
