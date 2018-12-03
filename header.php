@@ -17,8 +17,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
-<script src="./js/jquery-3.3.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 <?php wp_head(); ?>
 </head>
 
