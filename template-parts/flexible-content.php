@@ -21,13 +21,13 @@
 							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
 					                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
                 					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
-	                				<div class="text slider-info">
-								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
-
-									<span><?php the_sub_field( 'number' ); ?></span>
-									<small><?php the_sub_field( 'text' ); ?></small>
-								<?php endwhile; ?>
-								</div>
+	                					<div class="text">
+										<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
+											<span><?php the_sub_field( 'number' ); ?></span>
+											<small><?php the_sub_field( 'text' ); ?></small>
+										<?php endwhile; ?>
+										</div>
+									</div>
 							<?php else: ?>
 
 			                <div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
@@ -42,8 +42,11 @@
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
-			                <div class="number-slides"> <span class="current-slide"> </span>     
-			                <span class="total-slides"></span></div>
+			                <div class="number-slides">
+								<span class="zero1"></span><span class="current-slide"></span>
+								<hr class="line">
+								<span class="zero2"></span><span class="total-slides"></span>
+							</div>
 			            </div>
 						<?php endif; ?>
 					<?php elseif ($block_type === 'image-gallery'): ?>
@@ -84,13 +87,13 @@
 							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
 					                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
                 					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
-	                				<div class="text">
-								<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
-
-									<span><?php the_sub_field( 'number' ); ?></span>
-									<small><?php the_sub_field( 'text' ); ?></small>
-								<?php endwhile; ?>
-								</div>
+	                					<div class="text">
+										<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
+											<span><?php the_sub_field( 'number' ); ?></span>
+											<small><?php the_sub_field( 'text' ); ?></small>
+										<?php endwhile; ?>
+										</div>
+									</div>
 							<?php else: ?>
 
 			                <div class="sheet1"></div>
@@ -105,8 +108,11 @@
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
-			                <div class="number-slides"> <span class="current-slide"> </span>     
-			                <span class="total-slides"></span></div>
+			               <div class="number-slides">
+								<span class="zero1"></span><span class="current-slide"></span>
+								<hr class="line">
+								<span class="zero2"></span><span class="total-slides"></span>
+							</div>
 			            </div>
 						<?php endif; ?>
 					<?php elseif ($block_type === 'image-gallery'): ?>
@@ -145,13 +151,14 @@
 		                	<?php if ( get_sub_field( 'image' ) ) { ?>
 		                		<?php $image = get_sub_field( 'image' ); ?>
 							<?php } ?>
-		                    <svg>
+		                    <svg class="img-inner-shape" width="711" height="413" viewBox="0 0 711 413">
 		                        <defs>
 		                            <mask id="sect-2"  maskUnits="objectBoundingBox">
-		                                <image xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-section2-homepage.png" />
+	                                	<image width="802" height="558" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-section2-homepage.png"/>
 		                            </mask>
 		                        </defs>
 		                        <image mask="url(#sect-2)" xlink:href="<?php echo $image; ?>" />
+	                        	<image width="711" height="413" mask="url(#sect-2)" xlink:href="<?php echo $image; ?>"/>
 		                    </svg>
 		                </div>
 		                
@@ -250,13 +257,13 @@
 	            	</div>
 	     
 	            	<div class="image-shape2">
-	                    <svg>
+	                    <svg width="675" height="440" viewBox="0 0 675 440">
 	                        <defs>
 	                            <mask id="mask4" maskUnits="objectBoundingBox">
-	                                <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3.png" />
+	                                <image width="675" height="440" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-section5-2.png" />
 	                            </mask>
 	                        </defs>
-	                        <image mask="url(#mask4)" width="711" height="527" xlink:href="<?php echo $additional_image; ?>" />
+                        	<image mask="url(#mask4)" width="675" height="440" xlink:href="<?php echo $additional_image['url']; ?>"/>
 	                    </svg>
 	                </div>
 	        	</div>
@@ -427,7 +434,7 @@
 				                        <image width="731" height="368" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask23.png" />
 				                    </mask>
 				                </defs>
-				                <image mask="url(#mask3)" width="761" height="368" xlink:href="<?php the_sub_field( 'image_4' ); ?>" />
+				                <image mask="url(#mask3)" width="761" height="386" xlink:href="<?php the_sub_field( 'image_4' ); ?>" />
 				            </svg>
 				        </div>
 					<?php } ?>
@@ -515,7 +522,7 @@
 			                <svg width="470" height="380" viewBox="0 0 470 380">
 			                    <defs>
 			                        <mask id="mask13" maskUnits="objectBoundingBox">
-			                            <image width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet2.png" />
+			                            <image width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-border-top.png" />
 			                        </mask>
 			                    </defs>
 			                    <image mask="url(#mask13)" width="480" height="380" xlink:href="<?php the_sub_field( 'image_3' ); ?>" />
