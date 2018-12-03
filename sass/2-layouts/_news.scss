@@ -24,6 +24,29 @@
         
     }
 }
+
+.pagination { 
+    text-align: center;
+    margin-top: 60px;
+    .page-numbers {
+        border: 1px solid $grey;
+        padding: 3px 14px;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0 5px;
+        color: $green-blue;
+        &:hover {
+            background-color: $green-blue;
+            color: $white;
+        }
+    }
+    .current {
+        background-color: $green-blue;
+        color: $white;
+    }
+}
+
+
 @include small-devices {
     .news1 {
         h3 {

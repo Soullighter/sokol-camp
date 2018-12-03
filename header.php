@@ -73,11 +73,16 @@
                     preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $url, $match);
                         $youtube_id = $match[1];
                  ?>
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $youtube_id  ?>?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
+                 <div class="videoWrapper">
+                 <div class='youtube_codegena' id='6EA-MIYY1bg' src='<?php echo get_template_directory_uri(); ?>/images/video-play.png'></div>
+                    <script src='https://rawgit.com/shaneapen/Async-Youtube-Player/master/async_youtube_player.js'></script>
+                 </div>
+                  
             </div>
         </section>
+        <script>
+        
+        </script>
     <?php elseif ($hero_type === 'image type'): ?> 
         <section class="header-bottom background-wave">
             <div class="wrapper">

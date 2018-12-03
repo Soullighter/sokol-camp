@@ -8,11 +8,20 @@
     right: 0;
     bottom: 0;
     padding: 16px;
-    span.current-slide {
+    span.current-slide,
+    .zero1 {
         color: $green-blue;
     }
-    span.total-slides {
+    span.total-slides,
+    .zero2,
+    .line  {
        color: $grey;
+    }
+    .line {
+        width: 10px;
+        display: inline-block;
+        margin: 2px 10px;
+        border-top: 1px solid $grey;
     }
 }
 

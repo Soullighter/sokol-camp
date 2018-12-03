@@ -11,6 +11,7 @@
 
 ?>
 
+</script>
 	</div><!-- #content -->
     <footer class="footer">
         <div class="wrapper">

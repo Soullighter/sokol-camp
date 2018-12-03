@@ -17,6 +17,8 @@ $(window).load(function() {
 		  
 		}
     });
+
+    
   });
 
 var imgUrl = $('.block-section .wrapper > .text img.mask').get(0).src;
