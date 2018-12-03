@@ -181,7 +181,9 @@ svg {
 }
 
 .section6 {
-    position: relative;
+   .wrapper {
+       position: relative;
+   }
     h2 {
         position: relative;
         z-index: 1;
@@ -345,15 +347,11 @@ svg {
             width: 32%;
             display: block;
             position: absolute;
-            top: 8px;
-            left: -27px;
+            top: -54px;
+            left: -70px;
             z-index: -1;
         }
-        .side-img2 {
-            // width: 35%;
-            // bottom: -51px;
-            // left: -9px;
-        }
+       
     }
 }
 
@@ -512,16 +510,6 @@ svg {
             }
         }
     }
-    .section6 {
-        .side-img {
-            // width: 19%;
-        }
-        .side-img2 {
-            // width: auto;
-            // bottom: -51px;
-            // left: -9px;
-        }
-    }
     .section7 {
         .shape1 {
             top: -120px;
@@ -556,9 +544,9 @@ svg {
         .side-img2 {
             display: block;
             position: absolute;
-            right: 0;
-            bottom: -57px;
-            z-index: -1;
+            right: -40px;
+            bottom: -105px;
+            z-index: 2;
         }
     }
 }
@@ -609,7 +597,7 @@ svg {
             position: static;
             margin-top: 0;
             width: 522px;
-            text-align: normal;
+            text-align: unset;
         }
         .image-shape2 {
             display: block;
@@ -633,7 +621,7 @@ svg {
         }
         .inner-sheet {
             bottom: 109px;
-            left: 205px;
+            left: 202px;
             width: 100%;
         }
         .shape1 {
@@ -657,7 +645,14 @@ svg {
     }
     .section6 {
         .side-img {
+            top: -99px;
+            left: -133px;
+        
             width: auto;
+        }
+        .side-img2 {
+            right: -80px;
+            bottom: -138px;
         }
     }
 }

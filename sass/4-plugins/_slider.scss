@@ -45,6 +45,7 @@
     }
     .flex-control-nav {
         bottom: 21px;
+        z-index: 999;
     }
     .flex-direction-nav {
         position: absolute;
@@ -89,7 +90,6 @@
 
 @include extra-small-devices {
     .section6 {
-      
             .flex-direction-nav {
                 left: 47%;
         }
