@@ -438,6 +438,11 @@ svg {
             width: 711px;
             height: 413px;
         }
+        svg {
+            display: block;
+            width: 711px;
+            height: 413px;
+        }
         .col {
             padding-bottom: 0 !important;
             padding-top: 0 !important;
@@ -598,6 +603,7 @@ svg {
             position: static;
             margin-top: 0;
             width: 522px;
+            text-align: normal;
         }
         .image-shape2 {
             display: block;
