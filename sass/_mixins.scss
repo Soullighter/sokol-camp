@@ -49,3 +49,9 @@
     @content;    
   }
 }
+
+@mixin devices-1600 {
+  @media only screen and (min-width: 1550px) {
+    @content;
+}
+}

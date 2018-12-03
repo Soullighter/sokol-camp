@@ -92,9 +92,12 @@ input[type=number]::-webkit-inner-spin-button {
     height: auto!important;
 }
 
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing { 
-    border: none!important;
-    color: $green-blue;
+.contact {
+    div.wpcf7-validation-errors, div.wpcf7-acceptance-missing { 
+        border: none!important;
+        color: $green-blue;
+    }
+    
 }
 
 .contact .contact-form .wpcf7-form label {

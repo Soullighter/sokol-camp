@@ -78,6 +78,7 @@ h2 {
     line-height: 1.22;
     letter-spacing: 3.4px;
     font-weight: 800;
+    padding-bottom: 2.4em;
 }
 
 h3 {
@@ -194,7 +195,6 @@ video {
 .section1,
 .section2 {
     a {
-        color: red;
         text-transform: uppercase;
         padding: 3% 5% 0% 0;
         display: inline-block;
@@ -204,6 +204,10 @@ video {
         &:after {
             content: "\2192";
             padding-left: 10px;
+        }
+        &:hover {
+            color: $yellow;
+            transition: all 0.5;
         }
     }
 }
@@ -234,6 +238,15 @@ iframe {
 // .padding {
 //     padding: 5% 0;
 // }
+
+#content {
+    section:first-of-type {
+        .col-2 {
+            padding-top:0;
+        }
+       
+    }
+}
 @include small-devices {
     *,
     body,

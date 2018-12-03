@@ -18,18 +18,21 @@
     }
 }
 .sheet-text {
-    .text {
-        color: $yellow;
-        span {
-            font-size: 1.5em;
+    .text {    
+        small  {
              line-height: 0.5em;
+             font-size: 16px;
+             color: $green-blue;
+        }
+        p {
+            font-size: 26px;
         }
     }
     img {
-        display: none;
-        
+        display: none;     
     }
 }
+
 .col-2 {
     .img-inner-shape {
         width: 320px;
@@ -68,7 +71,15 @@
         right: -11px;
     }
 }
-
+.wpcf7-response-output,  
+.wpcf7-display-none,
+.wpcf7-validation-errors  {
+   
+}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    color: $white;
+    border: none!important;
+}
 .wpcf7-form {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +141,7 @@
     }
     .sheet-text {
         position: absolute;
-        width: 150px;
+        width: 150px;    
         height: 128px;
         top: 12px;
         left: -86px;
@@ -141,10 +152,14 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30px;
+            left: 22px!important;
+            
             top: -170px;
             color: $green-blue;
             font-weight: normal;
+            small {
+                color: $green-blue;
+            }
         }
     }
    

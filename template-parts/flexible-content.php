@@ -414,10 +414,10 @@
 				        </div>
 					<?php } ?>
 						<!-- 5 top -->
-				        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
+				        <div class="img-shape top"><img src="<?php echo get_template_directory_uri(); ?>/images/mask4.png" alt=""></div>
 
 				        <!-- 6 bottom -->
-				        <div class="img-shape"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
+				        <div class="img-shape bottom"><img src="<?php echo get_template_directory_uri(); ?>/images/mask5.png" alt=""></div>
 					<?php if ( get_sub_field( 'image_4' ) ) { ?>
 						<!-- 5 right  -->
 				        <div class="img-shape">

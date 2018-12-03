@@ -65,6 +65,9 @@ svg {
             padding-bottom: 1em;
             color: $white;
         }
+        h5 {
+            color: $yellow;
+        }
         div:nth-of-type(3) {
             margin-top: 20px;
         }
@@ -115,9 +118,6 @@ svg {
 }
 
 .news-list {
-    h2 {
-        padding-bottom: 1em;
-    }
     h6 {
         font-size: 1.2em;
         font-weight: normal;
@@ -154,6 +154,11 @@ svg {
         }
     }
     .inner-sheet {
+        p {
+            padding: 0;
+            margin:0;
+            display: block;
+        }
         span {
             color: $white;
         }
@@ -192,12 +197,7 @@ svg {
         display: none;
     }
     .side-img2 {
-        display: none; // width: 40%;
-        // width: 43%;
-        // position: absolute;
-        // z-index: 999;
-        // bottom: -81px;
-        // left: 0;
+        display: none;
     }
     p {
         color: $green-blue;
@@ -219,11 +219,23 @@ svg {
     .col-2 {
         justify-content: space-around;
         padding-top: 0;
+        li:nth-of-type(2) {
+            a,
+            p {
+               font-size: 16px;
+            }         
+         }
+    }
+    h2{
+        color: $white;
     }
     li,
     h2,
     p {
         text-align: center;
+    }
+    a {
+        font-weight: normal;
     }
     label {
         text-align: left;
@@ -362,15 +374,23 @@ svg {
         p {
             text-align: left;
         }
+        .col-2 {
+            li:nth-of-type(2) {
+                p:nth-of-type(1) {
+                   padding-top: 39px;
+                }
+                p:nth-of-type(2) {
+                    a:last-child {
+                        color: $green-light;
+                    }
+                }           
+             }
+        }
+       
     }
     .section2 {
         .shape1 {
             top: -106px;
-        }
-    }
-    .news-list {
-        h2 {
-            padding-bottom: 1.5em;
         }
     }
     .section5 {
@@ -405,11 +425,12 @@ svg {
         .inner-sheet {
             position: absolute;
             bottom: 111px;
-            left: 290px;
+            left: 470px;
             z-index: 999;
-            span,
+            p,
             strong {
                 color: $green-blue;
+                text-align: left;
             }
         }
     }
@@ -620,8 +641,8 @@ svg {
             }
         }
         .inner-sheet {
+            left: 293px;
             bottom: 109px;
-            left: 202px;
             width: 100%;
         }
         .shape1 {
@@ -653,6 +674,14 @@ svg {
         .side-img2 {
             right: -80px;
             bottom: -138px;
+        }
+    }
+}
+
+@include devices-1600 {
+    .section6 {
+        .side-img {
+            left: -201px;
         }
     }
 }

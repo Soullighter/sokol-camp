@@ -60,9 +60,6 @@
   .col-2 .text {
     margin: 0 7%; }
 
-.top-none {
-  padding-top: 0; }
-
 .col-3 {
   width: 55%; }
 
@@ -98,6 +95,8 @@
     margin: 0 auto;
     padding-top: 0;
     padding-bottom: 0; }
+    .background-img-shapes .col-2 li {
+      margin-bottom: 20px; }
   .background-img-shapes ul.col-1,
   .background-img-shapes ul.col-2,
   .background-img-shapes .col-3 {
@@ -116,7 +115,7 @@
     .background-img-shapes ul.col-1 li:last-child {
       margin-bottom: 0; }
   .background-img-shapes ul.col-2 {
-    padding: 7% 0; }
+    padding: 10% 0; }
   .background-img-shapes .col-3 {
     padding: 10% 0;
     width: 90%;
@@ -194,22 +193,25 @@
     flex-direction: column;
     width: 60%;
     margin: 0 0 0 auto;
-    padding: 7%; }
+    padding: 7% 0; }
     .background-img-shapes .col-3 li {
       width: auto; } }
 @media only screen and (min-width: 767px) {
   .background-img-shapes .col-1 {
     width: 60%; }
   .background-img-shapes .col-2 {
+    padding: 7% 0;
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%; }
     .background-img-shapes .col-2 li {
       width: 40%;
-      padding: 10px 25px; }
+      padding: 10px 0; }
   .background-img-shapes .col-3 {
     display: flex;
     flex-direction: column; }
+  .background-img-shapes ul.col-2 {
+    padding: 7% 0; }
 
   .section1.background-wave {
     min-height: 623px; }
@@ -301,7 +303,7 @@
       width: 40%; }
   .background-img-shapes .col-3 {
     margin: auto;
-    justify-content: space-around; }
+    justify-content: space-between; }
     .background-img-shapes .col-3 li {
       width: auto; } }
 @media only screen and (min-width: 1280px) {
@@ -319,6 +321,9 @@
 
   .col-4 article {
     padding: 0px; } }
+@media only screen and (min-width: 1550px) {
+  .background-img-shapes .col-2 {
+    width: 75%; } }
 *,
 body,
 html {
@@ -388,7 +393,8 @@ h2 {
   text-transform: uppercase;
   line-height: 1.22;
   letter-spacing: 3.4px;
-  font-weight: 800; }
+  font-weight: 800;
+  padding-bottom: 2.4em; }
 
 h3 {
   font-size: 2.125em;
@@ -485,7 +491,6 @@ video {
 
 .section1 a,
 .section2 a {
-  color: red;
   text-transform: uppercase;
   padding: 3% 5% 0% 0;
   display: inline-block;
@@ -496,6 +501,10 @@ video {
   .section2 a:after {
     content: "\2192";
     padding-left: 10px; }
+  .section1 a:hover,
+  .section2 a:hover {
+    color: #ffca05;
+    transition: all 0.5; }
 
 video,
 iframe {
@@ -509,6 +518,9 @@ iframe {
   max-width: 640px;
   height: 420px;
   z-index: 999; }
+
+#content section:first-of-type .col-2 {
+  padding-top: 0; }
 
 @media only screen and (min-width: 767px) {
   *,
@@ -748,14 +760,14 @@ iframe {
 @media only screen and (min-width: 1280px) {
   .header .menu-list a {
     padding: 25px; } }
-.location-gallery .col-2 {
+.block-section .location-gallery .col-2 {
   padding-top: 0; }
-.location-gallery .location1-img {
+.block-section .location-gallery .location1-img {
   position: relative; }
-  .location-gallery .location1-img img {
+  .block-section .location-gallery .location1-img img {
     display: block;
     margin: 0 auto 15px auto; }
-.location-gallery .sheet {
+.block-section .location-gallery .sheet {
   position: absolute;
   top: -28px;
   right: 62px;
@@ -785,17 +797,20 @@ iframe {
   padding-right: 8px; }
 
 @media only screen and (min-width: 767px) {
-  .block-section .location1-img div img {
-    width: 45%;
-    float: right; }
-  .block-section .location1-img div img:nth-of-type(1) {
-    margin-left: 15px; }
-  .block-section .location1-img .sheet {
-    position: absolute;
-    top: -28px;
-    right: 62px;
-    z-index: -999;
-    width: 65%; }
+  .block-section .location1-img {
+    position: relative; }
+    .block-section .location1-img div img {
+      width: 45%;
+      float: right;
+      margin: 0 auto 15px auto; }
+    .block-section .location1-img div img:nth-of-type(1) {
+      margin-left: 15px; }
+    .block-section .location1-img .sheet {
+      position: absolute;
+      top: -28px;
+      right: 62px;
+      z-index: -999;
+      width: 65%; }
 
   .sheet-text-inner .sheet {
     text-align: left; }
@@ -867,11 +882,12 @@ iframe {
 .accommodation1 small {
   color: #004253; }
 
-.sheet-text .text {
-  color: #ffca05; }
-  .sheet-text .text span {
-    font-size: 1.5em;
-    line-height: 0.5em; }
+.sheet-text .text small {
+  line-height: 0.5em;
+  font-size: 16px;
+  color: #004253; }
+.sheet-text .text p {
+  font-size: 26px; }
 .sheet-text img {
   display: none; }
 
@@ -904,6 +920,10 @@ iframe {
   position: absolute;
   top: -10px;
   right: -11px; }
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  color: #ffffff;
+  border: none !important; }
 
 .wpcf7-form {
   display: flex;
@@ -960,10 +980,12 @@ iframe {
       display: flex;
       flex-direction: column;
       position: relative;
-      left: 30px;
+      left: 22px !important;
       top: -170px;
       color: #004253;
       font-weight: normal; }
+      .sheet-text .text small {
+        color: #004253; }
 
   .wpcf7-form {
     flex-direction: row; }
@@ -1100,6 +1122,8 @@ svg {
   .section2 .wrapper p {
     padding-bottom: 1em;
     color: #ffffff; }
+  .section2 .wrapper h5 {
+    color: #ffca05; }
   .section2 .wrapper div:nth-of-type(3) {
     margin-top: 20px; }
 .section2 .image-shape2 {
@@ -1136,8 +1160,6 @@ svg {
     right: 1px;
     bottom: 34px; }
 
-.news-list h2 {
-  padding-bottom: 1em; }
 .news-list h6 {
   font-size: 1.2em;
   font-weight: normal;
@@ -1166,6 +1188,10 @@ svg {
     .section5 .image-shape1 svg {
       width: 100%;
       height: auto; }
+  .section5 .inner-sheet p {
+    padding: 0;
+    margin: 0;
+    display: block; }
   .section5 .inner-sheet span {
     color: #ffffff; }
   .section5 .sheet-text1 {
@@ -1208,10 +1234,17 @@ svg {
   .section-contact .col-2 {
     justify-content: space-around;
     padding-top: 0; }
+    .section-contact .col-2 li:nth-of-type(2) a,
+    .section-contact .col-2 li:nth-of-type(2) p {
+      font-size: 16px; }
+  .section-contact h2 {
+    color: #ffffff; }
   .section-contact li,
   .section-contact h2,
   .section-contact p {
     text-align: center; }
+  .section-contact a {
+    font-weight: normal; }
   .section-contact label {
     text-align: left; }
   .section-contact li:first-child {
@@ -1309,12 +1342,13 @@ svg {
   .section-contact h2,
   .section-contact p {
     text-align: left; }
+  .section-contact .col-2 li:nth-of-type(2) p:nth-of-type(1) {
+    padding-top: 39px; }
+  .section-contact .col-2 li:nth-of-type(2) p:nth-of-type(2) a:last-child {
+    color: #94bc52; }
 
   .section2 .shape1 {
     top: -106px; }
-
-  .news-list h2 {
-    padding-bottom: 1.5em; }
 
   .section5 {
     padding: 0 0 4% 0; }
@@ -1343,11 +1377,12 @@ svg {
     .section5 .inner-sheet {
       position: absolute;
       bottom: 111px;
-      left: 290px;
+      left: 470px;
       z-index: 999; }
-      .section5 .inner-sheet span,
+      .section5 .inner-sheet p,
       .section5 .inner-sheet strong {
-        color: #004253; }
+        color: #004253;
+        text-align: left; }
 
   .section8 .partners {
     flex-wrap: nowrap; }
@@ -1486,8 +1521,8 @@ svg {
         width: 675px;
         height: 440px; }
     .section5 .inner-sheet {
+      left: 293px;
       bottom: 109px;
-      left: 202px;
       width: 100%; }
     .section5 .shape1 {
       display: block;
@@ -1512,6 +1547,9 @@ svg {
   .section6 .side-img2 {
     right: -80px;
     bottom: -138px; } }
+@media only screen and (min-width: 1550px) {
+  .section6 .side-img {
+    left: -201px; } }
 input[type=number]::-webkit-inner-spin-button {
   cursor: pointer;
   color: green;
@@ -1580,7 +1618,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: auto !important;
   height: auto !important; }
 
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+.contact div.wpcf7-validation-errors, .contact div.wpcf7-acceptance-missing {
   border: none !important;
   color: #004253; }
 
@@ -1707,12 +1745,14 @@ div.wpcf7-response-output {
       width: 50%; } }
 .flexslider {
   background-color: transparent; }
+  .flexslider img {
+    max-height: 343px; }
 
 .number-slides {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: 16px; }
+  padding: 8px; }
   .number-slides span.current-slide,
   .number-slides .zero1 {
     color: #004253; }
