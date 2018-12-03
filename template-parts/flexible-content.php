@@ -521,7 +521,7 @@
 			                <svg width="470" height="380" viewBox="0 0 470 380">
 			                    <defs>
 			                        <mask id="mask13" maskUnits="objectBoundingBox">
-			                            <image width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet2.png" />
+			                            <image width="480" height="380" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-border-top.png" />
 			                        </mask>
 			                    </defs>
 			                    <image mask="url(#mask13)" width="480" height="380" xlink:href="<?php the_sub_field( 'image_3' ); ?>" />
