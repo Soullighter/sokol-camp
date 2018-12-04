@@ -5,14 +5,19 @@
             display: block;
             margin: 0 auto 15px auto;
         }
+        div {
+            position: relative;
+            z-index: 1;
+        }
+        .sheet {
+            position: absolute;
+            top: -28px;
+            right: 62px;
+            width: 80%;
+            z-index: 1;
+        }
     }
-    .sheet {
-        position: absolute;
-        top: -28px;
-        right: 62px;
-        z-index: -999;
-        width: 80%;
-    }
+   
     ol {
         li:before {
             content: "\2192";
@@ -55,7 +60,6 @@
                 position: absolute;
                 top: -28px;
                 right: 62px;
-                z-index: -999;
                 width: 65%;
             }
         }

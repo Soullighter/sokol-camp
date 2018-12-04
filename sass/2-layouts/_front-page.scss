@@ -52,7 +52,6 @@ svg {
 }
 
 .section2 {
-   
     .wrapper {
         position: relative;
         h5,
@@ -71,9 +70,16 @@ svg {
         display: none;
     }
     .shape1 {
-        top: -51px;
+        // top: -51px;
+        // transform: rotate(118deg);
+        // right: 0;
+        top: -88px;
+        
         transform: rotate(118deg);
-        right: 0;
+        
+        right: -51px;
+        
+        width: 160px;
     }
     .shape2 {
         transform: rotate(-83deg);
@@ -587,7 +593,6 @@ svg {
 
 @include large-devices {
     .section2 {
-        // margin-top: 40px;
         .wrapper {
             div:nth-of-type(2) {
                 left: -132px;
@@ -600,6 +605,12 @@ svg {
         }
         li:first-child {
             width: 60%;
+        }
+    }
+    .footer {
+        .shape1 {
+            top: -95px;
+            left: -149px;
         }
     }
 }
@@ -633,9 +644,6 @@ svg {
             width: 522px;
             text-align: unset;
         }
-        .image-shape2 {
-            right: 93px;
-        }
         .sheet-text1 {
             width: 309px;
         }
@@ -647,7 +655,7 @@ svg {
             display: block;
             position: relative;
             bottom: -97px;
-            right: 71px;
+            right: 17px;
             svg,
             image {
                 width: 675px;
@@ -687,6 +695,12 @@ svg {
         .side-img2 {
             right: -80px;
             bottom: -138px;
+        }
+    }
+
+    .footer {
+        .shape2 {
+            right: -170px;
         }
     }
 }

@@ -117,13 +117,15 @@
     color: $white;
     .image-shape1 {
         position: absolute;
-        bottom: -75px;
-        left: -165px; // transform: rotateY(178deg);
+        bottom: -1px;
+        left: -165px;
     }
     .image-shape2 {
         position: absolute;
-        left: 817px;
-        bottom: -18px;
+        // left: 817px;
+        // bottom: -18px;
+        left: 892px;
+        bottom: 116px;
         transform: rotate(-30deg);
     }
     h1,

@@ -114,13 +114,13 @@
                 </span>
                 <!-- hero image2 -->
                 <span class="image-shape2">
-                    <svg width="660" height="470" viewBox="0 0 660 470">
+                    <svg width="536" height="362" viewBox="0 0 536 362">
                         <defs>
                              <mask id="mask-hero2"  maskUnits="objectBoundingBox">
-                                 <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
+                                 <image width="536" height="362" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero22.png" />
                             </mask>
                         </defs>
-                        <image mask="url(#mask-hero2)" width="660" height="470" xlink:href="<?php echo $second_image; ?>" />
+                        <image mask="url(#mask-hero2)" width="536" height="362" xlink:href="<?php echo $second_image; ?>" />
                     </svg>
                  </span>
             </div>
