@@ -16,6 +16,21 @@ if ( ! function_exists( 'gulp_wordpress_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function gulp_wordpress_setup() {
+
+	add_theme_support( 'post-thumbnails' );
+    add_image_size( 'blog-block-thumb', 315, '' ); // (cropped)
+
+    // SVG Mask Sizes
+	add_image_size( '711x413', 711, 413, true, array( 'center' , 'center' ) );
+	add_image_size( '695x415', 695, 415, true, array( 'center' , 'center' ) );
+	add_image_size( '675x440', 675, 440, true, array( 'center' , 'center' ) );
+	add_image_size( '732x530', 732, 530, true, array( 'center' , 'center' ) );
+	add_image_size( '655x397', 655, 397, true, array( 'center' , 'center' ) );
+	add_image_size( '731x368', 731, 368, true, array( 'center' , 'center' ) );
+	add_image_size( '470x380', 470, 380, true, array( 'center' , 'center' ) );
+	add_image_size( '373x345', 373, 345, true, array( 'center' , 'center' ) );
+	add_image_size( '470x380', 660, 470, true, array( 'center' , 'center' ) );
+	add_image_size( '660x470', 660, 470, true, array( 'center' , 'center' ) );
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -127,6 +142,7 @@ function theme_pagination()
     ));
 }
 add_action('init', 'theme_pagination'); // Add Theme Custom Pagination
+
 /**
  * Implement the Custom Header feature.
  */

@@ -92,7 +92,7 @@
                 if ( have_rows( 'image_group' ) ) : 
                     while ( have_rows( 'image_group' ) ) : the_row(); 
                         if ( get_sub_field( 'first_image' ) ) { 
-                            $first_image = get_sub_field( 'first_image' ); 
+                            $first_image = get_sub_field( 'first_image' );
                         } 
                         if ( get_sub_field( 'second_image' ) ) { 
                             $second_image = get_sub_field( 'second_image' ); 
@@ -108,7 +108,7 @@
                                 <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                             </mask>
                         </defs>
-                        <image mask="url(#mask-hero1)" width="660" height="470" xlink:href="<?php echo $first_image; ?>" />
+                        <image mask="url(#mask-hero1)" width="660" height="470" xlink:href="<?php echo $first_image['sizes']['660x470']; ?>" />
                     </svg>
                 </span>
                 <!-- hero image2 -->
@@ -119,7 +119,7 @@
                                  <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                             </mask>
                         </defs>
-                        <image mask="url(#mask-hero2)" width="660" height="470" xlink:href="<?php echo $second_image; ?>" />
+                        <image mask="url(#mask-hero2)" width="660" height="470" xlink:href="<?php echo $second_image['sizes']['660x470']; ?>" />
                     </svg>
                  </span>
             </div>

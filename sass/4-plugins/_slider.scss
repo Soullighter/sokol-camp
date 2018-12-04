@@ -1,8 +1,17 @@
 // front page slider
 .flexslider {
-    background-color: transparent;
+        background-color: transparent;
+    li {
+        text-align: left;
+    }
     img {
         max-height: 343px;
+        display: inline-block!important;
+        height: auto!important;
+        width: auto!important;
+    }
+    .flex-viewport {
+        background-color: #faf9f7;
     }
 }
 
