@@ -1,36 +1,29 @@
 .block-section {
-    .location-gallery {
-        .col-2 {
-            padding-top: 0;
+    .location1-img {
+        position: relative;
+        img {
+            display: block;
+            margin: 0 auto 15px auto;
         }
-        .location1-img {
-            position: relative;
-            img {
-                display: block;
-                margin: 0 auto 15px auto;
-            }
-        }
-        .sheet {
-            position: absolute;
-            top: -28px;
-            right: 62px;
-            z-index: -999;
-            width: 80%;
+    }
+    .sheet {
+        position: absolute;
+        top: -28px;
+        right: 62px;
+        z-index: -999;
+        width: 80%;
+    }
+    ol {
+        li:before {
+            content: "\2192";
+            font-weight: 800;
+            color: $green-blue;
+            padding-left: 30px;
+            padding-right: 8px;
         }
     }
 }
 
-
-
-.col-2.top-none {
-    padding-top: 0;
-}
-.contact {
-    .col-2 {
-        padding-top: 0;
-    }
-  
-}
 .sheet-text-inner {
     .sheet {
         text-align: center;
@@ -44,32 +37,18 @@
     }
 }
 
-.block-section {
-    ol {
-        li:before {
-            content: "\2192";
-            font-weight: 800;
-            color: $green-blue;
-            padding-left: 30px;
-            padding-right: 8px;
-        }
-    }
-}
 @include small-devices {
-    .block-section
-     {
+    .block-section {
         .location1-img {
             position: relative;
-           
             div {
                 img {
                     width: 45%;
                     float: right;
                     margin: 0 auto 15px auto;
-                   
-                } 
+                }
                 img:nth-of-type(1) {
-                    margin-left: 15px;            
+                    margin-left: 15px;
                 }
             }
             .sheet {

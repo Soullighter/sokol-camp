@@ -1,5 +1,4 @@
 .sheet-top,
-.sheet-text,
 .sheet1,
 .sheet2 {
     width: 150px;
@@ -14,19 +13,21 @@
         color: $green-blue;
     }
 }
+
 .sheet-text {
-    .text {    
-        small  {
-             line-height: 0.5em;
-             font-size: 16px;
-             color: $green-blue;
+    .text {
+        small {
+            line-height: 0.5em;
+            font-size: 16px;
+            color: $green-blue;
         }
-        p {
-            font-size: 26px;
+        span {
+            font-size: 1.5em;
+            line-height: 1.5em;
         }
     }
     img {
-        display: none;     
+        display: none;
     }
 }
 
@@ -42,10 +43,10 @@
         position: relative;
         margin: 0 7%;
         .sheet1 {
-        transform: rotate(-65deg);
-        position: absolute;
-        top: -20px;
-        right: 20px;
+            transform: rotate(-65deg);
+            position: absolute;
+            top: -20px;
+            right: 20px;
         }
         .sheet2 {
             position: absolute;
@@ -61,22 +62,24 @@
             top: 10%;
         }
     }
-    .sheet-top{
+    .sheet-top {
         transform: rotate(-65deg);
         position: absolute;
         top: -10px;
         right: -11px;
     }
 }
-.wpcf7-response-output,  
+
+.wpcf7-response-output,
 .wpcf7-display-none,
-.wpcf7-validation-errors  {
-   
-}
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+.wpcf7-validation-errors {}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
     color: $white;
-    border: none!important;
+    border: none !important;
 }
+
 .wpcf7-form {
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +92,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     input {
         box-sizing: border-box;
         width: 100%;
-        border:none;
+        border: none;
         padding: 10px;
         color: $green-blue;
         margin-top: 5px;
@@ -103,6 +106,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
         background-color: $yellow;
     }
 }
+
 @include extra-small-devices {
     .col-2 {
         .flexslider {
@@ -111,7 +115,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
             }
             .sheet2 {
                 left: -54px;
-               bottom: 104px;
+                bottom: 104px;
                 img {
                     width: 50%;
                 }
@@ -138,28 +142,30 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     }
     .sheet-text {
         position: absolute;
-        width: 150px;    
+        width: 128px;
         height: 128px;
         top: 12px;
-        left: -86px;
+        left: -93px;
         img {
             display: block;
+        }
+        span:nth-of-type(2) {
+            display: block;
+            margin-top: 5px;
         }
         .text {
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 22px!important;
-            
-            top: -170px;
-            color: $green-blue;
+            left: 27px !important;
+            top: -162px; // color: $green-blue;
             font-weight: normal;
+            font-size: 16px;
             small {
-                color: $green-blue;
+                // color: $green-blue;
             }
         }
     }
-   
     .wpcf7-form {
         flex-direction: row;
         p {
@@ -181,7 +187,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
             }
             .sheet1 {
                 top: -26px;
-
                 right: 12px;
             }
         }
@@ -189,7 +194,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 
 @include medium-devices {
-   
     .col-2 {
         .flexslider {
             align-self: none;
@@ -209,7 +213,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     .sheet-top {
         width: 200px;
     }
-    
 }
 
 @include large-devices {
@@ -229,11 +232,23 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
             .sheet1 {
                 width: 295px;
                 height: 198px;
-
             }
         }
     }
+}
 
-    
-  
+@include extra-large {
+    .sheet-text {
+        width: 165px;
+        height: 182px;
+        top: 12px;
+        left: -134px;
+        span:nth-of-type(2) {
+            margin-top: 15px;
+        }
+        .text {
+            left: 41px !important;
+            top: -206px;
+        }
+    }
 }

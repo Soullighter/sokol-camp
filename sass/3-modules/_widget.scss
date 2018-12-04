@@ -304,6 +304,9 @@
         .article {
             margin-right: 0;
         }
+        article:last-child {
+            margin-bottom: 25px;
+        }
     }
 }
 

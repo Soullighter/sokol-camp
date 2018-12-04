@@ -32,12 +32,6 @@
     width: 120px;
 }
 
-.youtube_codegena {
-    background-color: transparent !important;
-    width: 640px;
-    height: 420px;
-}
-
 svg {
     width: auto;
     height: auto;
@@ -58,6 +52,7 @@ svg {
 }
 
 .section2 {
+   
     .wrapper {
         position: relative;
         h5,
@@ -88,7 +83,7 @@ svg {
 }
 
 .section3 {
-    padding-top: 4%;
+    padding-top: 7%;
     .wrapper {
         text-align: center;
     }
@@ -100,26 +95,26 @@ svg {
         width: 90px;
     }
     .shape1 {
-        top: 87px;
+        top: 62px;
         left: -58px;
     }
     .shape2 {
-        top: 11px;
-        left: 30px;
+        top: -2px;
+        left: 21px;
     }
     .shape3 {
         top: 1px;
         right: -59px;
     }
     .shape4 {
-        right: 1px;
-        bottom: 34px;
+        bottom: 0px;
+        right: 15px;
     }
 }
 
 .news-list {
     h6 {
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: normal;
         color: $green-blue;
         font-weight: normal;
@@ -156,7 +151,7 @@ svg {
     .inner-sheet {
         p {
             padding: 0;
-            margin:0;
+            margin: 0;
             display: block;
         }
         span {
@@ -186,12 +181,13 @@ svg {
 }
 
 .section6 {
-   .wrapper {
-       position: relative;
-   }
+    .wrapper {
+        position: relative;
+    }
     h2 {
         position: relative;
         z-index: 1;
+        padding-bottom: 0.5em;
     }
     .side-img {
         display: none;
@@ -199,8 +195,13 @@ svg {
     .side-img2 {
         display: none;
     }
-    p {
+    p, strong {
         color: $green-blue;
+        padding:0;
+    }
+    strong {
+        padding-top: 1em;
+        display: block;
     }
 }
 
@@ -222,11 +223,11 @@ svg {
         li:nth-of-type(2) {
             a,
             p {
-               font-size: 16px;
-            }         
-         }
+                font-size: 16px;
+            }
+        }
     }
-    h2{
+    h2 {
         color: $white;
     }
     li,
@@ -246,7 +247,7 @@ svg {
     .shape2 {
         bottom: -40px;
         transform: rotate(-89deg);
-        left: 314px;
+        left: 398px;
         z-index: 2;
     }
     .wpcf7-form {
@@ -267,7 +268,7 @@ svg {
             -webkit-filter: grayscale(100%) brightness(60%) contrast(10000000%);
             filter: grayscale(100%) brightness(60%) contrast(10000000%);
             opacity: 0.2;
-            text-align: center;
+            // text-align: center;
             &:hover {
                 filter: none;
                 opacity: 1;
@@ -338,7 +339,7 @@ svg {
             right: -108px;
         }
         .shape4 {
-            bottom: 82px !important;
+            bottom: 2px !important;
         }
     }
     .section-contact {
@@ -363,11 +364,15 @@ svg {
             left: -70px;
             z-index: -1;
         }
-       
     }
 }
 
 @include small-devices {
+    .section1 {
+        .col-2 {
+            align-items: center;
+        }
+    }
     .section-contact {
         li,
         h2,
@@ -377,20 +382,24 @@ svg {
         .col-2 {
             li:nth-of-type(2) {
                 p:nth-of-type(1) {
-                   padding-top: 39px;
+                    padding-top: 39px;
                 }
                 p:nth-of-type(2) {
                     a:last-child {
                         color: $green-light;
                     }
-                }           
-             }
+                }
+            }
         }
-       
     }
     .section2 {
         .shape1 {
             top: -106px;
+        }
+    }
+    .news-list {
+        h2 {
+            padding-bottom: 1.5em;
         }
     }
     .section5 {
@@ -510,11 +519,11 @@ svg {
     }
     .section3 {
         .shape1 {
-            top: 217px;
+            top: 129px;        
             left: -86px;
         }
         .shape2 {
-            top: 82px;
+            top: 22px;
             left: 142px;
         }
         .shape1,
@@ -559,6 +568,9 @@ svg {
         }
     }
     .section6 {
+        h2 {
+            padding-bottom: 1.5em;
+        }
         .side-img {
             width: 23%;
         }
@@ -570,6 +582,7 @@ svg {
             z-index: 2;
         }
     }
+    
 }
 
 @include large-devices {
@@ -621,7 +634,7 @@ svg {
             text-align: unset;
         }
         .image-shape2 {
-            display: block;
+            right: 93px;
         }
         .sheet-text1 {
             width: 309px;
@@ -631,9 +644,10 @@ svg {
             bottom: -70px;
         }
         .image-shape2 {
+            display: block;
             position: relative;
             bottom: -97px;
-            right: -15px;
+            right: 71px;
             svg,
             image {
                 width: 675px;
@@ -668,7 +682,6 @@ svg {
         .side-img {
             top: -99px;
             left: -133px;
-        
             width: auto;
         }
         .side-img2 {
