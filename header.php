@@ -120,7 +120,7 @@
                                  <image width="536" height="362" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero22.png" />
                             </mask>
                         </defs>
-                        <image mask="url(#mask-hero2)" width="660" height="470" xlink:href="<?php echo $second_image['sizes']['660x470']; ?>" />
+                        <image mask="url(#mask-hero2)" width="536" height="362" xlink:href="<?php echo $second_image['sizes']['536x362']; ?>" />
                     </svg>
                  </span>
             </div>
