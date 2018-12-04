@@ -74,8 +74,9 @@
                         $youtube_id = $match[1];
                  ?>
                  <div class="videoWrapper">
-                 <div class='youtube_codegena' id='<?php echo $youtube_id; ?>' src='http://i3.ytimg.com/vi/<?php echo $youtube_id; ?>/hqdefault.jpg'></div>
-                    <script src='https://rawgit.com/shaneapen/Async-Youtube-Player/master/async_youtube_player.js'></script>
+                    <div class='youtube_codegena' id='<?php echo $youtube_id; ?>' src='http://i3.ytimg.com/vi/<?php echo $youtube_id; ?>/hqdefault.jpg'>
+                        <script src='https://rawgit.com/shaneapen/Async-Youtube-Player/master/async_youtube_player.js'></script>
+                    </div>
                  </div>
                   
             </div>
@@ -113,10 +114,10 @@
                 </span>
                 <!-- hero image2 -->
                 <span class="image-shape2">
-                    <svg width="660" height="470" viewBox="0 0 660 470">
+                    <svg width="536" height="362" viewBox="0 0 536 362">
                         <defs>
                              <mask id="mask-hero2"  maskUnits="objectBoundingBox">
-                                 <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
+                                 <image width="536" height="362" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero22.png" />
                             </mask>
                         </defs>
                         <image mask="url(#mask-hero2)" width="660" height="470" xlink:href="<?php echo $second_image['sizes']['660x470']; ?>" />

@@ -1,8 +1,3 @@
-input[type=number]::-webkit-inner-spin-button {
-    cursor: pointer;
-    color: green;
-    background-color: red;
-  }
 .contact {
     .contact-form {
         position: relative;
@@ -13,7 +8,7 @@ input[type=number]::-webkit-inner-spin-button {
             label {
                 color: $green-blue;
             }
-            input, 
+            input,
             textarea {
                 border: 1px solid #837d73;
                 width: 100%;
@@ -31,9 +26,6 @@ input[type=number]::-webkit-inner-spin-button {
                 }
             }
         }
-    }
-    .text {
-        text-align: center;
     }
     .col-2 {
         align-items: center;
@@ -81,41 +73,45 @@ input[type=number]::-webkit-inner-spin-button {
 
 .google-maps {
     iframe {
-        width: 100% ;
-        min-height: 451px;;
+        width: 100%;
+        min-height: 451px;
+        ;
     }
 }
 
 .sheet1,
 .sheet2 {
-    width: auto!important;
-    height: auto!important;
+    width: auto !important;
+    height: auto !important;
 }
 
 .contact {
-    div.wpcf7-validation-errors, div.wpcf7-acceptance-missing { 
-        border: none!important;
+    div.wpcf7-validation-errors,
+    div.wpcf7-acceptance-missing {
+        border: none !important;
         color: $green-blue;
     }
-    
 }
 
 .contact .contact-form .wpcf7-form label {
     color: grey;
 }
-span.wpcf7-not-valid-tip  {
-    color: $green-light!important;
+
+span.wpcf7-not-valid-tip {
+    color: $green-light !important;
 }
-.contact .contact-form .wpcf7-form input, .contact .contact-form .wpcf7-form textarea {
+
+.contact .contact-form .wpcf7-form input,
+.contact .contact-form .wpcf7-form textarea {
     border: 1px solid $grey;
 }
 
-.wpcf7-response-output  {
-    float: right!important;
-    font-size: 14px!important;
+.wpcf7-response-output {
+    float: right !important;
+    font-size: 14px !important;
 }
 
-div.wpcf7-response-output  {
+div.wpcf7-response-output {
     margin: 2em 0em 1em;
 }
 
@@ -123,6 +119,7 @@ div.wpcf7-response-output  {
     color: $green-light;
     transition: all 0.5;
 }
+
 @include small-devices {
     .contact {
         .col-2 {
@@ -132,7 +129,7 @@ div.wpcf7-response-output  {
                     width: auto;
                 }
                 p:nth-of-type(1),
-                p:nth-of-type(2){
+                p:nth-of-type(2) {
                     width: 100%;
                 }
                 p:nth-of-type(3) {
@@ -167,7 +164,7 @@ div.wpcf7-response-output  {
                     }
                 }
                 p:nth-of-type(1),
-                p:nth-of-type(2){
+                p:nth-of-type(2) {
                     width: 47%;
                 }
             }
@@ -176,12 +173,11 @@ div.wpcf7-response-output  {
                 p:nth-of-type(1) {
                     // margin-right: 5px!important;
                 }
-                
             }
         }
+    }
 }
 
-}
 @include large-devices {
     .contact {
         .contact-form {

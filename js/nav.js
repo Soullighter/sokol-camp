@@ -5,5 +5,5 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("navmenu").style.width = "0";
-    document.getElementsByClassName('close')[0].style.display = "none"
+    document.getElementsByClassName('close a')[0].style.display = "none"
 }
