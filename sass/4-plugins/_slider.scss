@@ -5,7 +5,13 @@
         max-height: 426px;
     }
 }
-
+#fancybox-outer {
+    background-color: transparent!important;
+    box-shadow: none!important;
+}
+#fancybox-content {
+    border-color: transparent!important;
+}
 .number-slides {
     position: absolute;
     right: 0;

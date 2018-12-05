@@ -38,7 +38,9 @@
 			                <ul class="slides">
 							<?php foreach ( $picture_slider_images as $picture_slider_image ): ?>
 			                    <li>
-									<img src="<?php echo $picture_slider_image['sizes']['large']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
+			                    	<a href="<?php echo $picture_slider_image['sizes']['large']; ?>" rel="group">
+									<img src="<?php echo $picture_slider_image['sizes']['slider_thumb']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
+									</a>
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
@@ -104,7 +106,9 @@
 			                <ul class="slides">
 							<?php foreach ( $picture_slider_images as $picture_slider_image ): ?>
 			                    <li>
-									<img src="<?php echo $picture_slider_image['sizes']['large']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
+			                    	<a href="<?php echo $picture_slider_image['sizes']['large']; ?>" rel="group">
+									<img src="<?php echo $picture_slider_image['sizes']['slider_thumb']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>"/>
+									</a>
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
