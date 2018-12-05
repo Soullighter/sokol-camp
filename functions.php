@@ -32,6 +32,7 @@ function gulp_wordpress_setup() {
 	add_image_size( '470x380', 660, 470, true, array( 'center' , 'center' ) );
 	add_image_size( '660x470', 660, 470, true, array( 'center' , 'center' ) );
 	add_image_size( '536x362', 536, 362, true, array( 'center' , 'center' ) );
+	add_image_size( 'slider_thumb', 640, 426, true, array( 'top' , 'left' ) );
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
