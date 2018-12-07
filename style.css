@@ -1216,7 +1216,6 @@ div.wpcf7-acceptance-missing {
   .col-2 .flexslider {
     margin: 0;
     max-width: 640px;
-    max-height: 425px;
     align-self: center; }
   .col-2 .sheet-top {
     top: -44px;
@@ -2199,16 +2198,14 @@ div.wpcf7-response-output {
 .flexslider {
   background-color: transparent; }
   .flexslider img {
-    max-height: 343px; }
+    max-height: 426px; }
 
-.block-section .flexslider li {
-  text-align: left; }
-.block-section .flexslider .slides img {
-  display: inline-block !important;
-  width: 100%;
-  height: auto; }
-.block-section .flexslider .flex-viewport {
-  background-color: #faf9f7; }
+#fancybox-outer {
+  background-color: transparent !important;
+  box-shadow: none !important; }
+
+#fancybox-content {
+  border-color: transparent !important; }
 
 .number-slides {
   position: absolute;

@@ -1,5 +1,7 @@
 <?php if ( have_rows( 'flexible_content' ) ): ?>
+	<?php $count = 0; ?>
 	<?php while ( have_rows( 'flexible_content' ) ) : the_row(); ?>
+		<?php $count++; ?>
 
 		<!-- Block Section -->
 		<?php if ( get_row_layout() == 'block_section' ) : ?>
@@ -38,7 +40,9 @@
 			                <ul class="slides">
 							<?php foreach ( $picture_slider_images as $picture_slider_image ): ?>
 			                    <li>
-									<img src="<?php echo $picture_slider_image['sizes']['large']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
+			                    	<a href="<?php echo $picture_slider_image['sizes']['large']; ?>" rel="group-<?php echo $count; ?>">
+									<img src="<?php echo $picture_slider_image['sizes']['slider_thumb']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
+									</a>
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>
@@ -48,7 +52,7 @@
 								<span class="zero2"></span><span class="total-slides"></span>
 							</div>
 			            </div>
-						<?php endif; ?>
+					<?php endif; ?>
 					<?php elseif ($block_type === 'image-gallery'): ?>
 						<?php $image_gallery_images = get_sub_field( 'image_gallery' ); ?>
 						<?php if ( $image_gallery_images ) :  ?>
@@ -104,7 +108,9 @@
 			                <ul class="slides">
 							<?php foreach ( $picture_slider_images as $picture_slider_image ): ?>
 			                    <li>
-									<img src="<?php echo $picture_slider_image['sizes']['large']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
+			                    	<a href="<?php echo $picture_slider_image['sizes']['large']; ?>" rel="group-<?php echo $count; ?>">
+									<img src="<?php echo $picture_slider_image['sizes']['slider_thumb']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>"/>
+									</a>
 			                    </li>
 							<?php endforeach; ?>
 			                </ul>

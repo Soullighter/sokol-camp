@@ -2,26 +2,16 @@
 .flexslider {
     background-color: transparent;
     img {
-        max-height: 343px;
+        max-height: 426px;
     }
 }
-
-.block-section .flexslider {
-    li {
-        text-align: left;
-    }
-    .slides {
-        img {
-            display: inline-block !important;
-            width: 100%;
-            height: auto;
-        }
-    }
-    .flex-viewport {
-        background-color: #faf9f7;
-    }
+#fancybox-outer {
+    background-color: transparent!important;
+    box-shadow: none!important;
 }
-
+#fancybox-content {
+    border-color: transparent!important;
+}
 .number-slides {
     position: absolute;
     right: 0;
