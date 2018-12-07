@@ -5,14 +5,17 @@
         max-height: 343px;
     }
 }
+
 .block-section .flexslider {
     li {
         text-align: left;
     }
-    img {
-        display: inline-block!important;
-        height: auto!important;
-        width: auto!important;
+    .slides {
+        img {
+            display: inline-block !important;
+            width: 100%;
+            height: auto;
+        }
     }
     .flex-viewport {
         background-color: #faf9f7;
@@ -30,8 +33,8 @@
     }
     span.total-slides,
     .zero2,
-    .line  {
-       color: $grey;
+    .line {
+        color: $grey;
     }
     .line {
         width: 10px;
@@ -42,40 +45,48 @@
 }
 
 .section6 {
+    padding-bottom: 0;
     .flex-caption {
         background-color: $white;
-        position: relative;
-        max-height: 725px;
+        position: relative; 
+        max-height: 562px;
         >div {
             width: 90%;
             background-color: $white;
             position: relative;
-            top: -113px;
-            margin-bottom: 50px;
+            margin-bottom: 29px;
         }
         display: flex;
-        flex-wrap: wrap;
-        padding: 2%;
+        flex-wrap: wrap; 
         justify-content: center;
         align-items: center;
     }
     .flex-control-nav {
         bottom: 21px;
         z-index: 999;
+        display: none;
     }
     .flex-direction-nav {
         position: absolute;
         left: 42%;
-        bottom: 52px;
+        bottom: 28px;
         .flex-prev {
             right: 0px !important;
             margin: -49px -16px;
+            a {
+                padding: 25px;
+            }
         }
         .flex-next {
             margin: -49px;
+            a {
+                padding: 25px;
+            }
         }
     }
     .flexslider {
+        margin: 0;
+        margin-bottom: 38px;
         .flex-caption {
             margin-top: 150px;
         }
@@ -106,12 +117,20 @@
 
 @include extra-small-devices {
     .section6 {
-            .flex-direction-nav {
-                left: 47%;
+        .flex-direction-nav {
+            left: 47%;
         }
-
     }
 }
+
+@include device-576 {
+    .section6 {
+        .flex-caption {
+            max-height: 418px;
+        }
+    } 
+}
+
 @include small-devices {
     .section6 {
         position: relative;
@@ -119,9 +138,6 @@
         .flexslider {
             margin: 0 60px;
             .flex-caption {
-                // >div {
-                //     width: 75%;
-                // }
                 display: flex;
                 flex-wrap: wrap;
                 padding: 2%;

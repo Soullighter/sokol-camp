@@ -52,10 +52,10 @@
 
 @include extra-small-devices {
     .border-image {
-    .img-shape1:nth-of-type(1) {
-        left: -87px
+        .img-shape1:nth-of-type(1) {
+            left: -87px
+        }
     }
-}
 }
 
 @include medium-devices {
@@ -65,5 +65,3 @@
         }
     }
 }
-
-

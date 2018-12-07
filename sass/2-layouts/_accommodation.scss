@@ -14,23 +14,6 @@
     }
 }
 
-.sheet-text {
-    .text {
-        small {
-            line-height: 0.5em;
-            font-size: 16px;
-            color: $green-blue;
-        }
-        span {
-            font-size: 1.5em;
-            line-height: 1.5em;
-        }
-    }
-    img {
-        display: none;
-    }
-}
-
 .col-2 {
     .img-inner-shape {
         width: 320px;
@@ -38,20 +21,22 @@
         display: block;
         margin: 0 auto;
         padding-top: 15px;
+        position: relative;
+        left: -24px;
     }
     .flexslider {
         position: relative;
-        margin: 0 7%;
+        margin: 0 auto; // margin: 0 7%;
         .sheet1 {
             transform: rotate(-65deg);
-            position: absolute;
-            top: -20px;
-            right: 20px;
+            position: absolute; 
+            // top: -20px;
+            // right: 20px;
+            top: -22px;
+            right: -4px;
         }
         .sheet2 {
-            position: absolute;
-            left: -37px;
-            bottom: 58px;
+            display: none;
             img {
                 width: 50%;
             }
@@ -63,17 +48,33 @@
         }
     }
     .sheet-top {
-        transform: rotate(-65deg);
-        position: absolute;
-        top: -10px;
-        right: -11px;
+        img {
+            transform: rotate(-65deg);
+            position: absolute; // top: -10px;
+            top: -25px;
+            right: -11px;
+        }
+    }
+    .sheet-text {
+        display: none;
+        .text {
+            display: block;
+            small {
+                line-height: 0.5em;
+                font-size: 16px;
+                color: $green-blue;
+            }
+            span {
+                font-size: 1.5em;
+                line-height: 1.5em;
+            }
+        }
     }
 }
 
-.wpcf7-response-output,
-.wpcf7-display-none,
-.wpcf7-validation-errors {}
-
+// .wpcf7-response-output,
+// .wpcf7-display-none,
+// .wpcf7-validation-errors {}
 div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
     color: $white;
@@ -86,16 +87,15 @@ div.wpcf7-acceptance-missing {
     flex-direction: column;
     align-items: center;
     p {
-        width: 80%;
-        margin-top: 2%;
+        width: 95%; // margin-top: 2%;
     }
     input {
         box-sizing: border-box;
         width: 100%;
-        border: none;
-        padding: 10px;
-        color: $green-blue;
-        margin-top: 5px;
+        border: none; // padding: 10px;
+        padding: 5px;
+        color: $green-blue; // margin-top: 5px;
+        // margin-top: 2px;
     }
     label {
         display: inline-block;
@@ -104,6 +104,7 @@ div.wpcf7-acceptance-missing {
     }
     input[type=submit] {
         background-color: $yellow;
+        margin-top: 10px;
     }
 }
 
@@ -125,6 +126,39 @@ div.wpcf7-acceptance-missing {
     .wpcf7-form {
         align-items: normal;
     }
+    .section-contact {
+        .wpcf7-form {
+            
+                width: 76%;
+                margin: 0 auto;
+            
+            }
+    } 
+}
+
+@include device-576 {
+    .col-2 {
+     
+        .flexslider {
+            .sheet2 {
+                display: block;
+                position: absolute;
+                left: -37px;
+                bottom: 58px;
+            }
+        }
+    }
+ 
+    .contact-form {
+        width: 76%;
+    }
+
+    .block-section {
+        .text {
+            padding: 0 5%;
+        }
+    }
+   
 }
 
 @include small-devices {
@@ -138,6 +172,10 @@ div.wpcf7-acceptance-missing {
         .sheet-top {
             top: -44px;
             right: 30px;
+            img {
+                width: auto!important;
+                height: auto!important;
+            }
         }
     }
     .sheet-text {
@@ -172,6 +210,9 @@ div.wpcf7-acceptance-missing {
             width: 30%;
             margin-right: 10px;
         }
+    }
+    .block-section .text {
+        padding: 0;
     }
 }
 

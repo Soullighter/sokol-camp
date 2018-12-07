@@ -96,7 +96,7 @@
 									</div>
 							<?php else: ?>
 
-			                <div class="sheet1"></div>
+							<div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt=""></div>
 			                <div class="sheet2"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-sheet-yellow.png" alt="yellow-sheet"></div>
 
 							<?php endif; ?>
@@ -338,17 +338,23 @@
 		<!-- Booking with contact form -->
 		<?php elseif ( get_row_layout() == 'booking_form_with_contact' ) : ?>
 	    <section class="section-contact">
-	        <div class="wrapper">
-	            <img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
-	            <ul class="col-2">
-	            	<li>
-	                   <?php the_sub_field( 'form' ); ?>
-               	 	</li>
-               	 	<li>
-						<?php the_sub_field( 'contact_info' ); ?>
-               	 	</li>
-               	 </ul>
-           	</div>
+			<div class="top-shape">
+			
+			</div>
+			<div class="wrapper">
+			<img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
+					<ul class="col-2 contact-form">
+						<li>
+						<?php the_sub_field( 'form' ); ?>
+						</li>
+						<li>
+							<?php the_sub_field( 'contact_info' ); ?>
+						</li>
+					</ul>
+			</div>
+	        <!-- <div class="wrapper"> -->
+	           
+           	<!-- </div> -->
        </section>
 		<!-- Booking with contact form -->
 
@@ -562,9 +568,9 @@
 		<!-- Oval separator -->
 		<?php elseif ( get_row_layout() == 'oval_separator' ) : ?>
 			<?php if ( get_sub_field( 'show_separator' ) == 1 ) { ?>
-			    <section class="section7">
+			    <!-- <section class="section7">
 			    	<img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
-			    </section>
+			    </section> -->
 			<?php } else { ?>
 			 <?php echo 'Please check button to show separator' ?>
 			<?php } ?>

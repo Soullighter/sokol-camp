@@ -1,9 +1,8 @@
-.col-2 {
-    padding-top: 10%;
-    padding-bottom: 10%;
+
+.block-section {
+    padding: 30px 0;
 }
 
-// hero background image
 .background-wave {
     position: relative;
     width: 100%;
@@ -26,8 +25,8 @@
 
 .section7 {
     position: relative;
-    width: 100%;
-    height: 181px;
+    width: 100%; 
+    height: 85px;
     background-color: $green-blue;
     overflow: hidden;
 }
@@ -37,8 +36,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 210px;
+    width: 100%; 
+    height: 114px;
     background: url('./images/hero-background2.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,21 +58,12 @@
 .col-2 {
     box-sizing: border-box;
     >div {
-        &:first-of-type {
-            margin-bottom: 5%;
-        }
         &:nth-of-type(2n) {
-            margin-top: 5%;
+            margin-top: 30px;
         }
     }
-    .text {
-        margin: 0 5%;
-    }
-}
 
-// .top-none {
-//     padding-top: 0;
-// }
+}
 
 .col-3 {
     width: 55%;
@@ -98,16 +88,16 @@
     .img-shape:nth-of-type(5) {
         position: absolute;
         transform: rotate(164deg);
-        top: -185px;
+        top: -194px;
         right: 50px;
-        
     }
     .img-shape:nth-of-type(6) {
+        display: none;
         position: absolute;
-        bottom: -153px;
-        right: 25%;
-        
-        transform: rotate(76deg);
+        right: -15%;
+        transform: rotate(92deg);
+        bottom: -180px;
+        width: 58%;
     }
     .top {
         display: block;
@@ -133,29 +123,29 @@
         z-index: 1;
         li {
             color: $white;
-            z-index: 999;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
         }
     }
     ul.col-1 {
-        padding: 10% 0;
-        li {
-            margin-bottom: 30px;
-        }
+        padding: 12% 0%;
+   
         li:last-child {
             margin-bottom: 0;
         }
     }
     ul.col-2 {
-        padding: 10% 7%;
+        padding: 12% 0;
+        li:last-child {
+            margin-bottom: 0;
+        }
     }
     .col-3 {
-        padding: 10% 0;
+        padding: 12% 0;
         width: 90%;
         text-align: center;
-        margin: 0 auto;
-        ul {
-            margin-bottom: 30px;
-        }
+        margin: 15px auto;
         ul:last-child {
             margin-bottom: 0;
         }
@@ -171,8 +161,8 @@
     justify-content: space-between;
     article {
         max-width: 305px;
-        margin: 0 auto;
-        margin-bottom: 25px;
+        margin: 0 auto; 
+        margin-bottom: 15px;
         background-color: $white;
         &:hover {
             -webkit-box-shadow: 0 4px 18px 0 rgba(207, 204, 200, 0.3);
@@ -190,15 +180,22 @@
     }
 }
 
-@include device-576 {
-    .col-2 {
-        padding-top: 7%;
-        padding-bottom: 7%;
-    }
+@include extra-small-devices {
     .background-img-shapes {
-        ul.col-2 {
-            padding: 10% 0;
+        .img-shape:nth-of-type(6) {
+            bottom: -209px;
         }
+    }
+    .block-section {
+        padding: 45px 10px;
+    }
+    .col-2>div:nth-of-type(2n) {
+        margin-top: 45px;
+    }
+}
+
+@include device-576 {
+    .background-img-shapes {
         .img-shape {
             position: absolute;
             display: block;
@@ -220,9 +217,13 @@
             left: -97px;
         }
         .img-shape:nth-of-type(4) {
+            display: none;
             top: 815px;
             left: -220px;
             transform: rotate(-8deg);
+        }
+        .img-shape:nth-of-type(6) {
+            bottom: -238px;
         }
         .img-shape:nth-of-type(n+7) {
             display: none;
@@ -236,8 +237,6 @@
             }
         }
         .col-2 {
-            padding-top: 3%;
-            padding-bottom: 3%;
             width: 60%;
             display: flex;
             flex-direction: column;
@@ -249,16 +248,20 @@
             flex-direction: column;
             width: 60%;
             margin: 0 0 0 auto;
-            padding: 7% 0;
             li {
                 width: auto;
             }
         }
     }
+    .section7 {
+        height: 112px;
+    }
+    .section7:after {
+        height: 149px;
+    }
 }
 
 @include small-devices {
- 
     .background-img-shapes {
         .col-1 {
             width: 60%;
@@ -268,6 +271,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             width: 80%;
+            justify-content: space-around;
             li {
                 width: 40%;
                 padding: 10px 0;
@@ -280,9 +284,18 @@
         ul.col-2 {
             padding: 7% 0;
         }
+        .img-shape:nth-of-type(6) {
+            bottom: -394px;
+        }
     }
-    .section1.background-wave {
-        min-height: 623px;
+    .section1 {
+        padding: 45px 0 0 0;
+    }
+    .background-wave {
+        min-height: 378px;
+        &:before {
+            height: 230px;
+        }
     }
     .col-2 {
         display: flex;
@@ -316,6 +329,12 @@
 }
 
 @include device-920 {
+    .background-wave {
+        min-height: 395px;
+        &:before {
+            height: 276px;
+        }
+    }
     .background-img-shapes {
         .col-1 {
             margin-left: auto;
@@ -334,7 +353,7 @@
         }
         .img-shape:nth-of-type(8) {
             right: -330px;
-            top: 291px;        
+            top: 291px;
         }
         .img-shape:nth-of-type(9) {
             top: 800px;
@@ -347,9 +366,6 @@
 }
 
 @include medium-devices {
-    .col-2 {
-        align-items: normal;
-    }
     .background-img-shapes {
         .col-3 {
             width: 80%;
@@ -362,10 +378,10 @@
         }
     }
     .section7 {
-        height: 228px;
+        height: 163px;
     }
     .section7:after {
-        height: 282px;
+        height: 219px;
     }
     .col-4 {
         flex-wrap: nowrap;
@@ -375,6 +391,30 @@
         article:nth-of-type(4n) {
             margin-right: 0;
         }
+        h6 {
+            font-size: 20px;
+            padding: 25px;
+        }
+    }
+    .block-section {
+        padding: 65px 18px;
+    }
+}
+
+@include devices-1100 {
+    .background-wave {
+        height: 494px;
+        &:before {
+            height: 314px;
+        }
+    }
+    .block-section {
+        padding: 100px 18px;
+    }
+    ul.col-1,
+    ul.col-2,
+    .col-3 {
+        padding: 100px 0;
     }
 }
 
@@ -396,6 +436,10 @@
         }
         .img-shape:nth-of-type(4) {
             top: 962px;
+        }
+        .img-shape:nth-of-type(6) {
+            bottom: -476px;
+            right: 168px;
         }
         .img-shape:nth-of-type(7) {
             right: -326px;
@@ -425,21 +469,37 @@
 
 @include large-devices {
     .background-wave {
-        min-height: 500px;
+        min-height: 633px;
     }
     .background-wave:before {
-        height: 488px;
+        height: 369px;
     }
 }
 
 @include extra-large {
+    ul.col-1,
+    ul.col-2,
+    .col-3 {
+        padding: 140px 0;
+    }
+    .block-section {
+        padding: 140px 18px;
+    }
+    .section1 {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    .background-wave {
+        height: 621px;
+    }
+    .background-wave:before {
+        height: 424px;
+    }
     .section7 {
         height: 298px;
-
     }
     .section7:after {
         height: 368px;
-
     }
     .col-4 {
         article {
@@ -454,5 +514,4 @@
             width: 75%;
         }
     }
-    
 }

@@ -1,9 +1,9 @@
-
 .news {
     p {
         padding: 10px 10px;
     }
 }
+
 .news1 {
     h3 {
         max-width: 800px;
@@ -22,11 +22,10 @@
         img {
             padding-bottom: 20px;
         }
-        
     }
 }
 
-.pagination { 
+.pagination {
     text-align: center;
     margin-top: 60px;
     .page-numbers {
@@ -47,12 +46,11 @@
     }
 }
 
-
 @include small-devices {
     .news1 {
         h3 {
             padding-top: 60px;
-        } 
+        }
     }
 }
 
@@ -68,11 +66,9 @@
             margin: 0 auto;
         }
     }
-
     .news1 {
         h3 {
             padding-top: 100px;
-        } 
+        }
     }
 }
-

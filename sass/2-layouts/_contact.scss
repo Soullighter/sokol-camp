@@ -1,9 +1,16 @@
+.section-contact {
+    padding-bottom: 25px;
+}
+
 .contact {
     .contact-form {
         position: relative;
         background-color: $white;
-        padding: 20px 5% 2% 5% !important;
+        padding: 30px;
         margin: 0 auto;
+        h4 {
+            padding-top: 12px;
+        }
         .wpcf7-form {
             label {
                 color: $green-blue;
@@ -26,6 +33,10 @@
                 }
             }
         }
+    }
+    .text {
+        text-align: center;
+        margin-bottom: 45px !important;
     }
     .col-2 {
         align-items: center;
@@ -50,6 +61,7 @@
         transform: rotate(-78deg);
     }
     .sheet2 {
+        display: none;
         left: -44px;
         bottom: 83px;
         transform: rotate(-69deg);
@@ -112,7 +124,7 @@ span.wpcf7-not-valid-tip {
 }
 
 div.wpcf7-response-output {
-    margin: 2em 0em 1em;
+    margin: 0;
 }
 
 .wpcf7-form input[type=submit]:hover {
@@ -124,7 +136,7 @@ div.wpcf7-response-output {
     .contact {
         .col-2 {
             .contact-form {
-                width: 80%;
+                width: 60%;
                 .wpcf7-form p {
                     width: auto;
                 }
@@ -159,9 +171,6 @@ div.wpcf7-response-output {
         .col-2 {
             .contact-form {
                 .pcf7-form {
-                    p {
-                        // margin-right: 10px;
-                    }
                 }
                 p:nth-of-type(1),
                 p:nth-of-type(2) {
@@ -170,9 +179,6 @@ div.wpcf7-response-output {
             }
             .wpcf7-form {
                 justify-content: space-between;
-                p:nth-of-type(1) {
-                    // margin-right: 5px!important;
-                }
             }
         }
     }
@@ -182,6 +188,7 @@ div.wpcf7-response-output {
     .contact {
         .contact-form {
             width: 80%;
+            padding: 60px 70px;
             .sheet1 {
                 top: -49px;
                 width: 300px;

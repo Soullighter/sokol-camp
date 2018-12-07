@@ -1,10 +1,12 @@
 <?php /* Template Name: Object */ get_header(); ?>
+<div class="wrapper">
+<section class="hero">
 
-<section class="header-bottom background-wave">
-	<div class="wrapper">
-		<h1>Objekt</h1>
-		<!-- hero image1 -->
-		<span class="image-shape1">
+		<!-- <div class="hero1"> -->
+
+		
+		<!-- <h1>Objekt</h1>
+		 <span class="image-shape1">
                 <svg width="660" height="470" viewBox="0 0 660 470">
                     <defs>
                         <mask id="mask-hero1"  maskUnits="objectBoundingBox">
@@ -13,9 +15,9 @@
                     </defs>
                     <image mask="url(#mask-hero1)" width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                 </svg>
-            </span>
+            </span> 
 		<!-- hero image2 -->
-		<span class="image-shape2">
+		 <!-- <span class="image-shape2">
                 <svg width="660" height="470" viewBox="0 0 660 470">
                     <defs>
                          <mask id="mask-hero2"  maskUnits="objectBoundingBox">
@@ -24,9 +26,11 @@
                     </defs>
                     <image mask="url(#mask-hero2)" width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png" />
                 </svg>
-             </span>
+			 </span> --> 
+			 <!-- </div> -->
+			 </section>
 	</div>
-</section>
+
 
 <section>
 	<div class="wrapper col-2 top-none">

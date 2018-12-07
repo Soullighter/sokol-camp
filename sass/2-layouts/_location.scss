@@ -5,6 +5,9 @@
             display: block;
             margin: 0 auto 15px auto;
         }
+        img:last-child {
+            margin: 0 auto 0 auto;
+        }
         div {
             position: relative;
             z-index: 1;
@@ -17,7 +20,6 @@
             z-index: 1;
         }
     }
-   
     ol {
         li:before {
             content: "\2192";
@@ -75,6 +77,19 @@
     }
 }
 
+@include device-920 {
+    .block-section {
+        .location1-img {
+            .sheet {
+                position: absolute;
+                top: -45px;
+                right: 62px;
+                width: 62%;
+            }
+        }
+    }
+}
+
 @include medium-devices {
     .block-section {
         .location1-img {
@@ -82,5 +97,155 @@
                 top: -62px;
             }
         }
+    }
+}
+
+#page {
+    overflow: hidden;
+}
+
+.wrapper2 {
+    height: 435px;
+    margin: 0 auto;
+    max-width: 1300px;
+    position: relative;
+    background-color: $grey-white;
+}
+
+.hero {
+    background-color: $green-blue;
+    width: 2090px;
+    height: 1260px;
+    border-radius: 28% 66% 62% 39% / 21% 15% 82% 43%;
+    position: absolute;
+    bottom: 36px;
+    left: -468px;
+    overflow: hidden;
+    .image-shape2 {
+        position: absolute;
+        bottom: -11px;
+        left: 1114px;
+    }
+    .image-shape1 {
+        position: absolute;
+        left: 474px;
+        bottom: -50px;
+        svg {
+            width: 460px;
+        }
+    }
+}
+
+.hero-inner {
+    position: absolute;
+    bottom: 0;
+}
+
+.section-contact {
+    height: 100%;
+    padding-top: 55px;
+    max-width: 2200px;
+    margin: 0 auto;
+    p {
+        color: $white !important;
+        z-index: 999;
+        position: relative;
+    }
+    .col-2 {
+        margin: 0 auto;
+    }
+}
+
+.top-shape {
+    background-color: $green-blue;
+    width: 2060px;
+    height: 1260px;
+    border-radius: 56% 45% 52% 48% / 75% 78% 0% 0%;
+    position: absolute;
+    left: -860px;
+    top: 10px;
+}
+
+@include extra-small-devices {
+    .wrapper2 {
+        height: 535px;
+    }
+    .hero {
+        left: -297px;
+        .image-shape1 {
+            bottom: -80px;
+            left: 477px;
+        }
+    }
+}
+
+@include small-devices {
+    .hero {
+        .image-shape1 {
+            svg {
+                width: auto;
+            }
+        }
+    }
+    .wrapper2 {
+        height: 595px;
+    }
+    .section-contact {
+        margin-top: 37px;
+        padding-top: 85px;
+    }
+    .top-shape {
+        left: -670px;
+    }
+}
+
+@include medium-devices {
+    .section-contact {
+        margin-top: 55px;
+        ul.col-2 {
+            padding: 55px 0;
+        }
+        .contact-form {
+            margin-top: 60px;
+        }
+    }
+    .top-shape {
+        left: -620px;
+    }
+}
+
+@include large-devices {
+    .top-shape {
+        left: -410px;
+    }
+}
+
+@include extra-large {
+    .top-shape {
+        left: -240px;
+    }
+    .section-contact {
+        margin-top: 125px;
+    }
+}
+
+@include devices-1600 {
+    .top-shape {
+        left: -90px;
+    }
+    .section-contact {
+        padding-top: 37px;
+        ul.col-2 {
+            padding: 85px 0;
+        }
+        .contact-form {
+            margin-top: 80px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .top-shape {
+        left: -30px;
     }
 }

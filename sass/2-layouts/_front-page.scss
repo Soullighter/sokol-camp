@@ -1,7 +1,32 @@
+.home {
+    .wrapper2 {
+        height: auto;
+    }
+    .hero  {
+        overflow: unset;
+    }
+
+    .hero-inner {
+        position: absolute;
+        max-width: 297px;
+        right: 1298px;
+    }
+
+    .hero11 {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 26px;        
+    }      
+}
+
 .section2,
 .section3 {
     position: relative;
     overflow: hidden;
+}
+
+.section1 {
+    padding: 10% 0 4% 0;
 }
 
 .news-list,
@@ -9,13 +34,13 @@
 .section5,
 .section6,
 .section8,
+.contact
 .footer {
-    padding: 10% 0;
+    padding: 25px 0;
 }
 
 .section2,
 .section5,
-.section-contact,
 .footer {
     background-color: $green-blue;
     p {
@@ -37,7 +62,7 @@ svg {
     height: auto;
 }
 
-.section1 {
+.section11 {
     p {
         color: $white;
     }
@@ -45,40 +70,47 @@ svg {
         color: $green-light;
         text-transform: none;
     }
-    .wrapper {
-        z-index: 999;
-        position: relative;
-    }
+ 
+    // .col-2 {
+    //     div {
+    //         max-width: 450px;
+    //     }
+    // }
 }
 
+.hero11 {
+    p {
+        color: $white!important;
+    }
+    h3 {
+        color: $green-light;
+        text-transform: none;
+    }
+}
 .section2 {
     .wrapper {
         position: relative;
         h5,
         p {
-            padding-bottom: 1em;
+            padding-bottom: 0.5em;
             color: $white;
         }
         h5 {
             color: $yellow;
-        }
-        div:nth-of-type(3) {
-            margin-top: 20px;
+        } // div:nth-of-type(3) {
+        //     margin-top: 10px;
+        // }
+        div {
+            margin-top: 10px;
         }
     }
     .image-shape2 {
         display: none;
     }
     .shape1 {
-        // top: -51px;
-        // transform: rotate(118deg);
-        // right: 0;
         top: -88px;
-        
         transform: rotate(118deg);
-        
         right: -51px;
-        
         width: 160px;
     }
     .shape2 {
@@ -89,7 +121,7 @@ svg {
 }
 
 .section3 {
-    padding-top: 7%;
+    padding-top: 5%;
     .wrapper {
         text-align: center;
     }
@@ -97,8 +129,8 @@ svg {
     .shape2,
     .shape3,
     .shape4 {
-        z-index: -1;
-        width: 90px;
+        z-index: 999;
+        width: 78px;
     }
     .shape1 {
         top: 62px;
@@ -120,15 +152,15 @@ svg {
 
 .news-list {
     h6 {
-        font-size: 1.1em;
+        font-size: 14px;
         font-weight: normal;
         color: $green-blue;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
         line-height: 1.45;
-        letter-spacing: normal;
-        padding: 20px 20px;
+        letter-spacing: normal; 
+        padding: 10px;
         text-transform: none;
     }
 }
@@ -149,6 +181,9 @@ svg {
     .image-shape1 {
         margin: 0 auto;
         text-align: center;
+        width: 117%;
+        position: relative;
+        left: -29px;
         svg {
             width: 100%;
             height: auto;
@@ -176,6 +211,7 @@ svg {
         top: 0;
     }
     .shape2 {
+        display: none;
         z-index: 1;
         right: -97px;
         transform: rotate(182deg);
@@ -193,7 +229,7 @@ svg {
     h2 {
         position: relative;
         z-index: 1;
-        padding-bottom: 0.5em;
+        padding-bottom: 0;
     }
     .side-img {
         display: none;
@@ -201,9 +237,10 @@ svg {
     .side-img2 {
         display: none;
     }
-    p, strong {
+    p,
+    strong {
         color: $green-blue;
-        padding:0;
+        padding: 0;
     }
     strong {
         padding-top: 1em;
@@ -213,10 +250,15 @@ svg {
 
 .section7 {
     .shape1 {
-        top: -80px;
+        // top: -80px;
+        // z-index: 1;
+        // left: 476px;
+        // transform: rotate(69deg);
+        top: -67px;
         z-index: 1;
         left: 476px;
         transform: rotate(69deg);
+        left: 133px;
     }
 }
 
@@ -229,7 +271,8 @@ svg {
         li:nth-of-type(2) {
             a,
             p {
-                font-size: 16px;
+                // font-size: 16px;
+                font-size: 14px;
             }
         }
     }
@@ -269,42 +312,64 @@ svg {
         flex-wrap: wrap;
         align-items: center;
         div {
-            width: 40%;
+            // width: 40%;
+            width: 22%;
             margin: 0 5px;
             -webkit-filter: grayscale(100%) brightness(60%) contrast(10000000%);
             filter: grayscale(100%) brightness(60%) contrast(10000000%);
-            opacity: 0.2;
-            // text-align: center;
+            opacity: 0.2; // text-align: center;
             &:hover {
                 filter: none;
                 opacity: 1;
             }
         }
         img {
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
+            margin-bottom: 15px;
         }
     }
 }
 
 @include extra-small-devices {
+    .news-list,
+    .section2,
+    .section5,
+    .section6,
+    .section8,
+    .contact,
+    .footer {
+        padding: 45px 0;
+    }
+    .news-list {
+        padding-top: 45px;
+    }
+    .section1 {
+        .col-2>div:nth-of-type(2n) {
+            margin: 45px auto 0 auto;
+        }
+    }
     .section2 {
         .col {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         .shape1 {
             top: -88px;
         }
         .wrapper {
-            div:nth-of-type(1) {
-                width: 45%;
-                margin-right: 20px;
-            }
-            div:nth-of-type(3) {
-                width: 45%;
+            div {
+                width: 35%;
                 margin-top: 0;
-                margin-left: 20px;
-            }
+            } 
+           
+        }
+    }
+    .section3 {
+        .shape1,
+        .shape2,
+        .shape3,
+        .shape4 {
+            width: 105px;
         }
     }
     .section8 {
@@ -312,22 +377,29 @@ svg {
             margin-bottom: 3%;
         }
     }
+
+    
 }
 
 @include device-576 {
+    .section1 {
+        padding: 45px 0;
+    }
     .shape1,
     .shape2,
     .shape3,
     .shape4 {
         width: 150px;
+    } 
+    .news-list {
+        h6 {
+            font-size: 16px;
+        }
     }
-    .news-list,
-    .section2,
-    .section5,
-    .section6,
-    .section8,
-    .footer {
-        padding: 7% 0;
+    .section2 {
+        .shape2 {
+            bottom: -133px;
+        }
     }
     .section3 {
         .shape1,
@@ -357,8 +429,9 @@ svg {
         }
     }
     .section5 {
-        p {
-            margin-top: 30px;
+        .image-shape1 {
+            width: 88% !important;
+            position: unset;
         }
     }
     .section6 {
@@ -366,9 +439,9 @@ svg {
             width: 32%;
             display: block;
             position: absolute;
-            top: -54px;
-            left: -70px;
             z-index: -1;
+            top: -30px;
+            left: -28px;
         }
     }
 }
@@ -388,7 +461,7 @@ svg {
         .col-2 {
             li:nth-of-type(2) {
                 p:nth-of-type(1) {
-                    padding-top: 39px;
+                    padding-top: 17px;
                 }
                 p:nth-of-type(2) {
                     a:last-child {
@@ -409,6 +482,7 @@ svg {
         }
     }
     .section5 {
+        padding: 0;
         .wrapper {
             flex-direction: row;
             display: flex;
@@ -420,14 +494,13 @@ svg {
             display: block;
             width: 309px;
             position: absolute;
-            bottom: 25px;
+            bottom: 0;
             left: 272px;
         }
-        padding: 0 0 4% 0;
         .image-shape1 {
             position: relative;
             left: -161px;
-            bottom: -27px;
+            bottom: -55px;
             svg {
                 width: 695px;
             }
@@ -439,14 +512,26 @@ svg {
         }
         .inner-sheet {
             position: absolute;
-            bottom: 111px;
             left: 470px;
             z-index: 999;
+            bottom: 84px;
             p,
             strong {
                 color: $green-blue;
                 text-align: left;
             }
+        }
+    }
+    .section7 {
+        height: 181px;
+        &:after {
+            height: 222px;
+        }
+    }
+    .section-contact {
+        .wpcf7-form {
+            margin: 0 !important;
+            width: 100%;
         }
     }
     .section8 {
@@ -458,10 +543,14 @@ svg {
             }
         }
     }
+    .home .wrapper2 {
+        height: 626px;
+    }
 }
 
 @include device-920 {
     .section2 {
+        max-height: 346px;
         padding: 0;
         image {
             width: 98%;
@@ -471,6 +560,7 @@ svg {
             top: -73px;
         }
         .shape2 {
+            display: none;
             bottom: -143px;
         }
         .image-shape2 {
@@ -496,11 +586,10 @@ svg {
                 width: 33%;
             }
             div:nth-of-type(2) {
-                order: 0;
                 position: relative;
-                left: -167px;
+                left: -180px;
                 z-index: 1;
-                bottom: -99px;
+                bottom: -40px;
             }
             div:nth-of-type(1),
             div:nth-of-type(3) {
@@ -525,7 +614,7 @@ svg {
     }
     .section3 {
         .shape1 {
-            top: 129px;        
+            top: 129px;
             left: -86px;
         }
         .shape2 {
@@ -538,12 +627,16 @@ svg {
         .shape4 {
             width: 200px;
         }
-        .section-contact {
-            .shape1 {
-                top: -371px;
-                left: 454px;
-                transform: rotate(57deg);
-            }
+    }
+    .section-contact {
+      
+        .shape1 {
+            top: -371px;
+            left: 454px;
+            transform: rotate(57deg);
+        }
+        .shape2 {
+            left: 467px;
         }
     }
     .section7 {
@@ -556,10 +649,54 @@ svg {
     }
 }
 
+@include devices-1100 {
+    .news-list,
+    .section6,
+    .section8,
+    .contact,
+    .footer {
+        padding: 100px 0;
+    }
+    .section7 {
+        height: 217px;
+        max-width: 1600px;
+        margin:  0 auto;
+       
+
+    }
+
+    .section7:after {
+        height: 289px;
+    }
+    .news-list,
+    .section6,
+    .section8,
+    .footer {
+        padding: 55px 0;
+    }
+}
 @include medium-devices {
+    .news-list,
+    .section6,
+    .section8,
+    .contact
+    .footer {
+        padding: 65px 0;
+    }
     .section1 {
+        padding: 0;
         .col-2 {
             padding-top: 3%;
+        }
+    }
+    .section2 {
+        .wrapper {
+            div:nth-of-type(2) {
+                position: relative;
+                left: -148px;
+                z-index: 1;
+                bottom: -40px;
+            }
         }
     }
     .section3 {
@@ -572,26 +709,42 @@ svg {
         .shape2 {
             right: -235px;
         }
+        p {
+           width: 500px;
+        }
     }
     .section6 {
         h2 {
             padding-bottom: 1.5em;
         }
         .side-img {
-            width: 23%;
+            width: 30%;
         }
         .side-img2 {
             display: block;
             position: absolute;
-            right: -40px;
-            bottom: -105px;
+            right: -70px;
+            bottom: -145px;
             z-index: 2;
+            width: 24%;
         }
     }
-    
+    .news-list {
+        h6 {
+            font-size: 20px;
+            padding: 30px;
+        }
+    }
 }
 
 @include large-devices {
+    .news-list,
+    .section6,
+    .section8,
+    .contact,
+    .footer {
+        padding: 140px 0;
+    }
     .section2 {
         .wrapper {
             div:nth-of-type(2) {
@@ -613,10 +766,28 @@ svg {
             left: -149px;
         }
     }
+    .section6 {
+        .side-img {
+            top: -124px;
+            left: -121px;
+        }
+       
+    }
 }
 
 @include extra-large {
+    .section7 {
+        height: 245px;
+        &:after {
+            height: 331px;
+        }
+       
+    }
     .section2 {
+        max-height: 400px;
+        .shape2 {
+            display: block;
+        }
         image {
             width: auto;
             height: auto;
@@ -628,8 +799,9 @@ svg {
             }
         }
     }
+     
     .section5 {
-        max-height: 394px;
+        max-height: 444px;
         .wrapper {
             >div {
                 width: 33.3%;
@@ -638,24 +810,40 @@ svg {
                 width: 695px;
             }
         }
-        p {
-            position: static;
-            margin-top: 0;
-            width: 522px;
-            text-align: unset;
+        div:nth-of-type(2) {
+            position: relative;
+            z-index: 1;
+            left: -52px;
+            position: relative;
+           
+            width: 450px;
+           
+        
         }
+            p {
+                right: 84px;
+                margin-top: 0;
+                width: 450px;
+                text-align: unset;
+            }
+        
+       
         .sheet-text1 {
             width: 309px;
         }
         .image-shape1 {
-            left: -266px;
-            bottom: -70px;
+            left: -26px;
+            bottom: -68px;
+        }
+        .image-shape1 {
+            left: -151px;
+            
         }
         .image-shape2 {
             display: block;
             position: relative;
-            bottom: -97px;
-            right: 17px;
+            bottom: -77px;
+            right: 118px;
             svg,
             image {
                 width: 675px;
@@ -663,9 +851,12 @@ svg {
             }
         }
         .inner-sheet {
-            left: 293px;
+            left: 311px;
             bottom: 109px;
             width: 100%;
+            p {
+                position: static;
+            }
         }
         .shape1 {
             display: block;
@@ -693,14 +884,24 @@ svg {
             width: auto;
         }
         .side-img2 {
-            right: -80px;
-            bottom: -138px;
+            right: -112px;
+            bottom: -208px;
+            width: auto;
         }
     }
-
     .footer {
         .shape2 {
             right: -170px;
+        }
+    }
+
+    .home {
+        .wrapper2 {
+            height: 681px;
+        }
+
+        .hero11 {
+            padding-top: 65px;
         }
     }
 }
@@ -710,5 +911,11 @@ svg {
         .side-img {
             left: -201px;
         }
+        .side-img2 {
+            right: -206px;
+            bottom: -179px;
+        }
     }
+
+   
 }

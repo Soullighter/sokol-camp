@@ -1,6 +1,8 @@
 <?php /* Template Name: Home */ get_header(); ?>
-
-<!-- <section class="section1 background-wave negative">
+<div id="page" class="site">
+    <div class="wrapper2">
+        <header class="header wrapper">
+<section class="section1 background-wave negative">
         <div class="wrapper col-2 padd">
             <div>
                 <h3>Mjesto vrhunske gimnastike</h3>
@@ -14,7 +16,7 @@
                 </iframe>
             </div>
         </div>
-    </section> -->
+    </section>
 
 <section class="section2">
 	<div class="wrapper col">

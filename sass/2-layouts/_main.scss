@@ -12,13 +12,11 @@
     background-color: $green-blue;
     position: relative;
     z-index: 1000;
-    padding: 2% 2% 2% 0;
-    .wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+    padding: 25px 25px 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     .menu-list {
         height: 100%;
         width: 0;
@@ -39,7 +37,6 @@
             &:hover {
                 color: $green-light;
                 -webkit-transition: all 0.5s;
-                /* Safari */
                 transition: all 0.5s;
             }
         }
@@ -53,9 +50,9 @@
             z-index: 999;
             position: absolute;
             transition: 0.5s;
-            right: 60px;
-            top: 60px;
             padding: 20px;
+            right: 41px;
+            top: -4px;
         }
     }
     .menu-list {
@@ -121,9 +118,7 @@
         left: -165px;
     }
     .image-shape2 {
-        position: absolute;
-        // left: 817px;
-        // bottom: -18px;
+        position: absolute; 
         left: 892px;
         bottom: 116px;
         transform: rotate(-30deg);
@@ -297,18 +292,16 @@
 
 @include medium-devices {
     .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px;
         .close {
             display: none;
         }
         .menuicon {
             display: none;
-        }
-        .wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px;
         }
         .menu-list {
             width: 100% !important;
@@ -347,15 +340,4 @@
             }
         }
     }
-}
-
-@include extra-large {
-    // .news-list {
-    //     .wrapper {
-    //         // padding-bottom: 125px;
-    //     }
-    //     article {
-    //         // margin: 20px 10px;
-    //     }
-    // }
 }
