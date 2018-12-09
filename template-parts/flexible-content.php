@@ -25,7 +25,7 @@
                 					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
 	                					<div class="text">
 										<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
-											<span><?php the_sub_field( 'number' ); ?></span>
+											<span><?php the_sub_field( 'number' ); ?></span><br>
 											<small><?php the_sub_field( 'text' ); ?></small>
 										<?php endwhile; ?>
 										</div>
@@ -250,7 +250,7 @@
 							<image mask="url(#sect-5)" width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/section5-2.png"
 							/>
 						</svg>
-						<div>
+						<div >
 							<div class="inner-sheet">
 								<?php the_sub_field( 'quoter' ); ?>
 							</div>
@@ -258,7 +258,7 @@
 						</div>
 						
 					</div>
-	                <div>
+	                <div class="quote">
 	                    <?php the_sub_field( 'quote' ); ?>
 	            	</div>
 	     
@@ -348,6 +348,7 @@
 			
 			</div>
 			<div class="wrapper">
+			<img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
 			<img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
 					<ul class="col-2 contact-form">
 						<li>
@@ -375,10 +376,11 @@
 		            <div class="contact-form">
 		                <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-yellow.png" alt="yellow-sheet">
 		                <img class="sheet2" src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt="green-shape">
-		                <img src="<?php echo get_template_directory_uri(); ?>/images/" alt="">
+		                <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/" alt=""> -->
 		               
 		               <?php the_sub_field( 'form' ); ?>
-		             
+						
+						<span class="info">Ukoliko želite rezervisati smeštaj, kontaktirajte nas <a href="#"><strong>ovde</strong></a></span>
 		            </div>
 		        </div>
 		        <!-- end wrapper -->
@@ -558,7 +560,7 @@
 			                <svg width="373" height="345" viewBox="0 0 373 345">
 			                    <defs>
 			                        <mask id="mask14" maskUnits="objectBoundingBox">
-			                            <image width="373" height="345" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet1.png" />
+			                            <image width="373" height="345" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-sheet12.png" />
 			                        </mask>
 			                    </defs>
 			                    <image mask="url(#mask14)" width="373" height="345" xlink:href="<?php echo $image_4['sizes']['373x345']; ?>" />

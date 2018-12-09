@@ -55,7 +55,21 @@
     </footer>
     <!-- end footer -->
 </div><!-- #page -->
+<script>
 
+
+// (function ($) {
+//   $(window).load(function() {
+//     console.log('aaaaa');
+//     $('.flex-prev ').on('click', function() {
+//       console.log('bbbbbbb');
+//       // $(this).toggleClass('special');
+//     });
+
+//   });
+// });
+
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -18,9 +18,10 @@
     padding-bottom: 7%;
     .content {
         background-color: $white;
-        text-align: center;
         img {
             padding-bottom: 20px;
+            display: block;
+            margin: 0 auto;
         }
     }
 }

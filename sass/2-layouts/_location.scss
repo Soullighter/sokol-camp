@@ -45,6 +45,11 @@
 }
 
 @include small-devices {
+    .page-id-68 {
+        .col-2 {
+            align-items: center;
+        }
+    }
     .block-section {
         .location1-img {
             position: relative;
@@ -113,28 +118,33 @@
 }
 
 .hero {
-    background-color: $green-blue;
-    width: 2090px;
-    height: 1260px;
-    border-radius: 28% 66% 62% 39% / 21% 15% 82% 43%;
+    background-color: $green-blue; // width: 2090px;
+    width: 3500px;
+    height: 2200px; // border-radius: 28% 66% 62% 39% / 21% 15% 82% 43%;
+    border-radius: 52% 0% 55% 45% / 0% 0% 100% 60%;
     position: absolute;
-    bottom: 36px;
-    left: -468px;
+    bottom: 36px; // left: -468px;
     overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
     .image-shape2 {
         position: absolute;
-        bottom: -11px;
-        left: 1114px;
+        bottom: 15px;
+        left: 50%;
+        margin-left: 1930px;
+        display: none;
     }
     .image-shape1 {
         position: absolute;
-        left: 474px;
-        bottom: -50px;
+        left: 50%;
+        margin-left: 1540px;
+        bottom: -72px; 
+    }
         svg {
             width: 460px;
         }
     }
-}
+
 
 .hero-inner {
     position: absolute;
@@ -158,81 +168,100 @@
 
 .top-shape {
     background-color: $green-blue;
-    width: 2060px;
-    height: 1260px;
-    border-radius: 56% 45% 52% 48% / 75% 78% 0% 0%;
-    position: absolute;
-    left: -860px;
+    width: 3500px;
+    height: 2000px;
+    // border-radius: 56% 45% 52% 48% / 75% 78% 0% 0%;
+    border-radius:50% 56% 52% 13% / 73% 91% 0% 1%;
+    position: absolute; // left: -860px;
     top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @include extra-small-devices {
-    .wrapper2 {
-        height: 535px;
-    }
     .hero {
-        left: -297px;
         .image-shape1 {
-            bottom: -80px;
-            left: 477px;
+            width: auto;
         }
+    }
+    h1 {
+        transform: translate(17px, 76px);
     }
 }
 
 @include small-devices {
     .hero {
         .image-shape1 {
+            bottom: -117px;
             svg {
                 width: auto;
             }
         }
     }
     .wrapper2 {
-        height: 595px;
+        height: 502px;
+        
     }
     .section-contact {
         margin-top: 37px;
         padding-top: 85px;
-    }
-    .top-shape {
-        left: -670px;
-    }
+    } // .top-shape {
+    //     left: -670px;
+    // }
 }
 
 @include medium-devices {
     .section-contact {
         margin-top: 55px;
-        ul.col-2 {
-            padding: 55px 0;
-        }
         .contact-form {
             margin-top: 60px;
         }
+    } 
+
+    .wrapper2 {
+        height: 560px;
     }
+    .hero {
+        .image-shape1 {
+            margin-left: 1290px;
+            bottom: -95px;
+        }
+        .image-shape2 {
+            display: block;
+        }
+    }
+
     .top-shape {
-        left: -620px;
+      width  : 2940px;
     }
 }
 
 @include large-devices {
-    .top-shape {
-        left: -410px;
-    }
+    // .top-shape {
+    //     left: -410px;
+    // }
 }
 
 @include extra-large {
-    .top-shape {
-        left: -240px;
-    }
+    // .top-shape {
+    //     left: -240px;
+    // }
     .section-contact {
         margin-top: 125px;
+        .contact-form {
+           margin-top: 80px;
+           width: 90%;
+        }
+        ul.col-2 {
+            padding: 0;
+        }
     }
 }
 
 @include devices-1600 {
-    .top-shape {
-        left: -90px;
-    }
+    // .top-shape {
+    //     left: -90px;
+    // }
     .section-contact {
         padding-top: 37px;
         ul.col-2 {
@@ -245,7 +274,7 @@
 }
 
 @media only screen and (min-width: 1800px) {
-    .top-shape {
-        left: -30px;
-    }
+    // .top-shape {
+    //     left: -30px;
+    // }
 }

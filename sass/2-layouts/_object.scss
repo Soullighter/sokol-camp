@@ -1,7 +1,7 @@
 .border-image {
     background-color: $green-blue;
     overflow: hidden;
-    height: 250px;
+    height: 270px;
     width: 100%;
     .wrapper {
         position: relative;
@@ -14,23 +14,29 @@
     .img-shape1:nth-of-type(1) {
         position: absolute;
         left: -58px;
-        top: -16px;
+        // top: -148px;
+        top: -15px;
     }
     .img-shape1:nth-of-type(2) {
         position: absolute;
-        left: -32px;
-        top: -142px;
+        // left: -32px;
+        // top: -142px;
+        left: 7px;
+        top: -154px;
         transform: rotateX(-184deg);
     }
     .img-shape1:nth-of-type(3) {
         position: absolute;
-        top: -57px;
+        top: -29px;
+        // top: -57px;
         left: 270px;
+        display: none;
     }
     .img-shape1:nth-of-type(4) {
         position: absolute;
-        bottom: -337px;
-        left: 650px;
+        bottom: -359px;
+        // bottom: -337px;
+        left: 704px;
     }
     .img-shape1:nth-of-type(5) {
         position: absolute;
@@ -38,15 +44,15 @@
         left: 660px;
     }
     .img-shape1:nth-of-type(6) {
-        bottom: -398px;
+        bottom: -427px;
         position: absolute;
-        left: 1001px;
-        transform: rotate(159deg);
+        left: 1057px;
+        transform: rotate(109deg);
     }
     .img-shape1:nth-of-type(7) {
         position: absolute;
         left: 1130px;
-        top: -50px;
+        top: -36px;
     }
 }
 
@@ -58,10 +64,24 @@
     }
 }
 
+@include small-devices {
+    .border-image {
+        .img-shape1:nth-of-type(3) {
+            display: block;
+            left: 356px;
+        }
+    }
+}
+
 @include medium-devices {
     .border-image {
         .img-shape1:nth-of-type(1) {
             left: -163px;
         }
+        .img-shape1:nth-of-type(3) {
+            left: 332px;
+        }
     }
+
+    
 }

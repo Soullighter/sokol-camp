@@ -58,23 +58,21 @@
     .sheet-text {
         display: none;
         .text {
+            line-height: 1;
             display: block;
-            small {
-                line-height: 0.5em;
-                font-size: 16px;
-                color: $green-blue;
-            }
-            span {
-                font-size: 1.5em;
-                line-height: 1.5em;
-            }
         }
+        span {
+            display: block;
+        }
+           
     }
 }
 
-// .wpcf7-response-output,
-// .wpcf7-display-none,
-// .wpcf7-validation-errors {}
+.form {
+    width: 645px;
+    height: 420px;
+    background-color: red;
+}
 div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
     color: $white;
@@ -87,15 +85,14 @@ div.wpcf7-acceptance-missing {
     flex-direction: column;
     align-items: center;
     p {
-        width: 95%; // margin-top: 2%;
+        width: 95%; 
     }
     input {
         box-sizing: border-box;
         width: 100%;
-        border: none; // padding: 10px;
+        border: none; 
         padding: 5px;
-        color: $green-blue; // margin-top: 5px;
-        // margin-top: 2px;
+        color: $green-blue; 
     }
     label {
         display: inline-block;
@@ -108,6 +105,24 @@ div.wpcf7-acceptance-missing {
     }
 }
 
+
+.accommodation-form {
+    background-color: green;
+    .wrapper {
+        position: relative;
+    }
+    .image-shape1,
+    .image-shape2,
+    .sheet {
+        display: none;
+    }
+    .image-shape1,
+    .image-shape2,
+    .mask-text,
+    .sheet {
+        position: absolute;
+    }
+}
 @include extra-small-devices {
     .col-2 {
         .flexslider {
@@ -150,12 +165,17 @@ div.wpcf7-acceptance-missing {
     }
  
     .contact-form {
-        width: 76%;
+        width: 90%;
+        .wpcf7-form {
+            p {
+                margin-bottom: 20px;
+            }
+        }
     }
 
     .block-section {
         .text {
-            padding: 0 5%;
+            padding: 0 30px;
         }
     }
    
@@ -176,6 +196,9 @@ div.wpcf7-acceptance-missing {
                 height: auto!important;
             }
         }
+        .sheet-text {
+            display: block;
+        }
     }
     .sheet-text {
         position: absolute;
@@ -183,32 +206,27 @@ div.wpcf7-acceptance-missing {
         height: 128px;
         top: 12px;
         left: -93px;
-        img {
-            display: block;
-        }
+        
         span:nth-of-type(2) {
             display: block;
-            margin-top: 5px;
         }
         .text {
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 27px !important;
-            top: -162px; // color: $green-blue;
+            left: 38px !important;
+            top: -162px;
             font-weight: normal;
-            font-size: 16px;
-            small {
-                // color: $green-blue;
-            }
+            font-size: 14px;
         }
     }
     .wpcf7-form {
         flex-direction: row;
         p {
             width: 30%;
-            margin-right: 10px;
-        }
+            margin: 15px 10px 15px 0;
+
+            }
     }
     .block-section .text {
         padding: 0;
@@ -282,13 +300,28 @@ div.wpcf7-acceptance-missing {
         width: 165px;
         height: 182px;
         top: 12px;
-        left: -134px;
+        left: -122px;
+        font-size: 16px;
         span:nth-of-type(2) {
             margin-top: 15px;
         }
         .text {
-            left: 41px !important;
+            left: 50px !important;
             top: -206px;
+        }
+        small {
+            line-height: 0.5em;
+            color: $green-blue;
+        }
+        span {
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+    }
+
+    .wpcf7-form {
+        p {
+            padding-right: 15px;
         }
     }
 }

@@ -29,15 +29,6 @@
     padding: 10% 0 4% 0;
 }
 
-.news-list,
-.section2,
-.section5,
-.section6,
-.section8,
-.contact
-.footer {
-    padding: 25px 0;
-}
 
 .section2,
 .section5,
@@ -70,12 +61,6 @@ svg {
         color: $green-light;
         text-transform: none;
     }
- 
-    // .col-2 {
-    //     div {
-    //         max-width: 450px;
-    //     }
-    // }
 }
 
 .hero11 {
@@ -97,9 +82,7 @@ svg {
         }
         h5 {
             color: $yellow;
-        } // div:nth-of-type(3) {
-        //     margin-top: 10px;
-        // }
+        }
         div {
             margin-top: 10px;
         }
@@ -121,7 +104,6 @@ svg {
 }
 
 .section3 {
-    padding-top: 5%;
     .wrapper {
         text-align: center;
     }
@@ -152,9 +134,9 @@ svg {
 
 .news-list {
     h6 {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
-        color: $green-blue;
+        color: $black;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -250,10 +232,6 @@ svg {
 
 .section7 {
     .shape1 {
-        // top: -80px;
-        // z-index: 1;
-        // left: 476px;
-        // transform: rotate(69deg);
         top: -67px;
         z-index: 1;
         left: 476px;
@@ -265,6 +243,7 @@ svg {
 .section-contact {
     position: relative;
     overflow: hidden;
+    max-width: 100%;
     .col-2 {
         justify-content: space-around;
         padding-top: 0;
@@ -312,19 +291,17 @@ svg {
         flex-wrap: wrap;
         align-items: center;
         div {
-            // width: 40%;
             width: 22%;
             margin: 0 5px;
             -webkit-filter: grayscale(100%) brightness(60%) contrast(10000000%);
             filter: grayscale(100%) brightness(60%) contrast(10000000%);
-            opacity: 0.2; // text-align: center;
+            opacity: 0.2; 
             &:hover {
                 filter: none;
                 opacity: 1;
             }
         }
         img {
-            // margin-bottom: 30px;
             margin-bottom: 15px;
         }
     }
@@ -333,12 +310,13 @@ svg {
 @include extra-small-devices {
     .news-list,
     .section2,
+    .section3,
     .section5,
     .section6,
     .section8,
     .contact,
     .footer {
-        padding: 45px 0;
+        // padding: 45px 0;
     }
     .news-list {
         padding-top: 45px;
@@ -421,11 +399,17 @@ svg {
         }
     }
     .section-contact {
+        .shape1 {
+            display: none;
+            transform: rotate(75deg);
+            top: -98px;
+            left: 170px;
+        }
         .shape2 {
             transform: rotate(-89deg);
-            left: 738px;
+            left: 308px;
             z-index: 2;
-            bottom: -150px;
+            bottom: -130px;
         }
     }
     .section5 {
@@ -447,6 +431,18 @@ svg {
 }
 
 @include small-devices {
+    .news-list,
+    .section2,
+    .section5,
+    .section6,
+    .section8,
+    .contact,
+    .footer {
+        padding: 35px 0;
+    }
+    .section3 {
+        padding-top: 35px;
+    }
     .section1 {
         .col-2 {
             align-items: center;
@@ -480,6 +476,9 @@ svg {
         h2 {
             padding-bottom: 1.5em;
         }
+        h6 {
+            padding: 20px;
+        }
     }
     .section5 {
         padding: 0;
@@ -505,10 +504,14 @@ svg {
                 width: 695px;
             }
         }
+      
         p {
             position: relative;
             right: 177px;
             width: 307px;
+        }
+        .quote {
+            right: -54px;
         }
         .inner-sheet {
             position: absolute;
@@ -544,7 +547,7 @@ svg {
         }
     }
     .home .wrapper2 {
-        height: 626px;
+        height: 456px;
     }
 }
 
@@ -595,6 +598,7 @@ svg {
             div:nth-of-type(3) {
                 margin-top: 10%;
                 z-index: 2;
+                transform: translate(0, -23px);
             }
             div:nth-of-type(1) {
                 width: 30%;
@@ -650,13 +654,7 @@ svg {
 }
 
 @include devices-1100 {
-    .news-list,
-    .section6,
-    .section8,
-    .contact,
-    .footer {
-        padding: 100px 0;
-    }
+
     .section7 {
         height: 217px;
         max-width: 1600px;
@@ -676,12 +674,18 @@ svg {
     }
 }
 @include medium-devices {
+    .wrapper2 {
+        padding-bottom: 55px;
+    }
     .news-list,
     .section6,
     .section8,
-    .contact
     .footer {
-        padding: 65px 0;
+        padding: 55px 0;
+    }
+
+    .section3 {
+        padding-top: 55px;
     }
     .section1 {
         padding: 0;
@@ -690,10 +694,13 @@ svg {
         }
     }
     .section2 {
+        .shape1 {
+            top: -50px;
+        }
         .wrapper {
             div:nth-of-type(2) {
                 position: relative;
-                left: -148px;
+                left: -163px;
                 z-index: 1;
                 bottom: -40px;
             }
@@ -732,23 +739,33 @@ svg {
     .news-list {
         h6 {
             font-size: 20px;
-            padding: 30px;
+            padding: 25px;
+        }
+    }
+    .wrapper2 {
+        height: 486px;
+    }
+    .home {
+        .wrapper2 {
+            height: 537px;
         }
     }
 }
 
 @include large-devices {
-    .news-list,
-    .section6,
-    .section8,
-    .contact,
-    .footer {
-        padding: 140px 0;
-    }
+
     .section2 {
+        .shape1 {
+            top: -64px;
+            width: auto;
+        }
         .wrapper {
             div:nth-of-type(2) {
                 left: -132px;
+            }
+            div:nth-of-type(1),
+            div:nth-of-type(3) {
+                transform: none;
             }
         }
     }
@@ -758,12 +775,6 @@ svg {
         }
         li:first-child {
             width: 60%;
-        }
-    }
-    .footer {
-        .shape1 {
-            top: -95px;
-            left: -149px;
         }
     }
     .section6 {
@@ -776,6 +787,15 @@ svg {
 }
 
 @include extra-large {
+    .news-list,
+    .section8,
+    .footer {
+        padding: 70px 0;
+    }
+
+    .section3 {
+        padding-top: 70px;
+    }
     .section7 {
         height: 245px;
         &:after {
@@ -815,10 +835,7 @@ svg {
             z-index: 1;
             left: -52px;
             position: relative;
-           
             width: 450px;
-           
-        
         }
             p {
                 right: 84px;
@@ -827,23 +844,19 @@ svg {
                 text-align: unset;
             }
         
-       
         .sheet-text1 {
             width: 309px;
         }
         .image-shape1 {
-            left: -26px;
+            left: -151px;
             bottom: -68px;
         }
-        .image-shape1 {
-            left: -151px;
-            
-        }
+    
         .image-shape2 {
             display: block;
             position: relative;
             bottom: -77px;
-            right: 118px;
+            right: 221px;
             svg,
             image {
                 width: 675px;
@@ -878,42 +891,55 @@ svg {
         }
     }
     .section6 {
+        padding: 140px 0;
         .side-img {
-            top: -99px;
-            left: -133px;
-            width: auto;
+            top: -136px;
+            left: -61px;
+            width: 20%;
         }
         .side-img2 {
-            right: -112px;
-            bottom: -208px;
-            width: auto;
+            right: -33px;
+            bottom: -267px;
+            width: 27%;
         }
     }
-    .footer {
-        .shape2 {
-            right: -170px;
-        }
+    .wrapper2 {
+        height: 512px;
     }
-
     .home {
         .wrapper2 {
-            height: 681px;
+            height: 640px;
         }
 
         .hero11 {
-            padding-top: 65px;
+            padding-top: 40px;
         }
     }
 }
 
 @include devices-1600 {
+    .news-list,
+    .section8,
+    .footer {
+        padding: 130px 0;
+    }
+    .section3 {
+        padding-top: 130px;
+    }
+    .section5 {
+        .image-shape2 {
+            right: 127px;
+        }
+    }
     .section6 {
+        padding: 140px 0;
         .side-img {
-            left: -201px;
+            left: -106px;
+            width: auto;
         }
         .side-img2 {
-            right: -206px;
-            bottom: -179px;
+            right: -153px;
+            bottom: -307px;
         }
     }
 
