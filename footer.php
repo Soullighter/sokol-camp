@@ -46,7 +46,7 @@
 						<?php endif; ?>
 					<?php endwhile; ?>
 				<?php endif; ?>
-				<li>Copyright 2018 Sokol Camp</li>
+				<li>Copyright &copy; <?php echo date( 'Y' );?> Sokol Camp</li>
 				</ul>
             </div>
 
