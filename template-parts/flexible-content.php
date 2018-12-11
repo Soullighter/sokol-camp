@@ -403,27 +403,28 @@
 					<?php } ?>
 				<?php endwhile; ?>
 			<?php endif; ?>
-			<?php if ( have_rows( 'features' ) ) : ?>
-				<div class="mask-cover">
-					<img class="mask-sheet" src="<?php echo get_template_directory_uri(); ?>/images/mask-form-text.png" alt="">
-					<ul>
-				<?php while ( have_rows( 'features' ) ) : the_row(); ?>
-						<li><?php the_sub_field( 'feature' ); ?></li>
-				<?php endwhile; ?>
-					</ul>
+					<?php if ( have_rows( 'features' ) ) : ?>
+						<div class="mask-cover">
+							<img class="mask-sheet" src="<?php echo get_template_directory_uri(); ?>/images/mask-form-text.png" alt="">
+							<ul>
+						<?php while ( have_rows( 'features' ) ) : the_row(); ?>
+								<li><?php the_sub_field( 'feature' ); ?></li>
+						<?php endwhile; ?>
+							</ul>
+						</div>
+					<?php else : ?>
+						<?php // no rows found ?>
+					<?php endif; ?>
+		            <div class="sheet">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/sheet-form.png" alt="">
+		            </div>
+					<div class="col">
+			            <div class="form">
+							<?php the_sub_field( 'form' ); ?>
+			            </div>
+					</div>
 				</div>
-			<?php else : ?>
-				<?php // no rows found ?>
-			<?php endif; ?>
-            <div class="sheet">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/sheet-form.png" alt="">
-            </div>
-			<div class="col">
-	            <div class="form">
-					<h2><?php esc_html_e( 'Booking reservation', 'gulp-wordpress' ); ?></h2>
-					<?php the_sub_field( 'form' ); ?>
-	            </div>
-			</div>
+			</section>
 		<!-- Booking form with images -->
 
 		<!-- Contact form section -->
