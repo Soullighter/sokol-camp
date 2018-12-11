@@ -33,6 +33,7 @@
     background-color: $green-blue;
     p {
         color: $white;
+        line-height: 2.13;
     }
 }
 
@@ -442,13 +443,18 @@ svg {
         .col-2 {
             li:nth-of-type(2) {
                 p:nth-of-type(1) {
-                    padding-top: 17px;
+                    padding-top: 33px;
                 }
                 p:nth-of-type(2) {
                     a:last-child {
                         color: $green-light;
                     }
                 }
+            }
+        }
+        .contact-form {
+            .wpcf7-form p {
+                width: 30%;
             }
         }
     }
@@ -876,8 +882,8 @@ svg {
         .inner-sheet {
             left: 311px;
             bottom: 109px;
-            width: 100%;
-            p {
+            width: 318px;
+            >p {
                 position: static;
             }
         }

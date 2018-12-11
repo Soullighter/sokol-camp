@@ -10,7 +10,7 @@
     .contact-form {
         position: relative;
         background-color: $white;
-        padding: 0 10px;
+        padding: 25px 10px;
         margin: 30px auto;
         box-sizing: border-box;
         .wpcf7-form {
@@ -64,9 +64,12 @@
         z-index: -1
     }
     .sheet1 {
-        top: -16px;
-        right: -15px;
-        transform: rotate(-78deg);
+
+        top: -64px;
+        transform: rotate(-8deg);
+        right: 29px;
+        width: 160px;
+   
     }
     .sheet2 {
         display: none;
@@ -96,11 +99,11 @@
     }
 }
 
-.sheet1,
-.sheet2 {
-    width: auto !important;
-    height: auto !important;
-}
+// .sheet1,
+// .sheet2 {
+//     width: auto !important;
+//     height: auto !important;
+// }
 
 .contact {
     div.wpcf7-validation-errors,
@@ -145,6 +148,7 @@ div.wpcf7 .ajax-loader {
     .contact {
         .col-2 {
             .contact-form {
+                margin: 0;
                 width: 75%;
                 .wpcf7-form p {
                     margin: 10px 0;
@@ -157,12 +161,11 @@ div.wpcf7 .ajax-loader {
                 p:nth-of-type(3) {
                     width: 100%;
                 }
-                .sheet1 {
-                    top: -29px;
-                }
                 .sheet2 {
-                    display: block;
-                    left: -74px;
+                   
+                display: block;
+                left: -110px;
+                width: auto;
                 }
                 textarea {
                     width: 100%;
@@ -203,6 +206,15 @@ div.wpcf7 .ajax-loader {
             h4 {
                 margin-top: 25px;
             }
+            .sheet1 {
+                top: -78px;
+                right: 29px;
+                width: auto;
+            }
+
+            .sheet2 {
+
+            }
         }
     }
     .contact div.wpcf7-validation-errors,
@@ -218,14 +230,7 @@ div.wpcf7 .ajax-loader {
         }
         .contact-form {
             width: 80%;
-            padding: 60px 70px;
-            .sheet1 {
-                top: -49px;
-                width: 300px;
-            }
-            .sheet2 {
-                left: -97px;
-            }
+            padding: 60px 60px 28px 70px;
         }
     }
 }

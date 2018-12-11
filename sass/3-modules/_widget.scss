@@ -452,14 +452,6 @@
 }
 
 @include extra-large {
-    ul.col-1,
-    ul.col-2,
-    .col-3 {
-        // padding: 70px 0;
-    }
-    .block-section {
-        // padding: 70px 18px;
-    }
     .section1 {
         max-width: 1600px;
         margin: 0 auto;
@@ -479,6 +471,11 @@
     .col-4 {
         article {
             padding: 0px;
+        }
+    }
+    .col-2 {
+        >.text {
+            width: 40%;
         }
     }
 }

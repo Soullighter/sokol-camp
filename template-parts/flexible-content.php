@@ -435,10 +435,8 @@
 						<?php the_sub_field( 'text_editor' ); ?>
 		            </div>
 		            <div class="contact-form">
-					    <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-yellow.png" alt="yellow-sheet">	
-						<div class="sheet2">
-							<img  src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt="green-shape">
-						</div>
+					    <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-contact.png" alt="yellow-sheet">	
+						<img  class="sheet2" src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt="green-shape">
 		               
 		              
 		                <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/" alt=""> -->
