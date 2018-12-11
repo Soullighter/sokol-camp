@@ -603,7 +603,6 @@ iframe {
 .section5,
 .section6,
 .section8,
-.contact,
 .footer,
 .block-section,
 .background-img-shapes,
@@ -616,6 +615,9 @@ iframe {
 #content > .block-section:first-of-type {
   padding: 0 0 35px 0; }
 
+.contact {
+  padding: 0 0 35px 0; }
+
 @media only screen and (min-width: 480px) {
   iframe {
     height: 345px; } }
@@ -624,8 +626,7 @@ iframe {
   .section2,
   .section5,
   .section6,
-  .section8,
-  .contact,
+  .section8
   .footer,
   .block-section,
   .background-img-shapes,
@@ -642,6 +643,9 @@ iframe {
     margin-top: 20px; }
 
   #content > .block-section:first-of-type {
+    padding: 10px 0 45px 0; }
+
+  .contact {
     padding: 10px 0 45px 0; } }
 @media only screen and (min-width: 767px) {
   .wrapper {
@@ -662,8 +666,7 @@ iframe {
   .section2,
   .section5,
   .section6,
-  .section8,
-  .contact,
+  .section8
   .footer,
   .block-section {
     padding: 60px 0; }
@@ -675,6 +678,9 @@ iframe {
     margin-top: 40px; }
 
   #content > .block-section:first-of-type {
+    padding: 20px 0 60px 0; }
+
+  .contact {
     padding: 20px 0 60px 0; } }
 @media only screen and (min-width: 1260px) {
   .block-section {
@@ -686,7 +692,6 @@ iframe {
   .section5,
   .section6,
   .section8,
-  .contact,
   .footer,
   .block-section {
     padding: 80px 0; }
@@ -699,6 +704,9 @@ iframe {
     padding-top: 80px; }
 
   #content > .block-section:first-of-type {
+    padding: 40px 0 80px 0; }
+
+  .contact {
     padding: 40px 0 80px 0; } }
 @media only screen and (min-width: 1362px) {
   *,
@@ -714,7 +722,6 @@ iframe {
   .section5,
   .section6,
   .section8,
-  .contact,
   .footer,
   .block-section {
     padding: 130px 0; }
@@ -726,6 +733,9 @@ iframe {
     padding-top: 130px; }
 
   #content > .block-section:first-of-type {
+    padding: 80px 0 130px 0; }
+
+  .contact {
     padding: 80px 0 130px 0; } }
 .ytp-title-enable-channel-logo .ytp-title {
   display: none !important; }
@@ -746,6 +756,9 @@ iframe {
   height: 0; }
 
 @media only screen and (min-width: 1550px) {
+  .wrapper {
+    width: 100%; }
+
   .block-section {
     width: 90%;
     margin: 0 auto; }
@@ -1127,7 +1140,7 @@ a[href*="mailto"] a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 35px; }
+    padding: 35px 0; }
     .header .close {
       display: none; }
     .header .logo {

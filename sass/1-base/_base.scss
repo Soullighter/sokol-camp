@@ -83,7 +83,6 @@ h4,
 h6 {
     font-weight: 800;
     color: $green-blue;
-    // padding-bottom: 0.5em; 
     position: relative;
     z-index: 1;
 }
@@ -246,7 +245,6 @@ video {
 
 iframe {
     width: 100%;
-    // height: 345px;
     border: none;
 }
 
@@ -290,7 +288,6 @@ iframe {
 .section5,
 .section6,
 .section8,
-.contact,
 .footer,
 .block-section,
 .background-img-shapes,
@@ -307,7 +304,9 @@ iframe {
         padding: 0 0 $extra-small 0;
     }
 }
-
+.contact {
+    padding: 0 0 $extra-small 0;
+}
 @include extra-small-devices {
     iframe {
         height: 345px; 
@@ -318,8 +317,7 @@ iframe {
     .section2,
     .section5,
     .section6,
-    .section8,
-    .contact,
+    .section8
     .footer,
     .block-section,
     .background-img-shapes,
@@ -339,6 +337,9 @@ iframe {
         >.block-section:first-of-type {
             padding: 10px 0 $small 0;
         }
+    }
+    .contact {
+        padding: 10px 0 $small 0;
     }
 }
 
@@ -366,8 +367,7 @@ iframe {
     .section2,
     .section5,
     .section6,
-    .section8,
-    .contact,
+    .section8
     .footer,
     .block-section,
         {
@@ -384,6 +384,9 @@ iframe {
             padding: 20px 0 $medium 0;
         }
     }
+    .contact {
+        padding: 20px 0 $medium 0;
+    }
 }
 
 @include large-devices {
@@ -396,8 +399,6 @@ iframe {
     .section5,
     .section6,
     .section8,
-    .contact,
-    ,
     .footer,
     .block-section {
         padding: $large 0;
@@ -413,6 +414,9 @@ iframe {
         >.block-section:first-of-type {
             padding: 40px 0 $large 0;
         }
+    }
+    .contact {
+        padding: 40px 0 $large 0;
     }
 }
 
@@ -430,7 +434,6 @@ iframe {
     .section5,
     .section6,
     .section8,
-    .contact,
     .footer,
     .block-section {
         padding: $extra-large 0;
@@ -439,9 +442,7 @@ iframe {
     .accommodation-form {
         padding: $extra-large 0;
     }
-    .background-img-shapes {
 
-    }
     .section3 {
         padding-top: $extra-large;
     }
@@ -449,6 +450,10 @@ iframe {
         >.block-section:first-of-type {
             padding: 80px 0 $extra-large 0;
         }
+    }
+
+    .contact {
+         padding: 80px 0 $extra-large 0;
     }
 }
 
@@ -475,6 +480,9 @@ iframe {
 }
 
 @include devices-1600 {
+    .wrapper {
+        width: 100%;
+    }
     .block-section {
         width: 90%;
         margin: 0 auto;
