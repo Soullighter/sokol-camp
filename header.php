@@ -21,7 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+    <?php if ( get_field( 'hero_type' ) === 'block-type'): 
+
+        $block_type_class = 'home';
+
+        endif;
+    ?>
+<div id="page" class="site <?php echo $block_type_class ?>">
     <div class="wrapper2">
         <header class="header wrapper">
                 <div class="logo">

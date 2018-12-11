@@ -369,6 +369,64 @@
        </section>
 		<!-- Booking with contact form -->
 
+		<!-- Booking form with images -->
+		<?php elseif ( get_row_layout() == 'booking_form_with_images' ) : ?>
+			<section class="accommodation-form">
+				<div class="wrapper">
+			<?php if ( have_rows( 'image_group' ) ) : ?>
+				<?php while ( have_rows( 'image_group' ) ) : the_row(); ?>
+					<?php $image_left = get_sub_field( 'image_left' ); ?>
+					<?php if ( $image_left ) { ?>
+						<div class="image-shape1">
+							<svg class="img-inner-shape" width="776" height="600" viewBox="0 0 776 600">
+								<defs>
+									<mask id="accomm-1" maskUnits="objectBoundingBox">
+										<image width="776" height="600" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation1-form.png"></image>
+									</mask>
+								</defs>
+								<image mask="url(#accomm-1)" xlink:href="<?php echo $image_left['sizes']['776x600']; ?>"></image>
+							</svg>
+			            </div>
+					<?php } ?>
+					<?php $image_right = get_sub_field( 'image_right' ); ?>
+					<?php if ( $image_right ) { ?>
+			            <div class="image-shape2">
+							<svg class="img-inner-shape" width="776" height="600" viewBox="0 0 776 600">
+								<defs>
+									<mask id="accomm-2" maskUnits="objectBoundingBox">
+										<image width="776" height="600" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation2-form.png"></image>
+									</mask>
+								</defs>
+								<image mask="url(#accomm-2)" xlink:href="<?php echo $image_right['sizes']['776x600']; ?>"></image>
+							</svg>
+			            </div>
+					<?php } ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
+					<?php if ( have_rows( 'features' ) ) : ?>
+						<div class="mask-cover">
+							<img class="mask-sheet" src="<?php echo get_template_directory_uri(); ?>/images/mask-form-text.png" alt="">
+							<ul>
+						<?php while ( have_rows( 'features' ) ) : the_row(); ?>
+								<li><?php the_sub_field( 'feature' ); ?></li>
+						<?php endwhile; ?>
+							</ul>
+						</div>
+					<?php else : ?>
+						<?php // no rows found ?>
+					<?php endif; ?>
+		            <div class="sheet">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/sheet-form.png" alt="">
+		            </div>
+					<div class="col">
+			            <div class="form">
+							<?php the_sub_field( 'form' ); ?>
+			            </div>
+					</div>
+				</div>
+			</section>
+		<!-- Booking form with images -->
+
 		<!-- Contact form section -->
 		<?php elseif ( get_row_layout() == 'contact_form_with_additional_contact' ) : ?>
 
@@ -403,15 +461,15 @@
 						<?php $image_1 = get_sub_field( 'image_1' ); ?>
         				<!-- 1 left -->
 						<div class="img-shape">
-				            <svg width="732" height="530" viewBox="0 0 732 530">
-				                <defs>
-				                    <mask id="mask1" maskUnits="objectBoundingBox">
-				                        <image width="732" height="530" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation3-1.png" />
-				                    </mask>
-				                </defs>
-				                <image mask="url(#mask1)" width="711" height="527" xlink:href="<?php echo $image_1['sizes']['732x530']; ?>" />
-				            </svg>
-				        </div>
+							<svg class="img-inner-shape" width="776" height="600" viewBox="0 0 776 600">
+								<defs>
+									<mask id="mask1" maskUnits="objectBoundingBox">
+										<image width="776" height="600" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-background1.png"></image>
+									</mask>
+								</defs>
+								<image mask="url(#mask1)" xlink:href="<?php echo $image_1['sizes']['776x600']; ?>"></image>
+							</svg>
+			            </div>
 					<?php } ?>
 					<?php if ( get_sub_field( 'image_2' ) ) { ?>
 						<?php $image_2 = get_sub_field( 'image_2' ); ?>
