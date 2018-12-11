@@ -331,7 +331,7 @@
                 	<div class="partners">
 				<?php while ( have_rows( 'list_of_partners' ) ) : the_row(); ?>
 					<?php if ( get_sub_field( 'partners_logo' ) ) { ?>
-						<a href="<?php the_sub_field( 'partners_url' ); ?>">
+						<a href="<?php the_sub_field( 'partners_url' ); ?>" target="_blank">
 							<div>
 								<img src="<?php the_sub_field( 'partners_logo' ); ?>" /></a>
 							</div>

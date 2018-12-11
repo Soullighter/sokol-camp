@@ -2557,14 +2557,14 @@ div.wpcf7 .ajax-loader {
 .landing-page .col1 {
   background-image: url("images/landing1.png"); }
   .landing-page .col1 .wrap {
-    background-color: rgba(0, 66, 88, 0.7); }
+    background-color: rgba(0, 66, 88, 0.3); }
   .landing-page .col1 .button a {
     color: #004253;
     background-color: #94bc52; }
 .landing-page .col2 {
   background-image: url("images/landing2.png"); }
   .landing-page .col2 .wrap {
-    background-color: rgba(167, 194, 57, 0.72); }
+    background-color: rgba(167, 194, 57, 0.3); }
   .landing-page .col2 .button {
     color: #ffffff; }
     .landing-page .col2 .button a {
