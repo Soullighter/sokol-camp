@@ -1549,7 +1549,7 @@ div.wpcf7-acceptance-missing {
   .wpcf7-form {
     flex-direction: row; }
     .wpcf7-form p {
-      width: 30%;
+      width: 32%;
       margin: 15px 10px 15px 0; }
 
   .block-section .text {
@@ -1595,7 +1595,7 @@ div.wpcf7-acceptance-missing {
       top: -71px; }
     .accommodation-form .mask-cover {
       width: auto;
-      bottom: -227px;
+      bottom: -296px;
       left: -28px; }
       .accommodation-form .mask-cover ul {
         top: 16%; }

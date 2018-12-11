@@ -233,7 +233,7 @@ div.wpcf7-acceptance-missing {
     .wpcf7-form {
         flex-direction: row;
         p {
-            width: 30%;
+            width: 32%;
             margin: 15px 10px 15px 0;
         }
     }
@@ -269,11 +269,6 @@ div.wpcf7-acceptance-missing {
 }
 
 @include medium-devices {
-    .accommodation-form {
-        .image-shape2 {
-            //    display: block;
-        }
-    }
     .col-2 {
         .flexslider {
             align-self: none;
@@ -309,7 +304,7 @@ div.wpcf7-acceptance-missing {
         }
         .mask-cover {
             width: auto;
-            bottom: -227px;
+            bottom: -296px;
             left: -28px;
             ul {
                 top: 16%;
