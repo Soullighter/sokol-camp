@@ -1,10 +1,8 @@
 .landing-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     h1 {
         font-size: 3.875em;
+        transform: none !important;
+        padding-bottom: 90px;
     }
     h5 {
         text-transform: uppercase;
@@ -18,41 +16,10 @@
             padding: 10px 30px;
         }
     }
-    .col1,
-    .col2 {
-        height: 100%;
-        >div {
-            display: flex;
-            flex-direction: column;
-            align-items: stretch; 
-            p {
-                margin-bottom: 60px;
-            }
-        }
-        h5 {
-            color: $green-blue;
-        }
-    }
     .col1 {
         background-image: url('images/landing1.png');
-        // background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
         .wrap {
             background-color: rgba(0, 66, 88, 0.7);
-            width: 100%;
-            height: 100%;
-            padding: 20% 15% 20% 15%;
-            box-sizing: border-box;
-        }
-        h1,
-        p {
-            color: $white;
-        }
-        h5 {
-            color: $yellow;
         }
         .button {
             a {
@@ -63,18 +30,8 @@
     }
     .col2 {
         background-image: url('images/landing2.png');
-        background-repeat: no-repeat;
-        background-position: center top;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
         .wrap {
             background-color: rgba(167, 194, 57, 0.72);
-            width: 100%;
-            height: 100%;
-            padding: 20% 15% 20% 15%;
-            box-sizing: border-box;
         }
         .button {
             color: $white;
@@ -82,28 +39,68 @@
                 background-color: $green-blue;
             }
         }
+        h1,
+        h5,
+        p {
+            color: $green-blue !important;
+        }
+    }
+    .col1,
+    .col2 {
+        height: 600px;
+        width: 100%;
+        position: relative;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        .wrap {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            >div {
+                width: 90%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        h1,
+        p {
+            color: $white;
+            padding-bottom: 90px;
+        }
+        h5 {
+            color: $yellow;
+        }
     }
 }
 
 @include small-devices {
     .landing-page {
-        flex-direction: row;
         .col1,
         .col2 {
-              height: 125vh;
-            width: 50%; 
-            >div {
-                p {
-                    margin-bottom: 131px;
+            .wrap {
+                >div {
+                    width: 70%;
                 }
             }
-            h1 {
-                font-size: 64px;
-                padding-bottom: 119px;
-            }
-           
         }
     }
 }
 
-    
+@include extra-large {
+    .landing-page {
+        display: flex;
+        .col1,
+        .col2 {
+            width: 50%;
+            height: 100vh;
+        }
+        p,
+        h1 {
+            padding-bottom: 120px;
+        }
+    }
+}

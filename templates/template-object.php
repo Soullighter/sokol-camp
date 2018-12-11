@@ -77,7 +77,7 @@
 <section class="background-img-shapes">
 
 	<!-- 1 left -->
-	<div class="img-shape">
+	<!-- <div class="img-shape">
 		<svg width="732" height="530" viewBox="0 0 732 530">
 			<defs>
 				<mask id="mask1" maskUnits="objectBoundingBox">
@@ -88,9 +88,19 @@
 			<image mask="url(#mask1)" width="711" height="527" xlink:href="<?php echo get_template_directory_uri(); ?>/images/accommodation5.png"
 			/>
 		</svg>
-	</div>
-
+	</div> -->
+	<div class="img-shape">
+				<svg class="img-inner-shape" width="776" height="600" viewBox="0 0 776 600">
+					<defs>
+						<mask id="mask1" maskUnits="objectBoundingBox">
+							<image width="776" height="600" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-background1.png"></image>
+						</mask>
+					</defs>
+					<image mask="url(#mask1)" xlink:href="<?php echo get_template_directory_uri(); ?>/images/test.png"></image>
+				</svg>
+            </div>
 	<!-- 2 left -->
+
 	<div class="img-shape">
 		<svg class="img-inner-shape" width="655" height="397" viewBox="0 0 655 397">
 			<defs>

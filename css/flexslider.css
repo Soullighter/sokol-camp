@@ -143,14 +143,22 @@ html[xmlns] .flexslider .slides {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.flex-direction-nav a.arrow-color:before {
+.flex-direction-nav a.flex-next:before {
   content: url('../images/arrow-fill.svg');
+  transition: all 1s;
 }
 
-.flex-direction-nav a.flex-next:before {
-  content: url('../images/arrow.svg');
-  transform: rotate(180deg);
+.flex-direction-nav a.flex-prev:hover:before {
+  content: url('../images/arrow-light-blue2.svg');
+  transition: all 1s;
 }
+.flex-direction-nav a.flex-next:hover:before {
+  content: url('../images/arrow-light-blue.svg');
+  transition: all 1s;
+ 
+}
+
+
 
 
 .flex-direction-nav .flex-prev {

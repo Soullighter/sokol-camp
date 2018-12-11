@@ -2,21 +2,19 @@
     .wrapper2 {
         height: auto;
     }
-    .hero  {
+    .hero {
         overflow: unset;
     }
-
     .hero-inner {
         position: absolute;
         max-width: 297px;
         right: 1298px;
     }
-
     .hero11 {
         position: relative;
         z-index: 1;
-        margin-bottom: 26px;        
-    }      
+        margin-bottom: 26px;
+    }
 }
 
 .section2,
@@ -28,7 +26,6 @@
 .section1 {
     padding: 10% 0 4% 0;
 }
-
 
 .section2,
 .section5,
@@ -65,19 +62,19 @@ svg {
 
 .hero11 {
     p {
-        color: $white!important;
+        color: $white !important;
     }
     h3 {
         color: $green-light;
         text-transform: none;
     }
 }
+
 .section2 {
     .wrapper {
         position: relative;
         h5,
         p {
-            padding-bottom: 0.5em;
             color: $white;
         }
         h5 {
@@ -141,7 +138,7 @@ svg {
         font-style: normal;
         font-stretch: normal;
         line-height: 1.45;
-        letter-spacing: normal; 
+        letter-spacing: normal;
         padding: 10px;
         text-transform: none;
     }
@@ -250,7 +247,6 @@ svg {
         li:nth-of-type(2) {
             a,
             p {
-                // font-size: 16px;
                 font-size: 14px;
             }
         }
@@ -295,7 +291,7 @@ svg {
             margin: 0 5px;
             -webkit-filter: grayscale(100%) brightness(60%) contrast(10000000%);
             filter: grayscale(100%) brightness(60%) contrast(10000000%);
-            opacity: 0.2; 
+            opacity: 0.2;
             &:hover {
                 filter: none;
                 opacity: 1;
@@ -307,17 +303,18 @@ svg {
     }
 }
 
-@include extra-small-devices {
-    .news-list,
-    .section2,
-    .section3,
-    .section5,
-    .section6,
-    .section8,
-    .contact,
-    .footer {
-        // padding: 45px 0;
+.wpcf7-form input[type=submit]:hover {
+    color: $green-light;
+}
+
+.shapes {
+    .shape1,
+    .shape2 {
+        display: none !important;
     }
+}
+
+@include extra-small-devices {
     .news-list {
         padding-top: 45px;
     }
@@ -338,8 +335,7 @@ svg {
             div {
                 width: 35%;
                 margin-top: 0;
-            } 
-           
+            }
         }
     }
     .section3 {
@@ -355,8 +351,6 @@ svg {
             margin-bottom: 3%;
         }
     }
-
-    
 }
 
 @include device-576 {
@@ -368,7 +362,7 @@ svg {
     .shape3,
     .shape4 {
         width: 150px;
-    } 
+    }
     .news-list {
         h6 {
             font-size: 16px;
@@ -431,15 +425,6 @@ svg {
 }
 
 @include small-devices {
-    .news-list,
-    .section2,
-    .section5,
-    .section6,
-    .section8,
-    .contact,
-    .footer {
-        padding: 35px 0;
-    }
     .section3 {
         padding-top: 35px;
     }
@@ -504,7 +489,6 @@ svg {
                 width: 695px;
             }
         }
-      
         p {
             position: relative;
             right: 177px;
@@ -633,14 +617,13 @@ svg {
         }
     }
     .section-contact {
-      
         .shape1 {
             top: -371px;
             left: 454px;
             transform: rotate(57deg);
         }
         .shape2 {
-            left: 467px;
+            left: 857px;
         }
     }
     .section7 {
@@ -651,18 +634,38 @@ svg {
             transform: rotate(69deg);
         }
     }
+    .shapes {
+        position: relative;
+        .shape1,
+        .shape2 {
+            width: 250px !important;
+            height: auto !important;
+            z-index: -1;
+            display: block !important;
+        }
+        .shape1 {
+            position: absolute;
+            top: 85px;
+            transform: rotate(248deg);
+            right: 115px;
+            width: 139px !important;
+        }
+        .shape2 {
+            position: absolute;
+            bottom: -30px;
+            transform: rotate(115deg);
+            max-width: 300px;
+            left: 95px;
+        }
+    }
 }
 
 @include devices-1100 {
-
     .section7 {
         height: 217px;
         max-width: 1600px;
-        margin:  0 auto;
-       
-
+        margin: 0 auto;
     }
-
     .section7:after {
         height: 289px;
     }
@@ -673,6 +676,7 @@ svg {
         padding: 55px 0;
     }
 }
+
 @include medium-devices {
     .wrapper2 {
         padding-bottom: 55px;
@@ -683,7 +687,6 @@ svg {
     .footer {
         padding: 55px 0;
     }
-
     .section3 {
         padding-top: 55px;
     }
@@ -717,7 +720,7 @@ svg {
             right: -235px;
         }
         p {
-           width: 500px;
+            width: 500px;
         }
     }
     .section6 {
@@ -752,8 +755,21 @@ svg {
     }
 }
 
-@include large-devices {
+@include devices-1100 {
+    .shapes {
+        .shape1 {
+            top: -65px;
+            right: 165px;
+        }
+        .shape2 {
+            bottom: -30px;
+            max-width: 260px;
+            left: 215px;
+        }
+    }
+}
 
+@include large-devices {
     .section2 {
         .shape1 {
             top: -64px;
@@ -782,7 +798,6 @@ svg {
             top: -124px;
             left: -121px;
         }
-       
     }
 }
 
@@ -792,7 +807,6 @@ svg {
     .footer {
         padding: 70px 0;
     }
-
     .section3 {
         padding-top: 70px;
     }
@@ -801,7 +815,6 @@ svg {
         &:after {
             height: 331px;
         }
-       
     }
     .section2 {
         max-height: 400px;
@@ -819,7 +832,6 @@ svg {
             }
         }
     }
-     
     .section5 {
         max-height: 444px;
         .wrapper {
@@ -837,13 +849,12 @@ svg {
             position: relative;
             width: 450px;
         }
-            p {
-                right: 84px;
-                margin-top: 0;
-                width: 450px;
-                text-align: unset;
-            }
-        
+        p {
+            right: 84px;
+            margin-top: 0;
+            width: 450px;
+            text-align: unset;
+        }
         .sheet-text1 {
             width: 309px;
         }
@@ -851,7 +862,6 @@ svg {
             left: -151px;
             bottom: -68px;
         }
-    
         .image-shape2 {
             display: block;
             position: relative;
@@ -910,7 +920,6 @@ svg {
         .wrapper2 {
             height: 640px;
         }
-
         .hero11 {
             padding-top: 40px;
         }
@@ -942,6 +951,4 @@ svg {
             bottom: -307px;
         }
     }
-
-   
 }

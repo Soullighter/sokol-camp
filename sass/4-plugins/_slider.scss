@@ -5,13 +5,16 @@
         max-height: 426px;
     }
 }
+
 #fancybox-outer {
-    background-color: transparent!important;
-    box-shadow: none!important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
+
 #fancybox-content {
-    border-color: transparent!important;
+    border-color: transparent !important;
 }
+
 .number-slides {
     position: absolute;
     right: 0;
@@ -38,20 +41,17 @@
     padding-bottom: 0;
     .flex-caption {
         background-color: $white;
-        position: relative; 
+        position: relative;
         max-height: 562px;
         >div:nth-of-type(2) {
             width: 90%;
             background-color: $white;
-            position: relative;
-            // margin-bottom: 121px;
+            position: relative; // margin-bottom: 121px;
             transform: translate(0px, -70px);
         }
-        div:nth-of-type(2) {
-            
-        }
+        div:nth-of-type(2) {}
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -72,7 +72,7 @@
             }
         }
         .flex-next {
-            transform: translate(100px, 10px);
+            transform: translate(100px, 4px);
             a {
                 padding: 25px;
             }
@@ -92,7 +92,7 @@
                 height: 210px;
                 top: -104px;
             }
-            img {
+            >img {
                 width: auto;
                 height: 100%;
                 position: absolute;
@@ -117,10 +117,10 @@
                 transform: translate(-40px, -15px);
             }
             .flex-next {
-                transform: translate(50px, 20px);
+                transform: translate(50px, 15px);
             }
         }
-        .flexslider { 
+        .flexslider {
             margin-bottom: 25px;
         }
     }
@@ -131,7 +131,7 @@
         .flex-caption {
             max-height: 418px;
         }
-    } 
+    }
 }
 
 @include small-devices {
@@ -164,7 +164,7 @@
                     top: 0;
                     left: -60px;
                 }
-                > div:nth-of-type(2) {
+                >div:nth-of-type(2) {
                     transform: none;
                 }
             }
@@ -177,7 +177,6 @@
                 }
             }
         }
-      
         .flex-direction-nav {
             position: static;
             left: 0;
@@ -222,7 +221,7 @@
         opacity: .8;
         text-align: right;
         left: 50px;
-        margin: -45px 0 0;
+        margin: -50px 0 0;
     }
     .flexslider:hover .flex-direction-nav .flex-prev {
         opacity: 0.7;

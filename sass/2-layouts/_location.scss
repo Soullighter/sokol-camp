@@ -99,7 +99,7 @@
     .block-section {
         .location1-img {
             .sheet {
-                top: -62px;
+                top: -43px;
             }
         }
     }
@@ -118,12 +118,12 @@
 }
 
 .hero {
-    background-color: $green-blue; // width: 2090px;
+    background-color: $green-blue; 
     width: 3500px;
-    height: 2200px; // border-radius: 28% 66% 62% 39% / 21% 15% 82% 43%;
+    height: 2200px; 
     border-radius: 52% 0% 55% 45% / 0% 0% 100% 60%;
     position: absolute;
-    bottom: 36px; // left: -468px;
+    bottom: 36px;
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
@@ -138,13 +138,12 @@
         position: absolute;
         left: 50%;
         margin-left: 1540px;
-        bottom: -72px; 
+        bottom: -72px;
     }
-        svg {
-            width: 460px;
-        }
+    svg {
+        width: 460px;
     }
-
+}
 
 .hero-inner {
     position: absolute;
@@ -169,10 +168,9 @@
 .top-shape {
     background-color: $green-blue;
     width: 3500px;
-    height: 2000px;
-    // border-radius: 56% 45% 52% 48% / 75% 78% 0% 0%;
-    border-radius:50% 56% 52% 13% / 73% 91% 0% 1%;
-    position: absolute; // left: -860px;
+    height: 2000px; 
+    border-radius: 50% 56% 52% 13% / 73% 91% 0% 1%;
+    position: absolute; 
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -200,14 +198,11 @@
     }
     .wrapper2 {
         height: 502px;
-        
     }
     .section-contact {
         margin-top: 37px;
         padding-top: 85px;
-    } // .top-shape {
-    //     left: -670px;
-    // }
+    }
 }
 
 @include medium-devices {
@@ -216,8 +211,7 @@
         .contact-form {
             margin-top: 60px;
         }
-    } 
-
+    }
     .wrapper2 {
         height: 560px;
     }
@@ -230,27 +224,23 @@
             display: block;
         }
     }
-
     .top-shape {
-      width  : 2940px;
+        width: 2940px;
     }
 }
 
 @include large-devices {
-    // .top-shape {
-    //     left: -410px;
-    // }
+    .page-id-68 .col-2 {
+        align-items: normal;
+    }
 }
 
 @include extra-large {
-    // .top-shape {
-    //     left: -240px;
-    // }
     .section-contact {
         margin-top: 125px;
         .contact-form {
-           margin-top: 80px;
-           width: 90%;
+            margin-top: 80px;
+            width: 100%;
         }
         ul.col-2 {
             padding: 0;
@@ -259,9 +249,6 @@
 }
 
 @include devices-1600 {
-    // .top-shape {
-    //     left: -90px;
-    // }
     .section-contact {
         padding-top: 37px;
         ul.col-2 {
@@ -273,8 +260,3 @@
     }
 }
 
-@media only screen and (min-width: 1800px) {
-    // .top-shape {
-    //     left: -30px;
-    // }
-}

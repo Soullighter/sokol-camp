@@ -143,7 +143,6 @@
 
 <section class="accommodation-form">
 	<div class="wrapper">
-		<div class="image-shape1">
 
 			<div class="image-shape1">
 				<svg class="img-inner-shape" width="776" height="600" viewBox="0 0 776 600">
@@ -155,40 +154,34 @@
 					<image mask="url(#accomm-1)" xlink:href="<?php echo get_template_directory_uri(); ?>/images/test.png"></image>
 				</svg>
             </div>
-            
-            <div class="mask-text">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/mask-form-text.png" alt="">
-            </div>
+			
+			<div class="mask-cover">
+			<img class="mask-sheet" src="<?php echo get_template_directory_uri(); ?>/images/mask-form-text.png" alt="">
+			<ul>
+						<li>WI-FI</li>
+						<li>Klimatizacija</li>
+						<li>LCD televizor</li>
+					</ul>
+			</div>
+           
             <div class="image-shape2">
 				<svg class="img-inner-shape" width="776" height="600" viewBox="0 0 776 600">
 					<defs>
-						<mask id="accomm-1" maskUnits="objectBoundingBox">
+						<mask id="accomm-2" maskUnits="objectBoundingBox">
 							<image width="776" height="600" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-accommodation2-form.png"></image>
 						</mask>
 					</defs>
-					<image mask="url(#accomm-1)" xlink:href="<?php echo get_template_directory_uri(); ?>/images/test.png"></image>
+					<image mask="url(#accomm-2)" xlink:href="<?php echo get_template_directory_uri(); ?>/images/test.png"></image>
 				</svg>
             </div>
             
             <div class="sheet">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/sheet-form.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/sheet-form.png" alt="">
             </div>
-            <!-- <div class="image-shape2">
-                <svg class="img-inner-shape" width="711" height="413" viewBox="0 0 711 413">
-                    <defs>
-                        <mask id="accomm-2" maskUnits="objectBoundingBox">
-                            <image width="802" height="558" xlink:href="http://sokolcamp.local/wp-content/themes/sokol-camp/images/mask-section2-homepage.png"></image>
-                        </mask>
-                    </defs>
-                    <image mask="url(#accomm-2)" xlink:href="http://sokolcamp.local/wp-content/uploads/2018/11/section2-homepage-711x413.jpg"></image>
-                    <image width="711" height="413" mask="url(#sect-2)" xlink:href="http://sokolcamp.local/wp-content/uploads/2018/11/section2-homepage-711x413.jpg"></image>
-                </svg>
-            </div> -->
-			
-		</div>
-		<div class="col-1">
+		<div class="col">
             <div class="form">
-
+				<h2>Rezervirajte smeštaj</h2>
+				<?php echo do_shortcode( '[contact-form-7 id="6" title="Booking form"]' ); ?>
             </div>
 		</div>
 	</div>

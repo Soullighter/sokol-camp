@@ -26,12 +26,10 @@
     }
     .flexslider {
         position: relative;
-        margin: 0 auto; // margin: 0 7%;
+        margin: 0 auto;
         .sheet1 {
             transform: rotate(-65deg);
-            position: absolute; 
-            // top: -20px;
-            // right: 20px;
+            position: absolute;
             top: -22px;
             right: -4px;
         }
@@ -50,7 +48,7 @@
     .sheet-top {
         img {
             transform: rotate(-65deg);
-            position: absolute; // top: -10px;
+            position: absolute;
             top: -25px;
             right: -11px;
         }
@@ -64,15 +62,9 @@
         span {
             display: block;
         }
-           
     }
 }
 
-.form {
-    width: 645px;
-    height: 420px;
-    background-color: red;
-}
 div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
     color: $white;
@@ -85,14 +77,14 @@ div.wpcf7-acceptance-missing {
     flex-direction: column;
     align-items: center;
     p {
-        width: 95%; 
+        width: 95%;
     }
     input {
         box-sizing: border-box;
         width: 100%;
-        border: none; 
+        border: none;
         padding: 5px;
-        color: $green-blue; 
+        color: $green-blue;
     }
     label {
         display: inline-block;
@@ -105,11 +97,35 @@ div.wpcf7-acceptance-missing {
     }
 }
 
-
 .accommodation-form {
-    background-color: green;
+    background-color: $green-blue;
+    margin-bottom: 150px;
+    overflow: hidden;
+    .col {
+        padding-bottom: 157px;
+    }
     .wrapper {
         position: relative;
+    }
+    h2 {
+        color: $white;
+    }
+    .mask-cover {
+        width: 400px;
+        bottom: -129px;
+        left: 33px;
+        transform: translateX(-50%);
+        ul {
+            position: absolute;
+            top: 23%;
+            right: 9%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2;
+        }
     }
     .image-shape1,
     .image-shape2,
@@ -118,11 +134,12 @@ div.wpcf7-acceptance-missing {
     }
     .image-shape1,
     .image-shape2,
-    .mask-text,
+    .mask-cover,
     .sheet {
         position: absolute;
     }
 }
+
 @include extra-small-devices {
     .col-2 {
         .flexslider {
@@ -143,17 +160,14 @@ div.wpcf7-acceptance-missing {
     }
     .section-contact {
         .wpcf7-form {
-            
-                width: 76%;
-                margin: 0 auto;
-            
-            }
-    } 
+            width: 76%;
+            margin: 0 auto;
+        }
+    }
 }
 
 @include device-576 {
     .col-2 {
-     
         .flexslider {
             .sheet2 {
                 display: block;
@@ -163,7 +177,6 @@ div.wpcf7-acceptance-missing {
             }
         }
     }
- 
     .contact-form {
         width: 90%;
         .wpcf7-form {
@@ -172,13 +185,11 @@ div.wpcf7-acceptance-missing {
             }
         }
     }
-
     .block-section {
         .text {
             padding: 0 30px;
         }
     }
-   
 }
 
 @include small-devices {
@@ -192,8 +203,8 @@ div.wpcf7-acceptance-missing {
             top: -44px;
             right: 30px;
             img {
-                width: auto!important;
-                height: auto!important;
+                width: auto !important;
+                height: auto !important;
             }
         }
         .sheet-text {
@@ -206,7 +217,6 @@ div.wpcf7-acceptance-missing {
         height: 128px;
         top: 12px;
         left: -93px;
-        
         span:nth-of-type(2) {
             display: block;
         }
@@ -225,11 +235,18 @@ div.wpcf7-acceptance-missing {
         p {
             width: 30%;
             margin: 15px 10px 15px 0;
-
-            }
+        }
     }
     .block-section .text {
         padding: 0;
+    }
+    .accommodation-form {
+        .sheet {
+            display: block;
+            right: -140px;
+            top: -40px;
+            width: 227px;
+        }
     }
 }
 
@@ -252,6 +269,11 @@ div.wpcf7-acceptance-missing {
 }
 
 @include medium-devices {
+    .accommodation-form {
+        .image-shape2 {
+            //    display: block;
+        }
+    }
     .col-2 {
         .flexslider {
             align-self: none;
@@ -274,6 +296,39 @@ div.wpcf7-acceptance-missing {
 }
 
 @include large-devices {
+    .accommodation-form {
+        margin-top: 150px;
+        .col {
+            width: 60%;
+            margin: 0 auto;
+            padding-bottom: 0;
+        }
+        .sheet {
+            right: -95px;
+            top: -71px;
+        }
+        .mask-cover {
+            width: auto;
+            bottom: -227px;
+            left: -28px;
+            ul {
+                top: 16%;
+            }
+        }
+        .image-shape1 {
+            top: -381px;
+            right: 0;
+            left: -550px;
+        }
+        .image-shape2 {
+            right: -475px;
+            bottom: -309px;
+        }
+        .image-shape1,
+        .image-shape2 {
+            display: block;
+        }
+    }
     .col-2 {
         .flexslider {
             .sheet1 {
@@ -296,29 +351,36 @@ div.wpcf7-acceptance-missing {
 }
 
 @include extra-large {
+    .col-2 {
+        .sheet-top {
+            img {
+                top: -51px;
+            }
+        }
+    }
     .sheet-text {
         width: 165px;
         height: 182px;
         top: 12px;
-        left: -122px;
+        left: -140px;
         font-size: 16px;
         span:nth-of-type(2) {
             margin-top: 15px;
         }
         .text {
-            left: 50px !important;
-            top: -206px;
+            left: 65px !important;
+            top: -218px;
         }
         small {
-            line-height: 0.5em;
+            font-size: 16px;
+            line-height: 0.1;
             color: $green-blue;
         }
         span {
-            font-size: 1.5em;
+            font-size: 35px;
             line-height: 1.5em;
         }
     }
-
     .wpcf7-form {
         p {
             padding-right: 15px;

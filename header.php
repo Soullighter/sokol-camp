@@ -32,15 +32,15 @@
                 </div>
 
                 <nav class="navmenu">
-                    <div class="menuicon" onclick="openNav()">
+                    <div class="menuicon2" onclick="openNav()">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="close">
-                        <a href="javascript:void(0)" onclick="closeNav()"> &times;</a>
-                    </div>
-
+                    <!-- <div class="close">
+                        <!-- <a href="javascript:void(0)" onclick="closeNav()"> &times;</a> -->
+                    <!-- </div> -->
+                    <div class="menu">
                         <?php
                             wp_nav_menu(
                                 array(
@@ -50,6 +50,16 @@
                                 )
                             );
                         ?>
+                          <!-- <div class="lang"> -->
+                <style>
+                    .wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
+                    width: auto;
+                    }
+                </style>
+                <?php do_action('wpml_add_language_selector');  ?>
+                <!-- </div> -->
+                    </div>
+                      
                 </nav>
                
         </header>

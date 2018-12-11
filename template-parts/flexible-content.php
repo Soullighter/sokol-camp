@@ -18,40 +18,41 @@
 					<?php elseif ($block_type === 'flexslider'): ?>
 						<?php $picture_slider_images = get_sub_field( 'picture_slider' ); ?>
 						<?php if ( $picture_slider_images ) :  ?>
-			            <div class="flexslider <?php echo $col1Class ?>">
+							<div class="flexslider <?php echo $col1Class ?>">
 
-							<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
-					                <div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
-                					<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
-	                					<div class="text">
-										<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
-											<span><?php the_sub_field( 'number' ); ?></span><br>
-											<small><?php the_sub_field( 'text' ); ?></small>
-										<?php endwhile; ?>
+								<?php if ( have_rows( 'slider_info_fields' ) ) : ?>
+										<div class="sheet-top"> <img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
+										<div class="sheet-text"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-yellow2.png" alt="yellow-sheet">
+											<div class="text">
+											<?php while ( have_rows( 'slider_info_fields' ) ) : the_row(); ?>
+												<span><?php the_sub_field( 'number' ); ?></span><br>
+												<small><?php the_sub_field( 'text' ); ?></small>
+											<?php endwhile; ?>
+											</div>
 										</div>
-									</div>
-							<?php else: ?>
+								<?php else: ?>
 
-			                <div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
-			                <div class="sheet2"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-sheet-yellow.png" alt="yellow-sheet"></div>
+								<div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
+								<div class="sheet2"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-sheet-yellow.png" alt="yellow-sheet"></div>
 
-							<?php endif; ?>
+								<?php endif; ?>
 
-			                <ul class="slides">
-							<?php foreach ( $picture_slider_images as $picture_slider_image ): ?>
-			                    <li>
-			                    	<a href="<?php echo $picture_slider_image['sizes']['large']; ?>" rel="group-<?php echo $count; ?>">
-									<img src="<?php echo $picture_slider_image['sizes']['slider_thumb']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
-									</a>
-			                    </li>
-							<?php endforeach; ?>
-			                </ul>
-			                <div class="number-slides">
-								<span class="zero1"></span><span class="current-slide"></span>
-								<hr class="line">
-								<span class="zero2"></span><span class="total-slides"></span>
+								<ul class="slides">
+								<?php foreach ( $picture_slider_images as $picture_slider_image ): ?>
+									<li>
+										<a href="<?php echo $picture_slider_image['sizes']['large']; ?>" rel="group-<?php echo $count; ?>">
+										<img src="<?php echo $picture_slider_image['sizes']['slider_thumb']; ?>" alt="<?php echo $picture_slider_image['alt']; ?>" />
+										</a>
+									</li>
+								<?php endforeach; ?>
+								</ul>
+								<div class="number-slides">
+									<span class="zero1"></span><span class="current-slide"></span>
+									<hr class="line">
+									<span class="zero2"></span><span class="total-slides"></span>
+								</div>
 							</div>
-			            </div>
+			          
 					<?php endif; ?>
 					<?php elseif ($block_type === 'image-gallery'): ?>
 						<?php $image_gallery_images = get_sub_field( 'image_gallery' ); ?>
@@ -100,7 +101,7 @@
 									</div>
 							<?php else: ?>
 
-							<div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt=""></div>
+							<div class="sheet1"><img src="<?php echo get_template_directory_uri(); ?>/images/green-sheet.png" alt=""></div>
 			                <div class="sheet2"><img src="<?php echo get_template_directory_uri(); ?>/images/mask-sheet-yellow.png" alt="yellow-sheet"></div>
 
 							<?php endif; ?>
@@ -282,34 +283,37 @@
 		    <section class="section6">
 		        <div class="wrapper">
 		        <img class="side-img" src="<?php echo get_template_directory_uri(); ?>/images/section6-side2.png" alt="">
-		        <!-- <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
-
-		        <img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt=""> -->
+		       
 	        	<h2><?php esc_html_e( 'People about us', 'gulp-wordpress' ); ?></h2>
 				<?php if ( have_rows( 'slide' ) ) : ?>
-	            <div class="flexslider">
-	                <ul class="slides">
-					<?php while ( have_rows( 'slide' ) ) : the_row(); ?>
-						<li>
-							<?php
-								if ( get_sub_field( 'image_of_quoter' ) ) { 
-								
-								$image_of_quoter = get_sub_field( 'image_of_quoter' );
-								}
-							?>
-	                        <div class="flex-caption">
-	                        	<div class="border-radius">
-		                        	<img src="<?php echo $image_of_quoter ?>" />
-		                        </div>
-		                        <div>
-		                        	<div><?php the_sub_field( 'quote' );?></div>
-		                        	<div><?php the_sub_field( 'quoter' ); ?></div>
-		                        </div>
-		                    </div>
-		                </li>
-					<?php endwhile; ?>
-					</ul>
+				<div class="flexslider shapes">
+					
+						<ul class="slides">
+						<?php while ( have_rows( 'slide' ) ) : the_row(); ?>
+							<li>
+								<?php
+									if ( get_sub_field( 'image_of_quoter' ) ) { 
+									
+									$image_of_quoter = get_sub_field( 'image_of_quoter' );
+									}
+								?>
+								<img class ="shape1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-green.png" alt="">
+								<img class ="shape2" src="<?php echo get_template_directory_uri(); ?>/images/yellow-sheet.png" alt="">
+								<div class="flex-caption">
+									<div class="border-radius">
+										<img src="<?php echo $image_of_quoter ?>" />
+									</div>
+									<div>
+										<div><?php the_sub_field( 'quote' );?></div>
+										<div><?php the_sub_field( 'quoter' ); ?></div>
+									</div>
+								</div>
+							</li>
+						<?php endwhile; ?>
+						</ul>
+			
 				</div>
+					
 				<?php else : ?>
 					<?php // no rows found ?>
 				<?php endif; ?>
@@ -345,10 +349,10 @@
 		<?php elseif ( get_row_layout() == 'booking_form_with_contact' ) : ?>
 	    <section class="section-contact">
 			<div class="top-shape">
-			
 			</div>
 			<div class="wrapper">
 			<img class="shape1" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
+
 			<img class="shape2" src="<?php echo get_template_directory_uri(); ?>/images/green-shape.png" alt="">
 					<ul class="col-2 contact-form">
 						<li>
@@ -374,8 +378,12 @@
 						<?php the_sub_field( 'text_editor' ); ?>
 		            </div>
 		            <div class="contact-form">
-		                <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-yellow.png" alt="yellow-sheet">
-		                <img class="sheet2" src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt="green-shape">
+					    <img class="sheet1" src="<?php echo get_template_directory_uri(); ?>/images/sheet-yellow.png" alt="yellow-sheet">	
+						<div class="sheet2">
+							<img  src="<?php echo get_template_directory_uri(); ?>/images/mask-green.png" alt="green-shape">
+						</div>
+		               
+		              
 		                <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/" alt=""> -->
 		               
 		               <?php the_sub_field( 'form' ); ?>
