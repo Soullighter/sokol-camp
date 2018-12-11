@@ -63,7 +63,7 @@
     .flex-direction-nav {
         position: absolute;
         left: 42%;
-        bottom: 28px;
+        bottom: 4px;
         .flex-prev {
             right: 0px !important;
             transform: translate(-40px, -25px);
@@ -114,7 +114,7 @@
         .flex-direction-nav {
             left: 47%;
             .flex-prev {
-                transform: translate(-40px, -15px);
+                transform: translate(-10px, -15px);
             }
             .flex-next {
                 transform: translate(50px, 15px);

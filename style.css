@@ -350,7 +350,10 @@
     height: 368px; }
 
   .col-4 article {
-    padding: 0px; } }
+    padding: 0px; }
+
+  .col-2 > .text {
+    width: 40%; } }
 @media only screen and (min-width: 1550px) {
   .background-img-shapes .col-2 {
     width: 75%; }
@@ -388,7 +391,8 @@ h2 {
   font-size: 2.25em; }
 
 h3 {
-  font-size: 2.125em; }
+  font-size: 2.125em;
+  padding-bottom: 1.6em; }
 
 h4 {
   font-size: 2em; }
@@ -433,7 +437,6 @@ h4,
 h6 {
   font-weight: 800;
   color: #004253;
-  padding-bottom: 0.5em;
   position: relative;
   z-index: 1; }
 
@@ -2333,8 +2336,8 @@ svg {
     .section5 .inner-sheet {
       left: 311px;
       bottom: 109px;
-      width: 100%; }
-      .section5 .inner-sheet p {
+      width: 318px; }
+      .section5 .inner-sheet > p {
         position: static; }
     .section5 .shape1 {
       display: block;
@@ -2492,6 +2495,7 @@ div.wpcf7 .ajax-loader {
     padding: 10px 20px 10px 30px; } }
 @media only screen and (min-width: 767px) {
   .contact .col-2 .contact-form {
+    margin: 0;
     width: 75%; }
     .contact .col-2 .contact-form .wpcf7-form p {
       margin: 10px 0;
@@ -2670,7 +2674,7 @@ div.wpcf7 .ajax-loader {
   .section6 .flex-direction-nav {
     position: absolute;
     left: 42%;
-    bottom: 28px; }
+    bottom: 4px; }
     .section6 .flex-direction-nav .flex-prev {
       right: 0px !important;
       transform: translate(-40px, -25px); }
@@ -2707,7 +2711,7 @@ div.wpcf7 .ajax-loader {
   .section6 .flex-direction-nav {
     left: 47%; }
     .section6 .flex-direction-nav .flex-prev {
-      transform: translate(-40px, -15px); }
+      transform: translate(-10px, -15px); }
     .section6 .flex-direction-nav .flex-next {
       transform: translate(50px, 15px); }
   .section6 .flexslider {
