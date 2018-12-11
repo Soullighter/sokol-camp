@@ -367,9 +367,9 @@
     height: 368px; }
   .col-4 article {
     padding: 0px; }
+
   .col-2 > .text {
     width: 40%; } }
-
 @media only screen and (min-width: 1550px) {
   .background-img-shapes .col-2 {
     width: 75%; }
@@ -1673,8 +1673,10 @@ div.wpcf7-acceptance-missing {
       color: #004253; }
     .sheet-text span {
       font-size: 35px;
-      line-height: 1.5em; } }
+      line-height: 1.5em; }
 
+  .wpcf7-form p {
+    padding-right: 15px; } }
 .border-image {
   background-color: #004253;
   overflow: hidden;
@@ -2071,8 +2073,7 @@ svg {
     padding-top: 33px; }
   .section-contact .col-2 li:nth-of-type(2) p:nth-of-type(2) a:last-child {
     color: #94bc52; }
-  .section-contact .contact-form .wpcf7-form p {
-    width: 30%; }
+
   .section2 .shape1 {
     top: -106px; }
   .news-list h2 {
@@ -2477,11 +2478,9 @@ svg {
   z-index: -1; }
 
 .contact .sheet1 {
-  top: -64px;
-  transform: rotate(-8deg);
-  right: 29px;
-  width: 160px; }
-
+  top: -16px;
+  right: -15px;
+  transform: rotate(-78deg); }
 .contact .sheet2 {
   display: none;
   left: -44px;
@@ -2567,10 +2566,7 @@ div.wpcf7 .ajax-loader {
     transform: translate(163px, -71px); }
   .contact .contact-form h4 {
     margin-top: 25px; }
-  .contact .contact-form .sheet1 {
-    top: -78px;
-    right: 29px;
-    width: auto; }
+
   .contact div.wpcf7-validation-errors,
   .contact div.wpcf7-acceptance-missing {
     transform: translate(-83px, -26px); } }
@@ -2580,8 +2576,12 @@ div.wpcf7 .ajax-loader {
     transform: translate(198px, -71px); }
   .contact .contact-form {
     width: 80%;
-    padding: 60px 60px 28px 70px; } }
-
+    padding: 60px 70px; }
+    .contact .contact-form .sheet1 {
+      top: -49px;
+      width: 300px; }
+    .contact .contact-form .sheet2 {
+      left: -97px; } }
 @media only screen and (min-width: 1362px) {
   .contact div.wpcf7-validation-errors,
   .contact div.wpcf7-acceptance-missing {
