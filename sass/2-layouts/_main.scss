@@ -175,7 +175,7 @@ a[href*="mailto"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: normal;
     .wrapper {
         width: 95%;
     }
@@ -354,7 +354,7 @@ a[href*="mailto"] {
     overflow: hidden;
     .wrapper {
         position: relative;
-        padding: 40px 60px;
+        padding: 0 65px;
     }
     a {
         font-size: 1em;

@@ -13,7 +13,7 @@
         padding: 25px 10px;
         margin: 30px auto;
         box-sizing: border-box;
-        .wpcf7-form {
+            justify-content: space-around;
             label {
                 color: $green-blue;
             }
@@ -34,18 +34,36 @@
                 }
             }
         }
-    }
-    .info {
-        transform: translate(48px, -11px);
-        display: block;
-        a {
-            padding: 25px 0;
+        strong {
+            color: $green-blue;
         }
-    }
-    .text {
-        text-align: center;
-        margin-bottom: 25px;
-    }
+        .text {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .sheet1,
+        .sheet2 {
+            position: absolute;
+            width: auto;
+            z-index: -1
+        }
+        .sheet1 {
+    
+            top: -64px;
+            transform: rotate(-8deg);
+            right: 29px;
+            width: 160px;
+       
+        }
+        .sheet2 {
+            display: none;
+            left: -44px;
+            bottom: 83px;
+            transform: rotate(-69deg);
+        }
+  
+   
     .col-2 {
         align-items: center;
         justify-content: center;
@@ -57,29 +75,8 @@
             }
         }
     }
-    .sheet1,
-    .sheet2 {
-        position: absolute;
-        width: auto;
-        z-index: -1
-    }
-    .sheet1 {
-
-        top: -64px;
-        transform: rotate(-8deg);
-        right: 29px;
-        width: 160px;
    
-    }
-    .sheet2 {
-        display: none;
-        left: -44px;
-        bottom: 83px;
-        transform: rotate(-69deg);
-    }
-    strong {
-        color: $green-blue;
-    }
+   
     span,
     a {
         color: $black;
@@ -90,7 +87,6 @@
         letter-spacing: normal;
     }
 }
-
 .google-maps {
     iframe {
         width: 100%;
@@ -99,18 +95,14 @@
     }
 }
 
-// .sheet1,
-// .sheet2 {
-//     width: auto !important;
-//     height: auto !important;
-// }
-
 .contact {
     div.wpcf7-validation-errors,
     div.wpcf7-acceptance-missing {
         border: none !important;
         color: $green-light;
-        transform: translate(37px, -26px);
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -139,10 +131,16 @@ div.wpcf7 .ajax-loader {
 @include extra-small-devices {
     .contact {
         .contact-form {
-            padding: 10px 20px 10px 30px;
+            padding: 30px 20px;
+            .info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }
+
 
 @include small-devices {
     .contact {
@@ -150,9 +148,13 @@ div.wpcf7 .ajax-loader {
             .contact-form {
                 margin: 0;
                 width: 75%;
+                .wpcf7-form {
+                    justify-content: space-between;
+                }
                 .wpcf7-form p {
-                    margin: 10px 0;
+                    margin: 0;
                     width: auto;
+                    margin-top: 7px;
                 }
                 p:nth-of-type(1),
                 p:nth-of-type(2) {
@@ -162,13 +164,15 @@ div.wpcf7 .ajax-loader {
                     width: 100%;
                 }
                 .sheet2 {
-                   
-                display: block;
-                left: -110px;
-                width: auto;
+                    display: block;
+                    width: auto;
+                    left: -132px;
                 }
                 textarea {
                     width: 100%;
+                }
+                .info {
+                   justify-content: flex-start;
                 }
             }
         }
@@ -177,6 +181,9 @@ div.wpcf7 .ajax-loader {
         }
         .text {
             text-align: left;
+            p {
+                padding-bottom: 1.8em;
+            }
         }
     }
 }
@@ -190,54 +197,72 @@ div.wpcf7 .ajax-loader {
                     width: 47%;
                 }
             }
-            .wpcf7-form {
-                justify-content: space-between;
-            }
         }
+        
+    }
+    .contact div.wpcf7-validation-errors, .contact div.wpcf7-acceptance-missing {
+        margin: 0 auto;
     }
 }
 
 @include medium-devices {
     .contact {
-        .info {
-            transform: translate(163px, -71px);
-        }
         .contact-form {
             h4 {
                 margin-top: 25px;
             }
             .sheet1 {
+                // transform: rotate(-8deg);
                 top: -78px;
                 right: 29px;
                 width: auto;
             }
-
             .sheet2 {
-
+                left: -110px;
+            }
+            .info {
+                display: block;
+                left: 51%;
+                transform: translate(30%, -267%);
             }
         }
     }
     .contact div.wpcf7-validation-errors,
     .contact div.wpcf7-acceptance-missing {
-        transform: translate(-83px, -26px);
+        transform: translate(90px, -81px);
     }
 }
 
 @include large-devices {
     .contact {
-        .info {
-            transform: translate(198px, -71px);
-        }
         .contact-form {
             width: 80%;
-            padding: 60px 60px 28px 70px;
+            padding: 60px 70px 28px 80px;
+            .sheet1 {
+                transform: rotate(0deg);
+                top: -111px;
+                right: 29px;
+                width: 243px;
+            }
+            .info {
+                transform: translate(30%, -209%);
+            }
         }
+    }
+    .contact div.wpcf7-validation-errors,
+    .contact div.wpcf7-acceptance-missing {
+        transform: translate(24px, -11px);
+   
     }
 }
 
-@include extra-large {
-    .contact div.wpcf7-validation-errors,
-    .contact div.wpcf7-acceptance-missing {
-        transform: translate(171px, -99px);
+
+@include devices-1600 {
+    .contact div.wpcf7-validation-errors, .contact div.wpcf7-acceptance-missing {
+        transform: translate(10px, -11px);
+    }
+
+    .contact .contact-form .info {
+        transform: translate(30%, -196%);
     }
 }

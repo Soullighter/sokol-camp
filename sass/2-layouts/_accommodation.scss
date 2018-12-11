@@ -1,8 +1,8 @@
-.sheet-top,
-.sheet1,
-.sheet2 {
-    width: 150px;
-}
+// .sheet-top,
+// .sheet1,
+// .sheet2 {
+//     width: 150px;
+// }
 
 .accommodation2 {
     height: 585px;
@@ -11,6 +11,14 @@
 .block-section {
     small {
         color: $green-blue;
+    }
+    .col-2 {
+        align-items: flex-start;
+    }
+    .text {
+        p {
+            font-size: 1.125em;
+        }
     }
 }
 
@@ -32,6 +40,7 @@
             position: absolute;
             top: -22px;
             right: -4px;
+            z-index: 0;
         }
         .sheet2 {
             display: none;
@@ -61,6 +70,7 @@
         }
         span {
             display: block;
+            line-height: 1.5;
         }
     }
 }
@@ -78,7 +88,7 @@ div.wpcf7-acceptance-missing {
     align-items: center;
     justify-content: center;
     p {
-        width: 95%;
+        width: 100%;
     }
     input {
         box-sizing: border-box;
@@ -141,6 +151,12 @@ div.wpcf7-acceptance-missing {
     }
 }
 
+
+.contact-form {
+    div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+        transform: translate(-110px, -20px);
+    }
+}
 @include extra-small-devices {
     .col-2 {
         .flexslider {
@@ -342,10 +358,10 @@ div.wpcf7-acceptance-missing {
                     width: 100%;
                 }
             }
-            .sheet1 {
-                width: 295px;
-                height: 198px;
-            }
+            // .sheet1 {
+            //     width: 295px;
+            //     height: 198px;
+            // }
         }
     }
 }
@@ -354,7 +370,17 @@ div.wpcf7-acceptance-missing {
     .col-2 {
         .sheet-top {
             img {
-                top: -51px;
+                width: 294px!important;
+                top: -66px;
+            }
+        }
+        .flexslider {
+            .sheet1 {
+                top: -67px;
+                right: -27px;
+                img {
+                    width: 295px;
+                }
             }
         }
     }
@@ -381,6 +407,8 @@ div.wpcf7-acceptance-missing {
             line-height: 1.5em;
         }
     }
+
+   
 }
 
 @include devices-1600 {
