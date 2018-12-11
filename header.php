@@ -37,9 +37,6 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <!-- <div class="close">
-                        <!-- <a href="javascript:void(0)" onclick="closeNav()"> &times;</a> -->
-                    <!-- </div> -->
                     <div class="menu">
                         <?php
                             wp_nav_menu(
@@ -50,14 +47,14 @@
                                 )
                             );
                         ?>
-                          <!-- <div class="lang"> -->
+                          <div class="lang2">
                 <style>
                     .wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
                     width: auto;
                     }
                 </style>
                 <?php do_action('wpml_add_language_selector');  ?>
-                <!-- </div> -->
+                </div>
                     </div>
                       
                 </nav>
@@ -112,7 +109,7 @@
                                     <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                                 </mask>
                             </defs>
-                            <image mask="url(#mask-hero1)" width="660" max-height:"100%" xlink:href="<?php echo $first_image['sizes']['660x470']; ?>" />
+                            <image mask="url(#mask-hero1)" width="660" height="100%" xlink:href="<?php echo $first_image['sizes']['660x470']; ?>" />
                         </svg>
                     </span>
                     <!-- hero image2 -->

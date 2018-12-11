@@ -171,9 +171,12 @@ svg {
     }
     .inner-sheet {
         p {
-            padding: 0;
-            margin: 0;
+            padding: 0!important;
+            margin: 0!important;
+       
             display: block;
+            line-height: 1.5;
+            text-align: center;
         }
         span {
             color: $white;
@@ -242,6 +245,9 @@ svg {
     position: relative;
     overflow: hidden;
     max-width: 100%;
+    .wrapper {
+        position: relative;
+    }
     .col-2 {
         justify-content: space-around;
         padding-top: 0;
@@ -268,6 +274,10 @@ svg {
     }
     li:first-child {
         width: 100%;
+    }
+    .shape1 {
+        display: none;
+        top: -14px;
     }
     .shape2 {
         bottom: -40px;
@@ -415,7 +425,7 @@ svg {
     }
     .section6 {
         .side-img {
-            width: 32%;
+            width: 220px;
             display: block;
             position: absolute;
             z-index: -1;
@@ -505,11 +515,12 @@ svg {
         }
         .inner-sheet {
             position: absolute;
-            left: 470px;
+            left: 496px;
             z-index: 999;
-            bottom: 84px;
+            bottom: 99px;
             p,
             strong {
+                width: 230px;
                 color: $green-blue;
                 text-align: left;
             }
@@ -640,6 +651,7 @@ svg {
             transform: rotate(69deg);
         }
     }
+   
     .shapes {
         position: relative;
         .shape1,
@@ -680,6 +692,18 @@ svg {
     .section8,
     .footer {
         padding: 55px 0;
+    }
+
+    .shapes {
+        .shape1 {
+            top: -65px;
+            right: 165px;
+        }
+        .shape2 {
+            bottom: -30px;
+            max-width: 260px;
+            left: 215px;
+        }
     }
 }
 
@@ -728,13 +752,13 @@ svg {
         p {
             width: 500px;
         }
+        .inner-sheet {
+            bottom: 78px;
+        }
     }
     .section6 {
         h2 {
             padding-bottom: 1.5em;
-        }
-        .side-img {
-            width: 30%;
         }
         .side-img2 {
             display: block;
@@ -761,19 +785,6 @@ svg {
     }
 }
 
-@include devices-1100 {
-    .shapes {
-        .shape1 {
-            top: -65px;
-            right: 165px;
-        }
-        .shape2 {
-            bottom: -30px;
-            max-width: 260px;
-            left: 215px;
-        }
-    }
-}
 
 @include large-devices {
     .section2 {
@@ -797,12 +808,6 @@ svg {
         }
         li:first-child {
             width: 60%;
-        }
-    }
-    .section6 {
-        .side-img {
-            top: -124px;
-            left: -121px;
         }
     }
 }
@@ -880,8 +885,8 @@ svg {
             }
         }
         .inner-sheet {
-            left: 311px;
-            bottom: 109px;
+            left: 319px;
+            bottom: 76px;
             width: 318px;
             >p {
                 position: static;

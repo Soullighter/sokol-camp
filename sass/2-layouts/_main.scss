@@ -30,7 +30,6 @@ a[href*="sokolcamp"]:hover {
         color: $green-blue !important;
         &:hover {
             color: $blue-light !important;
-            ;
         }
     }
 }
@@ -119,39 +118,49 @@ a[href*="mailto"] {
 }
 
 .block {
-    opacity: 0.9 !important;
-    transition: all 1s; 
     display: block !important;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+    -webkit-animation: slide-up .5s ease-in-out;
+    -moz-animation: slide-up .5s ease-in-out;
 }
 
 .header {
     .menu {
-        display: none;
-        opacity: 0;
-        -webkit-animation: fadeOut 1s;
-        animation: fadeOut 1s; 
-       
+        display: none;   
+        opacity: 0;    
     }
 }
 
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@-webkit-keyframes slide-up {
+    0% { opacity: 0; -webkit-transform: translateX(100%); }   
+  100% { opacity: 0.8; -webkit-transform: translateX(0); }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+.wpml-ls-sub-menu {
+    visibility: visible!important;
+}
+
+.wpml-ls-legacy-dropdown-click a.wpml-ls-item-toggle:after {
+    display: none!important;
+}
+
+.wpml-ls-link {
+    text-align: left;
+}
+.lang2 {
+    a {
+        padding: 0;
+        margin: 0;
     }
-    to {
-        opacity: 1;
-    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+        }    
+    } 
 }
 
 .wpml-ls-legacy-dropdown-click .wpml-ls-sub-menu {
@@ -179,7 +188,7 @@ a[href*="mailto"] {
         top: 0;
         right: 0;
         background-color: $white;
-        opacity: 0;
+        opacity: 0.8;
         overflow-x: hidden;
         transition: 0.5s;
         text-align: center;

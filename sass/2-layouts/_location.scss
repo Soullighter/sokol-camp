@@ -173,7 +173,7 @@
     position: absolute; 
     top: 10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-52%);
 }
 
 @include extra-small-devices {
@@ -202,6 +202,9 @@
     .section-contact {
         margin-top: 37px;
         padding-top: 85px;
+    }
+    .top-shape {
+        transform: translateX(-50%);
     }
 }
 

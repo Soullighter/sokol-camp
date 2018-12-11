@@ -341,6 +341,11 @@ iframe {
     }
 }
 
+@include small-devices {
+    .wrapper {
+        width: 90%;
+    }
+}
 
 @include medium-devices {
     *,
