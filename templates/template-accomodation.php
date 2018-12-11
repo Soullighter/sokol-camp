@@ -154,15 +154,6 @@
 					<image mask="url(#accomm-1)" xlink:href="<?php echo get_template_directory_uri(); ?>/images/test.png"></image>
 				</svg>
             </div>
-			
-			<div class="mask-cover">
-			<img class="mask-sheet" src="<?php echo get_template_directory_uri(); ?>/images/mask-form-text.png" alt="">
-			<ul>
-						<li>WI-FI</li>
-						<li>Klimatizacija</li>
-						<li>LCD televizor</li>
-					</ul>
-			</div>
            
             <div class="image-shape2">
 				<svg class="img-inner-shape" width="776" height="600" viewBox="0 0 776 600">
@@ -174,6 +165,16 @@
 					<image mask="url(#accomm-2)" xlink:href="<?php echo get_template_directory_uri(); ?>/images/test.png"></image>
 				</svg>
             </div>
+            
+			
+			<div class="mask-cover">
+				<img class="mask-sheet" src="<?php echo get_template_directory_uri(); ?>/images/mask-form-text.png" alt="">
+				<ul>
+					<li>WI-FI</li>
+					<li>Klimatizacija</li>
+					<li>LCD televizor</li>
+				</ul>
+			</div>
             
             <div class="sheet">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/sheet-form.png" alt="">

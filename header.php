@@ -21,7 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+    <?php if ( get_field( 'hero_type' ) === 'block-type'): 
+
+        $block_type_class = 'home';
+
+        endif;
+    ?>
+<div id="page" class="site <?php echo $block_type_class ?>">
     <div class="wrapper2">
         <header class="header wrapper">
                 <div class="logo">
@@ -112,7 +118,7 @@
                                     <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                                 </mask>
                             </defs>
-                            <image mask="url(#mask-hero1)" width="660" max-height:"100%" xlink:href="<?php echo $first_image['sizes']['660x470']; ?>" />
+                            <image mask="url(#mask-hero1)" width="660" height="100%" xlink:href="<?php echo $first_image['sizes']['660x470']; ?>" />
                         </svg>
                     </span>
                     <!-- hero image2 -->
