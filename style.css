@@ -884,26 +884,33 @@ a[href*="mailto"] a:hover {
   100% {
     opacity: 0.9;
     -webkit-transform: translateX(0); } }
-.wpml-ls-sub-menu {
-  visibility: visible !important; }
-
 .wpml-ls-legacy-dropdown-click a.wpml-ls-item-toggle:after {
   display: none !important; }
+
+.wpml-ls-legacy-dropdown-click a {
+  background-color: transparent !important; }
 
 .wpml-ls-link {
   text-align: left; }
 
-.lang2 a {
-  padding: 0;
-  margin: 0; }
-.lang2 ul {
-  padding: 0;
-  margin: 0; }
-  .lang2 ul li {
+.lang2 {
+  display: none; }
+  @media medium-devices {
+    .lang2 {
+      display: inline-flex; } }
+  .lang2 a {
     padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row; }
+    margin: 0; }
+  .lang2 ul {
+    padding: 0;
+    margin: 0; }
+    .lang2 ul li {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row; }
+  .lang2 .wpml-ls-statics-shortcode_actions, .lang2 .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .lang2 .wpml-ls-statics-shortcode_actions a {
+    width: auto; }
 
 .wpml-ls-legacy-dropdown-click .wpml-ls-sub-menu {
   border-top: none; }
@@ -939,7 +946,8 @@ a[href*="mailto"] a:hover {
       padding: 3px 5px;
       display: block;
       color: #004253;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-weight: 800; }
       .header .menu a:hover,
       .header .menu span:hover {
         color: #94bc52;
@@ -958,20 +966,16 @@ a[href*="mailto"] a:hover {
   .header .wpml-ls-legacy-dropdown-click {
     margin: auto; }
   .header .wpml-ls-legacy-dropdown-click {
-    width: 200px;
-    padding-left: 36px; }
+    width: 200px; }
   .header .wpml-ls-legacy-dropdown-click a.wpml-ls-item-toggle {
     text-align: center;
     font-size: 24px; }
-  .header .wpml-ls-legacy-dropdown-click .wpml-ls-sub-menu span {
-    padding-left: 13px; }
-  .header .menu-list {
-    display: flex;
-    flex-direction: column; }
   .header .navmenu {
     margin-left: auto; }
   .header .logo {
     width: 53%; }
+  .header .menu-list .wpml-ls-item {
+    display: inline-block; }
 
 .wpml-ls-legacy-dropdown-click a {
   background-color: #004253;
@@ -1087,6 +1091,8 @@ a[href*="mailto"] a:hover {
     .footer ul li:last-child {
       margin-top: auto;
       color: #ffffff; }
+  .footer .wpml-ls-menu-item {
+    display: none; }
 
 .lang {
   background-color: #004253;
@@ -1155,7 +1161,16 @@ a[href*="mailto"] a:hover {
     .header .menuicon2 {
       display: none; }
     .header .menu-list {
+      display: flex;
       flex-direction: row; }
+      .header .menu-list .wpml-ls-item {
+        display: none; }
+    .header .lang2 {
+      display: inline-flex;
+      padding-left: 20px; }
+      .header .lang2 .wpml-ls-statics-shortcode_actions {
+        background: transparent;
+        border-color: none; }
     .header .menu {
       opacity: 1;
       width: 100% !important;
@@ -1538,9 +1553,6 @@ div.wpcf7-acceptance-missing {
   .accommodation-form .mask-cover,
   .accommodation-form .sheet {
     position: absolute; }
-
-.contact-form div.wpcf7-validation-errors, .contact-form div.wpcf7-acceptance-missing {
-  transform: translate(-110px, -20px); }
 
 @media only screen and (min-width: 480px) {
   .col-2 .flexslider .sheet1 {
@@ -2626,10 +2638,13 @@ div.wpcf7 .ajax-loader {
     display: block;
     left: 51%;
     transform: translate(30%, -267%); }
-
-  .contact div.wpcf7-validation-errors,
-  .contact div.wpcf7-acceptance-missing {
-    transform: translate(90px, -81px); } }
+  .contact .contact-form form {
+    position: relative; }
+  .contact .contact-form div.wpcf7-validation-errors,
+  .contact .contact-form div.wpcf7-acceptance-missing {
+    display: block;
+    position: absolute;
+    bottom: -10px; } }
 @media only screen and (min-width: 1260px) {
   .contact .contact-form {
     width: 80%;
@@ -2640,15 +2655,8 @@ div.wpcf7 .ajax-loader {
       right: 29px;
       width: 243px; }
     .contact .contact-form .info {
-      transform: translate(30%, -209%); }
-
-  .contact div.wpcf7-validation-errors,
-  .contact div.wpcf7-acceptance-missing {
-    transform: translate(24px, -11px); } }
+      transform: translate(30%, -209%); } }
 @media only screen and (min-width: 1550px) {
-  .contact div.wpcf7-validation-errors, .contact div.wpcf7-acceptance-missing {
-    transform: translate(10px, -11px); }
-
   .contact .contact-form .info {
     transform: translate(30%, -196%); } }
 .landing-page h1 {

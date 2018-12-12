@@ -151,11 +151,6 @@ div.wpcf7-acceptance-missing {
 }
 
 
-.contact-form {
-    div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
-        transform: translate(-110px, -20px);
-    }
-}
 @include extra-small-devices {
     .col-2 {
         .flexslider {

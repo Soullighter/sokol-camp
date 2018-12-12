@@ -144,7 +144,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav a.flex-next:before {
-  content: url('../images/arrow-fill.svg');
+  transform: rotate(180deg);
   transition: all 1s;
 }
 
@@ -153,7 +153,8 @@ html[xmlns] .flexslider .slides {
   transition: all 1s;
 }
 .flex-direction-nav a.flex-next:hover:before {
-  content: url('../images/arrow-light-blue.svg');
+  content: url('../images/arrow-light-blue2.svg');
+  transform: rotate(180deg);
   transition: all 1s;
  
 }
