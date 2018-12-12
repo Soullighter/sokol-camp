@@ -2479,7 +2479,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .home .wrapper2 {
     height: 640px; }
   .home .hero11 {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+
+  .news-list h6 {
+    padding: 25px; } }
 @media only screen and (min-width: 1550px) {
   .news-list,
   .section8,
@@ -2906,7 +2909,7 @@ div.wpcf7 .ajax-loader {
   opacity: 1; }
 .col-2 .flex-direction-nav a {
   position: relative;
-  margin: 10px 0 10px 0; }
+  margin: 10px 0 14px 0; }
 .col-2 .flex-control-nav {
   display: none; }
 

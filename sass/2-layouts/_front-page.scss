@@ -957,6 +957,11 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
             padding-top: 40px;
         }
     }
+    .news-list {
+        h6 {
+            padding: 25px;
+        }
+    }
 }
 
 @include devices-1600 {
