@@ -244,7 +244,7 @@
 						<svg class="img-inner-shape" width="695" height="415" viewBox="0 0 695 415">
 							<defs>
 								<mask id="sect-5" maskUnits="objectBoundingBox">
-									<image width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask3.png"
+									<image width="695" height="415" xlink:href="<?php echo $image_of_quoter['sizes']['695x415']; ?>"
 									/>
 								</mask>
 							</defs>
