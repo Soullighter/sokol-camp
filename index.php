@@ -71,7 +71,7 @@ get_header('landing'); ?>
                                     <image width="660" height="470" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero.png" />
                                 </mask>
                             </defs>
-                            <image mask="url(#mask-hero1)" width="660" max-height:"100%" xlink:href="http://dev.sokolcamp.com/wp-content/uploads/2018/11/Page-5-Image-60-660x470.png" />
+                            <image mask="url(#mask-hero1)" width="660" max-height:"100%" xlink:href="http://dev.sokolcamp.com/wp-content/uploads/2018/12/IMG_4701-660x470.jpeg" />
                         </svg>
                     </span>
                     <!-- hero image2 -->
@@ -82,7 +82,7 @@ get_header('landing'); ?>
                                     <image width="536" height="362" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero22.png" />
                                 </mask>
                             </defs>
-                            <image mask="url(#mask-hero2)" width="536" height="362" xlink:href="http://dev.sokolcamp.com/wp-content/uploads/2018/11/Page-5-Image-60-536x362.png" />
+                            <image mask="url(#mask-hero2)" width="536" height="362" xlink:href="http://dev.sokolcamp.com/wp-content/uploads/2018/12/IMG_4316-536x362.jpeg" />
                         </svg>
                     </span>
                     </div>
