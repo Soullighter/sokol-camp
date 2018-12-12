@@ -358,7 +358,7 @@
 						<li>
 						<?php the_sub_field( 'form' ); ?>
 						</li>
-						<li>
+						<li class="info">
 							<?php the_sub_field( 'contact_info' ); ?>
 						</li>
 					</ul>
@@ -444,7 +444,7 @@
 		               
 		               <?php the_sub_field( 'form' ); ?>
 						
-						<span class="info">Ukoliko želite rezervisati smeštaj, kontaktirajte nas <a href="#"><strong>ovde</strong></a></span>
+						<span class="info">Ukoliko želite rezervisati smeštaj, kontaktirajte nas  <a href="#"><strong>  &nbsp; ovde</strong></a></span>
 		            </div>
 		        </div>
 		        <!-- end wrapper -->

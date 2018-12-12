@@ -10,7 +10,7 @@ html {
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.63;
+    line-height: 2.2;
     letter-spacing: normal;
 }
 
@@ -83,7 +83,6 @@ h4,
 h6 {
     font-weight: 800;
     color: $green-blue;
-    // padding-bottom: 0.5em; 
     position: relative;
     z-index: 1;
 }
@@ -106,18 +105,18 @@ h1 {
 
 // 36px
 h2 {
-    text-align: center;
     text-transform: uppercase;
     line-height: 1.22;
     letter-spacing: 3.6px;
     font-weight: 800;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
 }
 
 h3 {
     text-transform: uppercase;
     line-height: 1.29;
     letter-spacing: 3.4px;
+    padding-bottom: 1.3em;
 }
 
 // 32px
@@ -128,7 +127,8 @@ h4 {
     font-style: normal;
     font-stretch: normal;
     line-height: 1.03;
-    letter-spacing: normal;
+    letter-spacing: 2.5px;
+    padding-bottom: 1.5em;
 }
 
 h5 {
@@ -139,6 +139,7 @@ h5 {
     position: relative;
     z-index: 1;
     padding-bottom: 0.8em;
+    line-height: 1.03;
 }
 
 h6 {
@@ -223,7 +224,7 @@ video {
         text-transform: uppercase;
         display: inline;
         font-weight: normal;
-        color: $green-light;
+        color: $green-light!important;
         font-size: 1em;
         padding: 25px 25px 25px 0;
         &:after {
@@ -244,7 +245,6 @@ video {
 
 iframe {
     width: 100%;
-    height: 345px;
     border: none;
 }
 
@@ -288,7 +288,6 @@ iframe {
 .section5,
 .section6,
 .section8,
-.contact,
 .footer,
 .block-section,
 .background-img-shapes,
@@ -305,14 +304,20 @@ iframe {
         padding: 0 0 $extra-small 0;
     }
 }
-
+.contact {
+    padding: 0 0 $extra-small 0;
+}
+@include extra-small-devices {
+    iframe {
+        height: 345px; 
+    }
+}
 @include small-devices {
     .news-list,
     .section2,
     .section5,
     .section6,
-    .section8,
-    .contact,
+    .section8
     .footer,
     .block-section,
     .background-img-shapes,
@@ -333,16 +338,23 @@ iframe {
             padding: 10px 0 $small 0;
         }
     }
-}
-
-@include device-576 {
-    h2 {
-        padding-bottom: 1.2em;
+    .contact {
+        padding: 10px 0 $small 0;
     }
 }
 
 
+
+@include small-devices {
+    .wrapper {
+        width: 90%;
+    }
+}
+
 @include medium-devices {
+    h3 {
+        padding-bottom: 1.6em;
+    }
     *,
     body,
     html {
@@ -355,8 +367,7 @@ iframe {
     .section2,
     .section5,
     .section6,
-    .section8,
-    .contact,
+    .section8
     .footer,
     .block-section,
         {
@@ -373,6 +384,9 @@ iframe {
             padding: 20px 0 $medium 0;
         }
     }
+    .contact {
+        padding: 20px 0 $medium 0;
+    }
 }
 
 @include large-devices {
@@ -385,8 +399,6 @@ iframe {
     .section5,
     .section6,
     .section8,
-    .contact,
-    ,
     .footer,
     .block-section {
         padding: $large 0;
@@ -402,6 +414,9 @@ iframe {
         >.block-section:first-of-type {
             padding: 40px 0 $large 0;
         }
+    }
+    .contact {
+        padding: 40px 0 $large 0;
     }
 }
 
@@ -419,22 +434,26 @@ iframe {
     .section5,
     .section6,
     .section8,
-    .contact,
     .footer,
     .block-section {
         padding: $extra-large 0;
     }
-    .background-img-shapes,
+    // .background-img-shapes,
     .accommodation-form {
         padding: $extra-large 0;
     }
+
     .section3 {
         padding-top: $extra-large;
     }
     #content {
         >.block-section:first-of-type {
-            padding: 120px 0 $extra-large 0;
+            padding: 80px 0 $extra-large 0;
         }
+    }
+
+    .contact {
+         padding: 80px 0 $extra-large 0;
     }
 }
 
@@ -461,6 +480,9 @@ iframe {
 }
 
 @include devices-1600 {
+    .wrapper {
+        width: 100%;
+    }
     .block-section {
         width: 90%;
         margin: 0 auto;

@@ -79,3 +79,9 @@
         }
     }
 }
+
+@include devices-1600 {
+    .border-image .img-shape1:nth-of-type(7) {
+        left: 1163px;
+    }
+}

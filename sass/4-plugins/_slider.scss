@@ -42,18 +42,18 @@
     .flex-caption {
         background-color: $white;
         position: relative;
-        max-height: 562px;
+        max-height: 578px;
         >div:nth-of-type(2) {
             width: 90%;
             background-color: $white;
             position: relative; // margin-bottom: 121px;
             transform: translate(0px, -70px);
         }
-        div:nth-of-type(2) {}
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+       
     }
     .flex-control-nav {
         bottom: 21px;

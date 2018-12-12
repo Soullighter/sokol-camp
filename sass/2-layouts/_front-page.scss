@@ -33,7 +33,10 @@
     background-color: $green-blue;
     p {
         color: $white;
-        line-height: 2.13;
+        // line-height: 2.13;
+    }
+    a {
+        color: $white;
     }
 }
 
@@ -132,7 +135,7 @@ svg {
 
 .news-list {
     h6 {
-        font-size: 16px;
+        font-size: 1.375em;
         font-weight: normal;
         color: $black;
         font-weight: normal;
@@ -142,6 +145,9 @@ svg {
         letter-spacing: normal;
         padding: 10px;
         text-transform: none;
+    }
+    h2 {
+        text-align: center;
     }
 }
 
@@ -171,12 +177,14 @@ svg {
     }
     .inner-sheet {
         p {
-            padding: 0;
-            margin: 0;
+            padding: 0!important;
+            margin: 0!important;
             display: block;
-        }
-        span {
-            color: $white;
+            line-height: 1.5;
+            text-align: center;
+            strong {
+                color: $white;
+            }
         }
     }
     .sheet-text1 {
@@ -210,6 +218,7 @@ svg {
         position: relative;
         z-index: 1;
         padding-bottom: 0;
+        text-align: center;
     }
     .side-img {
         display: none;
@@ -242,6 +251,9 @@ svg {
     position: relative;
     overflow: hidden;
     max-width: 100%;
+    .wrapper {
+        position: relative;
+    }
     .col-2 {
         justify-content: space-around;
         padding-top: 0;
@@ -262,6 +274,7 @@ svg {
     }
     a {
         font-weight: normal;
+        color:$white;
     }
     label {
         text-align: left;
@@ -269,11 +282,15 @@ svg {
     li:first-child {
         width: 100%;
     }
+    .shape1 {
+        display: none;
+        top: -14px;
+    }
     .shape2 {
-        bottom: -40px;
         transform: rotate(-89deg);
         left: 398px;
         z-index: 2;
+        bottom: -142px;
     }
     .wpcf7-form {
         align-items: center;
@@ -302,12 +319,20 @@ svg {
             margin-bottom: 15px;
         }
     }
+    h2 {
+        text-align: center;
+    }
 }
 
 .wpcf7-form input[type=submit]:hover {
     color: $green-light;
 }
 
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    color: $green-light;
+    padding: 0;
+    margin: 0;
+}
 .shapes {
     .shape1,
     .shape2 {
@@ -364,11 +389,6 @@ svg {
     .shape4 {
         width: 150px;
     }
-    .news-list {
-        h6 {
-            font-size: 16px;
-        }
-    }
     .section2 {
         .shape2 {
             bottom: -133px;
@@ -415,16 +435,23 @@ svg {
     }
     .section6 {
         .side-img {
-            width: 32%;
+            width: 220px;
             display: block;
             position: absolute;
             z-index: -1;
-            top: -30px;
             left: -28px;
+            top: -21px;
         }
     }
 }
 
+.contact-form {
+    .info {
+        p {
+            margin-bottom: 25px;
+        }
+    }
+}
 @include small-devices {
     .section3 {
         padding-top: 35px;
@@ -441,10 +468,9 @@ svg {
             text-align: left;
         }
         .col-2 {
+            align-items: stretch;
             li:nth-of-type(2) {
-                p:nth-of-type(1) {
-                    padding-top: 33px;
-                }
+                margin-left: 20px;
                 p:nth-of-type(2) {
                     a:last-child {
                         color: $green-light;
@@ -453,6 +479,7 @@ svg {
             }
         }
         .contact-form {
+            width: 100%;
             .wpcf7-form p {
                 width: 30%;
             }
@@ -461,14 +488,6 @@ svg {
     .section2 {
         .shape1 {
             top: -106px;
-        }
-    }
-    .news-list {
-        h2 {
-            padding-bottom: 1.5em;
-        }
-        h6 {
-            padding: 20px;
         }
     }
     .section5 {
@@ -505,12 +524,13 @@ svg {
         }
         .inner-sheet {
             position: absolute;
-            left: 470px;
+            left: 496px;
             z-index: 999;
-            bottom: 84px;
+            bottom: 99px;
             p,
             strong {
-                color: $green-blue;
+                width: 230px;
+                color: $green-blue!important;
                 text-align: left;
             }
         }
@@ -537,7 +557,14 @@ svg {
         }
     }
     .home .wrapper2 {
-        height: 456px;
+        height: 490px;
+    }
+    .section6,
+    .news-list {
+        h2,h6 {
+            padding-bottom: 2.5em;
+        }
+       
     }
 }
 
@@ -640,6 +667,7 @@ svg {
             transform: rotate(69deg);
         }
     }
+   
     .shapes {
         position: relative;
         .shape1,
@@ -680,6 +708,18 @@ svg {
     .section8,
     .footer {
         padding: 55px 0;
+    }
+
+    .shapes {
+        .shape1 {
+            top: -72px;
+            right: 165px;
+        }
+        .shape2 {
+            bottom: -30px;
+            max-width: 260px;
+            left: 215px;
+        }
     }
 }
 
@@ -728,14 +768,11 @@ svg {
         p {
             width: 500px;
         }
+        .inner-sheet {
+            bottom: 78px;
+        }
     }
     .section6 {
-        h2 {
-            padding-bottom: 1.5em;
-        }
-        .side-img {
-            width: 30%;
-        }
         .side-img2 {
             display: block;
             position: absolute;
@@ -747,8 +784,7 @@ svg {
     }
     .news-list {
         h6 {
-            font-size: 20px;
-            padding: 25px;
+            padding: 20px;
         }
     }
     .wrapper2 {
@@ -759,21 +795,15 @@ svg {
             height: 537px;
         }
     }
-}
-
-@include devices-1100 {
-    .shapes {
-        .shape1 {
-            top: -65px;
-            right: 165px;
-        }
-        .shape2 {
-            bottom: -30px;
-            max-width: 260px;
-            left: 215px;
+    .contact-form {
+        .info {
+            p {
+                margin-bottom: 50px;
+            }
         }
     }
 }
+
 
 @include large-devices {
     .section2 {
@@ -798,11 +828,8 @@ svg {
         li:first-child {
             width: 60%;
         }
-    }
-    .section6 {
-        .side-img {
-            top: -124px;
-            left: -121px;
+        .contact-form div.wpcf7-validation-errors, .contact-form div.wpcf7-acceptance-missing {
+            transform: translate(-30px, 18px);
         }
     }
 }
@@ -880,8 +907,8 @@ svg {
             }
         }
         .inner-sheet {
-            left: 311px;
-            bottom: 109px;
+            left: 319px;
+            bottom: 76px;
             width: 318px;
             >p {
                 position: static;
@@ -909,7 +936,7 @@ svg {
     .section6 {
         padding: 140px 0;
         .side-img {
-            top: -136px;
+            top: -120px;
             left: -61px;
             width: 20%;
         }
