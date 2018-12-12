@@ -110,7 +110,6 @@ div.wpcf7-acceptance-missing {
 
 .accommodation-form {
     background-color: $green-blue;
-    margin-bottom: 150px;
     overflow: hidden;
     .col {
         padding-bottom: 157px;
@@ -311,7 +310,6 @@ div.wpcf7-acceptance-missing {
 
 @include large-devices {
     .accommodation-form {
-        margin-top: 150px;
         .col {
             width: 60%;
             margin: 0 auto;

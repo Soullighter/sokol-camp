@@ -49,7 +49,7 @@ a[href*="mailto"] {
 .menuicon2 {
     position: relative;
     z-index: 999;
-    width: 60px;
+    width: 54px;
     height: auto;
     position: relative;
     margin: 0 auto;
@@ -119,6 +119,7 @@ a[href*="mailto"] {
 
 .block {
     display: block !important;
+    opacity: 0.9;
     -webkit-animation: slide-up .5s ease-in-out;
     -moz-animation: slide-up .5s ease-in-out;
 }
@@ -132,7 +133,7 @@ a[href*="mailto"] {
 
 @-webkit-keyframes slide-up {
     0% { opacity: 0; -webkit-transform: translateX(100%); }   
-  100% { opacity: 0.8; -webkit-transform: translateX(0); }
+  100% { opacity: 0.9; -webkit-transform: translateX(0); }
 }
 
 .wpml-ls-sub-menu {
@@ -192,7 +193,8 @@ a[href*="mailto"] {
         overflow-x: hidden;
         transition: 0.5s;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 75px;
+        overflow-y: auto;
         a,
         span {
             padding: 3px 5px;
@@ -207,7 +209,7 @@ a[href*="mailto"] {
         }
         a,
         span {
-            font-size: 24px;
+            font-size: 20px;
             text-transform: uppercase;
             &:hover {
                 color: #006c8b;

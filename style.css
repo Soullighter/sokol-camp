@@ -615,8 +615,9 @@ iframe {
 #content > .block-section:first-of-type {
   padding: 0 0 35px 0; }
 
-.contact {
-  padding: 0 0 35px 0; }
+.contact,
+.blog .news-list {
+  padding: 0 0 35px 0 !important; }
 
 @media only screen and (min-width: 480px) {
   iframe {
@@ -645,8 +646,9 @@ iframe {
   #content > .block-section:first-of-type {
     padding: 10px 0 45px 0; }
 
-  .contact {
-    padding: 10px 0 45px 0; } }
+  .contact,
+  .blog .news-list {
+    padding: 10px 0 45px 0 !important; } }
 @media only screen and (min-width: 767px) {
   .wrapper {
     width: 90%; } }
@@ -680,8 +682,9 @@ iframe {
   #content > .block-section:first-of-type {
     padding: 20px 0 60px 0; }
 
-  .contact {
-    padding: 20px 0 60px 0; } }
+  .contact,
+  .blog .news-list {
+    padding: 20px 0 60px 0 !important; } }
 @media only screen and (min-width: 1260px) {
   .block-section {
     width: 90%;
@@ -706,8 +709,9 @@ iframe {
   #content > .block-section:first-of-type {
     padding: 40px 0 80px 0; }
 
-  .contact {
-    padding: 40px 0 80px 0; } }
+  .contact,
+  .blog .news-list {
+    padding: 40px 0 80px 0 !important; } }
 @media only screen and (min-width: 1362px) {
   *,
   body,
@@ -735,8 +739,9 @@ iframe {
   #content > .block-section:first-of-type {
     padding: 80px 0 130px 0; }
 
-  .contact {
-    padding: 80px 0 130px 0; } }
+  .contact,
+  .blog .news-list {
+    padding: 80px 0 130px 0 !important; } }
 .ytp-title-enable-channel-logo .ytp-title {
   display: none !important; }
 
@@ -805,7 +810,7 @@ a[href*="mailto"] a:hover {
 .menuicon2 {
   position: relative;
   z-index: 999;
-  width: 60px;
+  width: 54px;
   height: auto;
   position: relative;
   margin: 0 auto;
@@ -864,6 +869,7 @@ a[href*="mailto"] a:hover {
 
 .block {
   display: block !important;
+  opacity: 0.9;
   -webkit-animation: slide-up .5s ease-in-out;
   -moz-animation: slide-up .5s ease-in-out; }
 
@@ -876,7 +882,7 @@ a[href*="mailto"] a:hover {
     opacity: 0;
     -webkit-transform: translateX(100%); }
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
     -webkit-transform: translateX(0); } }
 .wpml-ls-sub-menu {
   visibility: visible !important; }
@@ -926,7 +932,8 @@ a[href*="mailto"] a:hover {
     overflow-x: hidden;
     transition: 0.5s;
     text-align: center;
-    padding-top: 150px; }
+    padding-top: 75px;
+    overflow-y: auto; }
     .header .menu a,
     .header .menu span {
       padding: 3px 5px;
@@ -940,7 +947,7 @@ a[href*="mailto"] a:hover {
         transition: all 0.5s; }
     .header .menu a,
     .header .menu span {
-      font-size: 24px;
+      font-size: 20px;
       text-transform: uppercase; }
       .header .menu a:hover,
       .header .menu span:hover {
@@ -1500,7 +1507,6 @@ div.wpcf7-acceptance-missing {
 
 .accommodation-form {
   background-color: #004253;
-  margin-bottom: 150px;
   overflow: hidden; }
   .accommodation-form .col {
     padding-bottom: 157px; }
@@ -1634,31 +1640,29 @@ div.wpcf7-acceptance-missing {
   .sheet-top {
     width: 200px; } }
 @media only screen and (min-width: 1260px) {
-  .accommodation-form {
-    margin-top: 150px; }
-    .accommodation-form .col {
-      width: 60%;
-      margin: 0 auto;
-      padding-bottom: 0; }
-    .accommodation-form .sheet {
-      right: -147px;
-      top: -71px; }
-    .accommodation-form .mask-cover {
-      width: auto;
-      bottom: -296px;
-      left: -28px; }
-      .accommodation-form .mask-cover ul {
-        top: 16%; }
-    .accommodation-form .image-shape1 {
-      top: -381px;
-      right: 0;
-      left: -550px; }
-    .accommodation-form .image-shape2 {
-      right: -475px;
-      bottom: -309px; }
-    .accommodation-form .image-shape1,
-    .accommodation-form .image-shape2 {
-      display: block; }
+  .accommodation-form .col {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 0; }
+  .accommodation-form .sheet {
+    right: -147px;
+    top: -71px; }
+  .accommodation-form .mask-cover {
+    width: auto;
+    bottom: -296px;
+    left: -28px; }
+    .accommodation-form .mask-cover ul {
+      top: 16%; }
+  .accommodation-form .image-shape1 {
+    top: -381px;
+    right: 0;
+    left: -550px; }
+  .accommodation-form .image-shape2 {
+    right: -475px;
+    bottom: -309px; }
+  .accommodation-form .image-shape1,
+  .accommodation-form .image-shape2 {
+    display: block; }
 
   .col-2 .flexslider .sheet1 {
     top: -102px;
