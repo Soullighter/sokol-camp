@@ -53,15 +53,10 @@
                                 )
                             );
                         ?>
-                          <div class="lang2">
-                <style>
-                    .wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
-                    width: auto;
-                    }
-                </style>
-                <?php do_action('wpml_add_language_selector');  ?>
-                </div>
-                    </div>
+                        <div class="lang2">
+                            <?php do_action('wpml_add_language_selector');  ?>
+                            </div>
+                        </div>
                       
                 </nav>
                

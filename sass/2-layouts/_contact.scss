@@ -225,11 +225,16 @@ div.wpcf7 .ajax-loader {
                 left: 51%;
                 transform: translate(30%, -267%);
             }
+            form {
+                position: relative;
+            }
+            div.wpcf7-validation-errors,
+            div.wpcf7-acceptance-missing {
+                display: block;
+                position: absolute;
+                bottom: -10px;
+            }
         }
-    }
-    .contact div.wpcf7-validation-errors,
-    .contact div.wpcf7-acceptance-missing {
-        transform: translate(90px, -81px);
     }
 }
 
@@ -249,18 +254,10 @@ div.wpcf7 .ajax-loader {
             }
         }
     }
-    .contact div.wpcf7-validation-errors,
-    .contact div.wpcf7-acceptance-missing {
-        transform: translate(24px, -11px);
-   
-    }
 }
 
 
 @include devices-1600 {
-    .contact div.wpcf7-validation-errors, .contact div.wpcf7-acceptance-missing {
-        transform: translate(10px, -11px);
-    }
 
     .contact .contact-form .info {
         transform: translate(30%, -196%);

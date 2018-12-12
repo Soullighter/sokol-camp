@@ -244,11 +244,11 @@
 						<svg class="img-inner-shape" width="695" height="415" viewBox="0 0 695 415">
 							<defs>
 								<mask id="sect-5" maskUnits="objectBoundingBox">
-									<image width="695" height="415" xlink:href="<?php echo $image_of_quoter['sizes']['695x415']; ?>"
+									<image width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask3.png"
 									/>
 								</mask>
 							</defs>
-							<image mask="url(#sect-5)" width="695" height="415" xlink:href="<?php echo get_template_directory_uri(); ?>/images/section5-2.png"
+							<image mask="url(#sect-5)" width="695" height="415" xlink:href="<?php echo $image_of_quoter['sizes']['695x415']; ?>"
 							/>
 						</svg>
 						<div >
@@ -358,7 +358,7 @@
 						<li>
 						<?php the_sub_field( 'form' ); ?>
 						</li>
-						<li class="info">
+						<li>
 							<?php the_sub_field( 'contact_info' ); ?>
 						</li>
 					</ul>
@@ -444,7 +444,7 @@
 		               
 		               <?php the_sub_field( 'form' ); ?>
 						
-						<span class="info">Ukoliko želite rezervisati smeštaj, kontaktirajte nas  <a href="#"><strong>  &nbsp; ovde</strong></a></span>
+						<span class="info">Ukoliko želite rezervisati smeštaj, kontaktirajte nas <a href="#"><strong>ovde</strong></a></span>
 		            </div>
 		        </div>
 		        <!-- end wrapper -->

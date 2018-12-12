@@ -146,6 +146,7 @@ function theme_pagination()
 }
 add_action('init', 'theme_pagination'); // Add Theme Custom Pagination
 
+
 /**
  * Implement the Custom Header feature.
  */

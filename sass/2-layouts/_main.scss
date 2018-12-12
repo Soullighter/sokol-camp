@@ -135,18 +135,20 @@ a[href*="mailto"] {
   100% { opacity: 0.8; -webkit-transform: translateX(0); }
 }
 
-.wpml-ls-sub-menu {
-    visibility: visible!important;
-}
-
 .wpml-ls-legacy-dropdown-click a.wpml-ls-item-toggle:after {
     display: none!important;
 }
-
+.wpml-ls-legacy-dropdown-click a {
+    background-color: transparent!important;
+}
 .wpml-ls-link {
     text-align: left;
 }
 .lang2 {
+    display: none;
+    @media medium-devices {
+        display: inline-flex;
+    }
     a {
         padding: 0;
         margin: 0;
@@ -161,6 +163,12 @@ a[href*="mailto"] {
             flex-direction: row;
         }    
     } 
+
+    .wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
+    width: auto;
+    }
+
+
 }
 
 .wpml-ls-legacy-dropdown-click .wpml-ls-sub-menu {
@@ -199,6 +207,7 @@ a[href*="mailto"] {
             display: block;
             color: $green-blue;
             margin: 0 auto;
+            font-weight: 800;
             &:hover {
                 color: $green-light;
                 -webkit-transition: all 0.5s;
@@ -225,26 +234,19 @@ a[href*="mailto"] {
     }
     .wpml-ls-legacy-dropdown-click {
         width: 200px;
-        padding-left: 36px;
     }
     .wpml-ls-legacy-dropdown-click a.wpml-ls-item-toggle {
         text-align: center;
         font-size: 24px;
-    }
-    .wpml-ls-legacy-dropdown-click .wpml-ls-sub-menu {
-        span {
-            padding-left: 13px;
-        }
-    }
-    .menu-list {
-        display: flex;
-        flex-direction: column;
     }
     .navmenu {
         margin-left: auto;
     } 
     .logo {
         width: 53%;
+    }
+    .menu-list .wpml-ls-item {
+        display: inline-block;
     }
 }
 
@@ -396,6 +398,9 @@ a[href*="mailto"] {
             color: $white;
         }
     }
+    .wpml-ls-menu-item {
+        display: none;
+    }
 }
 
 .lang {
@@ -507,7 +512,19 @@ a[href*="mailto"] {
             display: none;
         }
         .menu-list {
+            display: flex;
             flex-direction: row;
+            .wpml-ls-item {
+                display: none;
+            }
+        }
+        .lang2 {
+            display: inline-flex;
+            padding-left: 20px;
+            .wpml-ls-statics-shortcode_actions {
+                background: transparent;
+                border-color: none;
+            }
         }
         .menu {
             opacity: 1;
