@@ -1408,7 +1408,8 @@ a[href*="mailto"] a:hover {
   padding-top: 3%;
   padding-bottom: 7%; }
   .news-content .content {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    padding-bottom: 25px; }
     .news-content .content img {
       padding-bottom: 20px;
       display: block;
@@ -1431,16 +1432,24 @@ a[href*="mailto"] a:hover {
     background-color: #004253;
     color: #ffffff; }
 
+.single-post h1 {
+  text-transform: none;
+  line-height: 1.2;
+  font-size: 1.8em;
+  max-width: 800px;
+  margin: 0 auto; }
+
 @media only screen and (min-width: 767px) {
   .news1 h3 {
     padding-top: 60px; } }
 @media only screen and (min-width: 1024px) {
   .news p {
-    padding: 10px 160px; }
+    padding: 0 160px; }
 
   .news-content .content {
     max-width: 954px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 45px; }
 
   .news1 h3 {
     padding-top: 100px; } }
@@ -2615,9 +2624,7 @@ div.wpcf7 .ajax-loader {
   .contact .col-2 > div:first-of-type {
     margin-right: 25px; }
   .contact .text {
-    text-align: left; }
-    .contact .text p {
-      padding-bottom: 1.8em; } }
+    text-align: left; } }
 @media only screen and (min-width: 920px) {
   .contact .col-2 .contact-form p:nth-of-type(1),
   .contact .col-2 .contact-form p:nth-of-type(2) {
