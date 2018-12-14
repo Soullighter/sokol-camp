@@ -150,6 +150,20 @@ a[href*="mailto"] {
     @media medium-devices {
         display: inline-flex;
     }
+    .wpml-ls:after {
+        content: '';
+        width: 9px;
+        background-image: url("images/angle-arrow-down.svg");
+        background-size: 9px auto;
+        display: block;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -5px;
+        top: 50%;
+        height: 9px;
+        margin-top: -3px;
+
+    }
     a {
         padding: 0;
         margin: 0;
@@ -177,7 +191,7 @@ a[href*="mailto"] {
 }
 
 .header {
-    background-color: $green-blue;
+    background-color: transparent;
     position: relative;
     z-index: 1000;
     padding: 25px 0;
@@ -189,7 +203,7 @@ a[href*="mailto"] {
         width: 95%;
     }
     .menu {
-        overflow-x: unset !important;
+        overflow: none !important;
         height: 100%;
         width: 100%; 
         position: fixed;
@@ -198,11 +212,9 @@ a[href*="mailto"] {
         right: 0;
         background-color: $white;
         opacity: 0.8;
-        overflow-x: hidden;
         transition: 0.5s;
         text-align: center;
         padding-top: 75px;
-        overflow: unset;
         a,
         span {
             padding: 3px 5px;
@@ -550,9 +562,13 @@ a[href*="mailto"] {
                     background-color: transparent;
                 }
             }
+            li.wpml-ls-current-language a span,
+            li.current-menu-item a {
+                color: $green-light;
+            }
             a {
                 font-size: 18px !important;
-                text-transform: unset;
+                text-transform: uppercase;
                 transition: all 0.5s;
                 &:hover {
                     color: $green-light;

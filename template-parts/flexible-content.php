@@ -444,7 +444,7 @@
 		               
 		               <?php the_sub_field( 'form' ); ?>
 						
-						<span class="info">Ukoliko želite rezervisati smeštaj, kontaktirajte nas <a href="#"><strong>ovde</strong></a></span>
+						<span class="info">Ukoliko želite rezervirati smještaj, kontaktirajte nas <a href="#"><strong>ovdje</strong></a></span>
 		            </div>
 		        </div>
 		        <!-- end wrapper -->

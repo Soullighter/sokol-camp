@@ -145,17 +145,17 @@ html[xmlns] .flexslider .slides {
 
 .flex-direction-nav a.flex-next:before {
   transform: rotate(180deg);
-  transition: all 1s;
 }
 
 .flex-direction-nav a.flex-prev:hover:before {
-  content: url('../images/arrow-light-blue2.svg');
-  transition: all 1s;
+  content: url('../images/arrow-fill.svg');
+  transform: rotate(180deg);
+  margin-top: 4px;
 }
 .flex-direction-nav a.flex-next:hover:before {
-  content: url('../images/arrow-light-blue2.svg');
-  transform: rotate(180deg);
-  transition: all 1s;
+  content: url('../images/arrow-fill.svg');
+  transform: rotate(360deg);
+  margin-top: -4px;
  
 }
 
