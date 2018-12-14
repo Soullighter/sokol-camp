@@ -202,7 +202,7 @@ a[href*="mailto"] {
         transition: 0.5s;
         text-align: center;
         padding-top: 75px;
-        overflow-y: auto;
+        overflow: unset;
         a,
         span {
             padding: 3px 5px;
