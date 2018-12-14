@@ -84,7 +84,7 @@ get_header('landing'); ?>
                                     <image width="536" height="362" xlink:href="<?php echo get_template_directory_uri(); ?>/images/mask-hero22.png" />
                                 </mask>
                             </defs>
-                            <image mask="url(#mask-hero2)" width="536" height="362" xlink:href="http://dev.sokolcamp.com/wp-content/uploads/2018/12/IMG_4316-536x362.jpeg" />
+                            <image mask="url(#mask-hero2)" width="536" height="362" xlink:href="http://dev.sokolcamp.com/wp-content/uploads/2018/12/IMG_4316-e1544734472980-536x362.jpeg" />
                         </svg>
                     </span>
                     </div>
