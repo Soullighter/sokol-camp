@@ -23,15 +23,12 @@ get_header('landing'); ?>
                 </div>
 
                 <nav class="navmenu">
-                    <div class="menuicon" onclick="openNav()">
+                    <div class="menuicon2" onclick="openNav()">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="close">
-                        <a href="javascript:void(0)" onclick="closeNav()"> &times;</a>
-                    </div>
-
+                    <div class="menu">
                         <?php
                             wp_nav_menu(
                                 array(
@@ -41,6 +38,11 @@ get_header('landing'); ?>
                                 )
                             );
                         ?>
+                        <div class="lang2">
+                            <?php do_action('wpml_add_language_selector');  ?>
+                            </div>
+                        </div>
+                      
                 </nav>
                
         </header>
