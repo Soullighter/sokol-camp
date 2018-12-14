@@ -562,7 +562,7 @@ a[href*="mailto"] {
                     background-color: transparent;
                 }
             }
-            li.wpml-ls-current-language a span,
+            li.wpml-ls-current-language > a span,
             li.current-menu-item a {
                 color: $green-light;
             }

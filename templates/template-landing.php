@@ -19,7 +19,7 @@
                         <h5>Rekreativci i amateri</h5>
                         <p>Sokol Centar raspolaže sa nekoliko modernih dvorana koje svojom opremom nude raznolikost
                             treninga i programa za sve uzraste, a sve pod vodstvom iskusnih i stručnih trenera.</p>
-                        <div class="button"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Monthly Events' ) ) ); ?>">Ulaz</a></div>
+                        <div class="button"><a href="http://sokolcentar.com">Ulaz</a></div>
                     </div>
                 </div>
                    
