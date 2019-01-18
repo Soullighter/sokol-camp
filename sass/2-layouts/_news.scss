@@ -48,15 +48,6 @@
     }
 }
 
-.single-post {
-    h1 {
-        text-transform: none;
-        line-height: 1.2;
-        font-size: 1.8em;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-}
 @include small-devices {
     .news1 {
         h3 {
